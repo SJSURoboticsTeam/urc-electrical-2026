@@ -1,0 +1,52 @@
+site_name: URC-Electrical-2026
+repo_url: https://github.com/SJSURoboticsTeam/urc-electrical-2026
+
+nav:
+  - Home: index.md
+
+plugins:
+  - search
+  - macros
+  - mkdocs-pdf
+  
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme)"
+      primary: amber
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+extra:
+  version:
+    provider: mike
+
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10.8.0/dist/mermaid.min.js
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.pathconverter:
+      absolute: false
+      tags: 'a script img link object embed'
+  - attr_list
