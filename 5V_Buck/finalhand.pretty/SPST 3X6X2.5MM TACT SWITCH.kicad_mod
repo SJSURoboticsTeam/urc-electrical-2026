@@ -1,0 +1,206 @@
+(footprint "SPST 3X6X2.5MM TACT SWITCH"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f8b68d14-9b90-4f87-9f02-9e2bc131ed94")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "ee76565e-544e-4829-9d2d-fe6960682fe1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7e6c9186-6e0d-4ee9-bdcc-e1b3addd0333")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e4c93b32-e18e-4cd0-b447-7ba71e7c4dec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1c9f7080-d120-4914-bd9b-44d40cae04c1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "JLC_3DModel_Q" "f71f36c776714982bef6828e9ba2e449"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(hide yes)
+		(uuid "09334025-5af9-493a-b09f-09314fed165d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "JLC_3D_Size" "8.052 2.5145"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(hide yes)
+		(uuid "f414c7b3-a5f9-48dc-a2cc-66275ac899f1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(fp_line
+		(start 0 -6.5)
+		(end 1 -6.5)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "aa1c8875-e03b-4cb4-b92e-6dd55f1aa31f")
+	)
+	(fp_line
+		(start 0 0)
+		(end 0 -6.5)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6db1b0fb-2172-4c2a-b79e-926a19a5ef7f")
+	)
+	(fp_line
+		(start 1 0)
+		(end 0 0)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "181387fe-37fc-465b-8424-c311464cfa0b")
+	)
+	(fp_line
+		(start 2.001 -5.301)
+		(end 2.001 -4.3995)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "54cea007-9d00-4967-a694-57926fb20ce1")
+	)
+	(fp_line
+		(start 2.001 -4.3995)
+		(end 3.1995 -2.2)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3786fac3-9dfc-4c0d-a6ce-02271630bef2")
+	)
+	(fp_line
+		(start 2.001 -2.2)
+		(end 2.001 -1.199)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "bb26bf11-d5de-452b-8974-ba56eaeb50a0")
+	)
+	(fp_line
+		(start 2.9 -6.5)
+		(end 4 -6.5)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "258f42f9-e9fb-42f4-be98-3fb844f02a84")
+	)
+	(fp_line
+		(start 4 -6.5)
+		(end 4 0)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "06c0305a-0af5-4bbc-a1e1-b19269bdd199")
+	)
+	(fp_line
+		(start 4 0)
+		(end 3 0)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7c2f5a59-63d4-463a-bbf0-a8d64be4daa7")
+	)
+	(pad "1" smd rect
+		(at 2.001 -6.8)
+		(size 1.5 2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "3879fe02-75f0-4601-a559-b37ce64d3261")
+	)
+	(pad "2" smd rect
+		(at 2.0035 0.302)
+		(size 1.5 2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "8cb3a641-0334-4ae1-ac2a-44d44b32409b")
+	)
+	(model "${KIPRJMOD}/EASYEDA_MODELS/Tactile_SMD_3x6x2.5mm.step"
+		(offset
+			(xyz 0.2 3.3 1.2)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+)
