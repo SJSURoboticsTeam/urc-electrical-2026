@@ -4,6 +4,8 @@ on:
   push:
     branches-ignore:
       - gh-pages
+  paths:
+      - 'docs/*'
 env:
   GIT_COMMITTER_NAME: ci-bot
   GIT_COMMITTER_EMAIL: sjsurobotics@gmail.com
