@@ -2,8 +2,8 @@ name: Deploy Documentation
 on:
   workflow_dispatch:
   push:
-    branches-ignore:
-      - gh-pages
+    branches:
+      - 'main'
     paths:
         - 'docs/*'
         - '*.kicad_sch'
@@ -37,14 +37,14 @@ jobs:
     - name: Install the project dependencies
       run: poetry install --no-root
     - name: Build documenation
-      run: ./generate.sh
+      run: poetry run mkdocs build
     - name: Remove unnecessary files
       run: rm -rdf .git .venv
     - name: Upload production files
       uses: actions/upload-artifact@v4
       with:
         name: documentation
-        path: .
+        path: site
 
   deploy:
     runs-on: ubuntu-latest
