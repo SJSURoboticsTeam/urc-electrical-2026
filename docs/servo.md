@@ -11,7 +11,7 @@
 
 ## Authors
 
-Board Design: Shin Umeda
+Board Design: Shin Umeda  
 Documentation: Shin Umeda
 
 ## Active Revisions
