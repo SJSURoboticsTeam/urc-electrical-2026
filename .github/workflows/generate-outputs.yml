@@ -1,0 +1,41 @@
+name: Generate KiCad outputs
+on:
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      project:
+        required: true
+        type: string
+env:
+  GIT_COMMITTER_NAME: ci-bot
+  GIT_COMMITTER_EMAIL: sjsurobotics@gmail.com
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+  
+    - name: Export PDF
+      id: production
+      uses: sparkengineering/kicad-action@v2
+      if: '!cancelled()'
+      with:
+        kicad_sch: ${{ inputs.project }}/${{ inputs.project }}.kicad_sch
+        sch_pdf: true
+        sch_pdf_file:  ${{ inputs.project }}.pdf
+
+    - name: Render Image
+      uses: linalinn/kicad-render@main
+      with:
+        pcb_file: ${{ inputs.project }}/${{ inputs.project }}.kicad_pcb
+        output_path: ${{ inputs.project }}
+
+    - name: Upload production files
+      uses: actions/upload-artifact@v4
+      if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
+      with:
+        name: ${{ inputs.project }}-out
+        path: |
+          ${{ inputs.project }}/${{ inputs.project }}.pdf
+          ${{ inputs.project }}/top.png
+          ${{ inputs.project }}/bottom.png
