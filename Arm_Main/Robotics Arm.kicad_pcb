@@ -969,7 +969,7 @@
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D4"
-			(at 0 -1.43 270)
+			(at 0 -1.43 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "76359d7c-368a-4feb-8cd8-edcbdc4e9bc5")
@@ -981,7 +981,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 0 1.43 270)
+			(at 0 1.43 -90)
 			(layer "F.Fab")
 			(uuid "a1969837-b07f-4686-b37b-809c84c773a5")
 			(effects
@@ -1153,7 +1153,7 @@
 			(uuid "bce12683-d14a-47d0-9d46-48a9fe5a036b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 270)
+			(at 0 0 -90)
 			(layer "F.Fab")
 			(uuid "14554179-bae8-45df-ab5d-b99d168a10b0")
 			(effects
@@ -3350,7 +3350,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "47093cfd-a805-4543-b12a-2fbf3fda1920")
-		(at 170 129 90)
+		(at 169.75 129 90)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C10"
@@ -4084,8 +4084,9 @@
 		(descr "AMASS female XT60, through hole, vertical, https://www.tme.eu/Document/2d152ced3b7a446066e6c419d84bb460/XT60%20SPEC.pdf")
 		(tags "XT60 female vertical")
 		(property "Reference" "BatOut4"
-			(at 3.6 -5.3 -90)
+			(at 3.6 -5.3 270)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "d91439ca-0cad-45fb-b8d8-3f25114bf087")
 			(effects
 				(font
@@ -7930,7 +7931,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R6"
-			(at 0 -1.5 360)
+			(at 0 -1.5 0)
 			(layer "F.SilkS")
 			(uuid "2e22d035-4c69-452b-834d-d7906d73c4e2")
 			(effects
@@ -7941,7 +7942,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "8e481ec0-4022-421c-8d1a-dfe3926835c6")
 			(effects
@@ -8093,7 +8094,7 @@
 			(uuid "c224012c-a884-42ea-9121-5bdcd3384953")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "eef4c78b-58d3-4268-bd50-ae39a99c0fdc")
 			(effects
@@ -8140,7 +8141,7 @@
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D3"
-			(at 0 -1.43 270)
+			(at 0 -1.43 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "69a67f38-2890-4f55-b56d-a5bc75879ae9")
@@ -8152,7 +8153,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 0 1.43 270)
+			(at 0 1.43 -90)
 			(layer "F.Fab")
 			(uuid "f66ebdb1-af71-481b-bb5f-f7cb884b3ff7")
 			(effects
@@ -8324,7 +8325,7 @@
 			(uuid "01ef6013-c8c0-4262-b20a-0da20b40296e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 270)
+			(at 0 0 -90)
 			(layer "F.Fab")
 			(uuid "57a932c6-e300-4a69-a51d-78f701cbc859")
 			(effects
@@ -12809,7 +12810,7 @@
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D1"
-			(at 0 -1.43 270)
+			(at 0 -1.43 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "882fd359-20e8-4fc6-b9ca-8addb509e36e")
@@ -12821,7 +12822,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 0 1.43 270)
+			(at 0 1.43 -90)
 			(layer "F.Fab")
 			(uuid "b41522ff-0061-4943-ac0f-e9a658536bb9")
 			(effects
@@ -12993,7 +12994,7 @@
 			(uuid "7497bd08-baf8-4caa-bdae-239b3a6321d8")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 270)
+			(at 0 0 -90)
 			(layer "F.Fab")
 			(uuid "39f4287e-7830-41db-b16c-47cdeeda8d1c")
 			(effects
