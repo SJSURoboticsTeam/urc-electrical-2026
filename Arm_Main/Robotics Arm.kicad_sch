@@ -4356,6 +4356,12 @@
 		)
 	)
 	(junction
+		(at 24.13 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0aa0dc61-309c-4d06-8a1d-21be0c7f5cd7")
+	)
+	(junction
 		(at 36.83 173.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4434,6 +4440,12 @@
 		(uuid "67e8fa5f-615a-4a7d-b5a8-88bf73157202")
 	)
 	(junction
+		(at 24.13 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b9ea139-382d-4008-94eb-d04654408430")
+	)
+	(junction
 		(at 166.37 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4496,6 +4508,26 @@
 			(type default)
 		)
 		(uuid "00ff593a-dece-4c95-af45-5ce3702a2f36")
+	)
+	(wire
+		(pts
+			(xy 24.13 66.04) (xy 26.67 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02119ee9-5c14-46be-84ba-cfb639571be2")
+	)
+	(wire
+		(pts
+			(xy 21.59 66.04) (xy 21.59 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "024d8341-9b6c-447d-99df-2fc00a7a7259")
 	)
 	(wire
 		(pts
@@ -4679,6 +4711,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 71.12) (xy 21.59 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f782af6-91cb-428a-a8e4-92a2211fc588")
+	)
+	(wire
+		(pts
 			(xy 45.72 179.07) (xy 54.61 179.07)
 		)
 		(stroke
@@ -4706,6 +4748,16 @@
 			(type default)
 		)
 		(uuid "33543365-3576-4c38-bf67-131216be6aaa")
+	)
+	(wire
+		(pts
+			(xy 24.13 71.12) (xy 26.67 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33b0294a-9c46-461c-a928-ba5aec73637f")
 	)
 	(wire
 		(pts
@@ -5169,6 +5221,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 66.04) (xy 21.59 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af73dc13-2c47-42bd-84b0-7ebc8efab9c7")
+	)
+	(wire
+		(pts
 			(xy 133.35 43.18) (xy 138.43 43.18)
 		)
 		(stroke
@@ -5537,6 +5599,16 @@
 		)
 		(uuid "f9a3507f-3ad7-44e9-848e-a52c94da1827")
 	)
+	(wire
+		(pts
+			(xy 21.59 71.12) (xy 21.59 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbb1de58-36e1-4567-9e60-327f6673682f")
+	)
 	(rectangle
 		(start 12.7 132.08)
 		(end 73.66 186.69)
@@ -5562,7 +5634,7 @@
 		(uuid 485d1d1a-3766-4e10-bcb1-d69e924f5feb)
 	)
 	(rectangle
-		(start 27.94 49.53)
+		(start 12.7 49.53)
 		(end 81.28 87.63)
 		(stroke
 			(width 0)
@@ -6397,6 +6469,73 @@
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-BATT")
+		(at 16.51 74.93 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c6b35de-4b64-4273-b9fa-8e14b7a7ba2c")
+		(property "Reference" "#PWR047"
+			(at 16.51 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-BATT"
+			(at 16.51 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 16.51 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 16.51 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-BATT\""
+			(at 16.51 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7c803a80-b951-4713-872e-578ce097df5d")
+		)
+		(instances
+			(project "Robotics Arm"
+				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -7934,6 +8073,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic_MountingPin:Conn_01x02_MountingPin")
+		(at 16.51 67.31 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42915e8f-4caa-418f-8eab-e32a977c5326")
+		(property "Reference" "BatOut5"
+			(at 16.51 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_MountingPin"
+			(at 13.97 70.2055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_AMASS:AMASS_XT60PW-F_1x02_P7.20mm_Horizontal"
+			(at 16.51 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 16.51 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 16.51 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "MP"
+			(uuid "587eff91-b771-4ff3-bbed-6bc2502e29b9")
+		)
+		(pin "1"
+			(uuid "119b47c8-4d6d-4225-af91-7c369e2dab44")
+		)
+		(pin "2"
+			(uuid "5d23d689-a5f5-4c78-983a-346ccf1bc10a")
+		)
+		(instances
+			(project "Robotics Arm"
+				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
+					(reference "BatOut5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_SPST")
 		(at 172.72 30.48 0)
 		(unit 1)
@@ -8271,6 +8484,72 @@
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-BATT")
+		(at 26.67 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "545a010e-19c3-4b37-8a60-092975655026")
+		(property "Reference" "#PWR048"
+			(at 26.67 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-BATT"
+			(at 26.67 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-BATT\""
+			(at 26.67 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e59122c-9c34-48f0-8655-48a0722cf712")
+		)
+		(instances
+			(project "Robotics Arm"
+				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -10325,6 +10604,76 @@
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 24.13 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9918ff38-e54b-481a-8157-e37db6789552")
+		(property "Reference" "C11"
+			(at 26.67 67.3162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 26.67 69.8562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 24.13 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 24.13 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 24.13 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ba15fde7-9731-4c11-8d92-00fc85ba6b97")
+		)
+		(pin "1"
+			(uuid "bae2588b-8201-4ff4-9bdc-eed06dacee0f")
+		)
+		(instances
+			(project "Robotics Arm"
+				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -12470,6 +12819,72 @@
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
 					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 26.67 71.12 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fba377a8-ee16-4f95-9f70-7136d29e252e")
+		(property "Reference" "#PWR049"
+			(at 26.67 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 26.67 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 26.67 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e860fbb-672f-4dde-9af1-90ca6f2cbc9b")
+		)
+		(instances
+			(project "Robotics Arm"
+				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
