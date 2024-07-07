@@ -845,20 +845,15 @@
 				)
 			)
 		)
-		(symbol "Regulator_Linear:AMS1117-3.3"
+		(symbol "Device:R_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -3.81 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AMS1117-3.3"
-				(at 0 3.175 0)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -866,25 +861,16 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-				(at 0 5.08 0)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
+					(justify left)
 				)
 			)
-			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-				(at 2.54 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -893,7 +879,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "linear regulator ldo fixed positive"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -902,7 +888,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?223*TabPin2*"
+			(property "Description" "Resistor, small symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -911,24 +897,42 @@
 					(hide yes)
 				)
 			)
-			(symbol "AMS1117-3.3_0_1"
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
 				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
 					(stroke
-						(width 0.254)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 			)
-			(symbol "AMS1117-3.3_1_1"
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -943,10 +947,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "VO"
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -961,10 +965,129 @@
 						)
 					)
 				)
+			)
+		)
+		(symbol "Regulator_Linear:MCP1802x-xx02xOT"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U2"
+				(at 0 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TPMIC5504-3.3YM5"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at -6.35 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205241716_TECH-PUBLIC-TPMIC5504-3-3YM5_C3021093.pdf"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "300mA, LDO With Shutdown, Fixed 3.3V, SOT-23-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LDO Linear Voltage Regulator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MCP1802x-xx02xOT_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MCP1802x-xx02xOT_1_1"
 				(pin power_in line
-					(at -7.62 0 0)
+					(at -10.16 2.54 0)
 					(length 2.54)
-					(name "VI"
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "EN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -972,6 +1095,42 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 7.62 0 180)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1562,10 +1721,10 @@
 		(uuid "0dd0c4ae-8fff-4ec7-9772-a76e354cdaf1")
 	)
 	(junction
-		(at 91.44 46.99)
+		(at 91.44 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "16f2f6f3-6e32-4758-8908-cbbefbe59b91")
+		(uuid "1e500e59-014e-4f12-b5dc-37e2ddcc2814")
 	)
 	(junction
 		(at 68.58 55.88)
@@ -1574,16 +1733,16 @@
 		(uuid "24383418-e331-4a5a-8f76-abc6b629bdee")
 	)
 	(junction
+		(at 38.1 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "245ceb30-4067-43e9-90a1-ee245596c2fe")
+	)
+	(junction
 		(at 87.63 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "43e8beb1-076a-4830-af30-c5f0258eca6c")
-	)
-	(junction
-		(at 53.34 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "45ea53c7-5ff0-47b5-991d-198e5fe50836")
 	)
 	(junction
 		(at 38.1 138.43)
@@ -1592,22 +1751,28 @@
 		(uuid "59154a90-8491-4743-8460-2ebb7d865268")
 	)
 	(junction
+		(at 81.28 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6dba96a8-e6e6-4fbf-b957-f209918f5640")
+	)
+	(junction
 		(at 38.1 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7988da42-1164-4573-ab23-4a5886fb7c9b")
 	)
 	(junction
-		(at 81.28 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "805c5227-d83f-44c1-88a9-de0c4f1d57d3")
-	)
-	(junction
 		(at 48.26 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a42b5512-78f6-4e9d-b693-1ea59fbcc733")
+	)
+	(junction
+		(at 49.53 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da182f67-7c7f-46c8-ace1-4d989c4a9b42")
 	)
 	(wire
 		(pts
@@ -1641,6 +1806,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 55.88) (xy 81.28 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fea4523-04be-4ec7-811c-97690c1dd811")
+	)
+	(wire
+		(pts
 			(xy 34.29 137.16) (xy 34.29 138.43)
 		)
 		(stroke
@@ -1661,13 +1836,23 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 46.99) (xy 53.34 46.99)
+			(xy 49.53 50.8) (xy 58.42 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1d331bf0-09ec-4eef-a0a2-0c0d8ff01a9a")
+		(uuid "21306ec8-d40b-49d2-b7c4-5d6ca914408a")
+	)
+	(wire
+		(pts
+			(xy 91.44 45.72) (xy 91.44 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2645a9dc-03fe-4a9e-9896-f5d3736b8cdb")
 	)
 	(wire
 		(pts
@@ -1701,6 +1886,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 45.72) (xy 81.28 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "327f80e0-7407-4903-b87a-adc49d308302")
+	)
+	(wire
+		(pts
 			(xy 87.63 140.97) (xy 85.09 140.97)
 		)
 		(stroke
@@ -1711,7 +1906,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 46.99) (xy 81.28 48.26)
+			(xy 81.28 45.72) (xy 81.28 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1751,23 +1946,13 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 46.99) (xy 53.34 48.26)
+			(xy 38.1 44.45) (xy 38.1 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4cca45b5-171d-4f8f-aa5e-cb844bfbe1e3")
-	)
-	(wire
-		(pts
-			(xy 68.58 55.88) (xy 81.28 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e41e54d-5d07-48ba-aa8b-65357145ccf8")
 	)
 	(wire
 		(pts
@@ -1791,6 +1976,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 44.45) (xy 91.44 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5873dd86-4ab6-49de-ab05-aa22037b950e")
+	)
+	(wire
+		(pts
 			(xy 91.44 62.23) (xy 91.44 63.5)
 		)
 		(stroke
@@ -1798,6 +1993,16 @@
 			(type default)
 		)
 		(uuid "5cb5e258-b469-426c-b6a7-bd7d0b6e5b56")
+	)
+	(wire
+		(pts
+			(xy 49.53 45.72) (xy 58.42 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72ce2b8b-0639-49c3-84aa-54a55944e64a")
 	)
 	(wire
 		(pts
@@ -1831,16 +2036,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 46.99) (xy 76.2 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85c8cf49-5dbf-4222-b7ae-e21b65d6d277")
-	)
-	(wire
-		(pts
 			(xy 43.18 88.9) (xy 44.45 88.9)
 		)
 		(stroke
@@ -1851,7 +2046,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 46.99) (xy 91.44 46.99)
+			(xy 81.28 45.72) (xy 91.44 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1891,13 +2086,23 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 93.98) (xy 78.74 93.98)
+			(xy 38.1 45.72) (xy 38.1 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d2c57a40-19ab-4f39-a863-4948c1f48037")
+		(uuid "cf9cd14f-8246-4350-9d3f-f4fbc98298ad")
+	)
+	(wire
+		(pts
+			(xy 38.1 45.72) (xy 49.53 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9891468-d0c3-4c48-9101-cdb6326e10f6")
 	)
 	(wire
 		(pts
@@ -1911,7 +2116,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 55.88) (xy 68.58 55.88)
+			(xy 38.1 55.88) (xy 68.58 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1931,13 +2136,13 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 91.44) (xy 78.74 91.44)
+			(xy 81.28 55.88) (xy 81.28 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fd83b4c4-e174-4d67-bcdf-7a8b1d373444")
+		(uuid "f3773379-b30f-4b03-b09b-4aa9c355e409")
 	)
 	(rectangle
 		(start 30.48 29.21)
@@ -2008,28 +2213,6 @@
 		)
 		(uuid "fd358e74-8b92-4ee4-b5b0-064db43ec906")
 	)
-	(global_label "CAN_H"
-		(shape input)
-		(at 77.47 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2fe63e1d-5a53-4791-8d32-fca43e94f3a0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.4976 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "I2C_SDA"
 		(shape input)
 		(at 87.63 140.97 0)
@@ -2048,28 +2231,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CAN_L"
-		(shape input)
-		(at 77.47 93.98 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9bc224e3-4f09-43fc-925b-5b393f9f8210")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.8 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -2199,7 +2360,7 @@
 			(uuid "5473c0a8-f2a7-4365-a12e-5d19f3422416")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "#PWR07")
 					(unit 1)
@@ -2265,7 +2426,7 @@
 			(uuid "0626137f-ee15-47b6-a524-d69a1f84e647")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "#PWR09")
 					(unit 1)
@@ -2331,7 +2492,7 @@
 			(uuid "cb2b64d6-4314-444e-9ddb-9d4f78822041")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "#PWR010")
 					(unit 1)
@@ -2341,7 +2502,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 53.34 46.99 0)
+		(at 38.1 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2350,7 +2511,7 @@
 		(fields_autoplaced yes)
 		(uuid "3abb4bb9-5bad-4fca-8a2f-b135a6d86e7c")
 		(property "Reference" "#PWR01"
-			(at 53.34 50.8 0)
+			(at 38.1 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2359,7 +2520,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 53.34 41.91 0)
+			(at 38.1 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2367,7 +2528,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 46.99 0)
+			(at 38.1 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2376,7 +2537,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 46.99 0)
+			(at 38.1 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2385,7 +2546,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 53.34 46.99 0)
+			(at 38.1 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2397,9 +2558,78 @@
 			(uuid "44e2ddc7-9e0c-4894-bb02-f512d01b2fd3")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 49.53 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3bbd89f6-3b42-4cc5-8cd4-150d63af9e8c")
+		(property "Reference" "R2"
+			(at 50.8 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 50.8 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 49.53 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 49.53 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98eba064-c329-456b-827b-63121775cf6b")
+		)
+		(pin "2"
+			(uuid "e426d030-f661-4271-ae93-cf835ab663fd")
+		)
+		(instances
+			(project "MiniatureTMAG_Carrier"
+				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -2463,7 +2693,7 @@
 			(uuid "256c5071-1488-4764-8f99-b3d2d29affdc")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "#PWR011")
 					(unit 1)
@@ -2533,7 +2763,7 @@
 			(uuid "f54c0481-1099-444f-98ba-f34b20a59a8b")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "D1")
 					(unit 1)
@@ -2603,7 +2833,7 @@
 			(uuid "7e31ae70-1ae2-4f01-99e4-6a4dbbf44b4a")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "R1")
 					(unit 1)
@@ -2670,7 +2900,7 @@
 			(uuid "f89c2cd4-ad6b-46cd-a822-83df0625262e")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "#PWR08")
 					(unit 1)
@@ -2680,16 +2910,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 53.34 52.07 0)
+		(at 38.1 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "804b6966-c444-4de9-989b-31463b3c85df")
 		(property "Reference" "C1"
-			(at 57.15 50.7999 0)
+			(at 40.894 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2698,7 +2927,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 57.15 53.3399 0)
+			(at 40.894 53.086 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2707,7 +2936,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 54.3052 55.88 0)
+			(at 39.0652 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2716,7 +2945,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 52.07 0)
+			(at 38.1 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2725,7 +2954,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 53.34 52.07 0)
+			(at 38.1 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2740,7 +2969,7 @@
 			(uuid "d44717f7-5bb7-40ef-8b62-de7124d6adb2")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "C1")
 					(unit 1)
@@ -2813,9 +3042,88 @@
 			(uuid "9e020a96-2b32-4ecb-8d7e-41e44f2b2ef7")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "I2CIn1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:MCP1802x-xx02xOT")
+		(at 68.58 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "910235c4-0c4d-46dc-a25a-449558e712d8")
+		(property "Reference" "U2"
+			(at 68.58 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPMIC5504-3.3YM5"
+			(at 68.58 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 62.23 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205241716_TECH-PUBLIC-TPMIC5504-3-3YM5_C3021093.pdf"
+			(at 68.58 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "300mA, LDO With Shutdown, Fixed 3.3V, SOT-23-5"
+			(at 68.58 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "eec048db-786d-4845-ab4a-929094eea285")
+		)
+		(pin "3"
+			(uuid "6c07a362-65c1-4ae3-bf8a-c89d39404071")
+		)
+		(pin "4"
+			(uuid "ab9c84f0-8069-48e0-950e-c1193a0928d1")
+		)
+		(pin "5"
+			(uuid "7c18b1af-5e56-4e05-8bfc-c08285689bbd")
+		)
+		(pin "1"
+			(uuid "13ca1f4f-02b5-42e3-826c-3b7cfd2227cb")
+		)
+		(instances
+			(project "MiniatureTMAG_Carrier"
+				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -2879,7 +3187,7 @@
 			(uuid "72c79ab8-119f-4739-b0fb-6cb2a19ae17f")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "#PWR05")
 					(unit 1)
@@ -2945,7 +3253,7 @@
 			(uuid "cc7717dc-ca11-436e-a64c-7be22fec46ea")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "#PWR04")
 					(unit 1)
@@ -3015,7 +3323,7 @@
 			(uuid "c43178d6-9713-4f23-8d43-7d4c181ab1f9")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "C3")
 					(unit 1)
@@ -3081,7 +3389,7 @@
 			(uuid "7c360dce-cbc4-4e43-97d9-0f6220c4861c")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "#PWR02")
 					(unit 1)
@@ -3091,7 +3399,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 91.44 46.99 0)
+		(at 91.44 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3100,7 +3408,7 @@
 		(fields_autoplaced yes)
 		(uuid "cb3c0ce4-d80b-4e64-a134-98e035286e2f")
 		(property "Reference" "#PWR03"
-			(at 91.44 50.8 0)
+			(at 91.44 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3109,7 +3417,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 91.44 41.91 0)
+			(at 91.44 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3117,7 +3425,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 46.99 0)
+			(at 91.44 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3126,7 +3434,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 46.99 0)
+			(at 91.44 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3135,7 +3443,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 91.44 46.99 0)
+			(at 91.44 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3147,7 +3455,7 @@
 			(uuid "d001222c-4af2-4a83-89fa-c53e1ec839d4")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "#PWR03")
 					(unit 1)
@@ -3226,7 +3534,7 @@
 			(uuid "9dfa8c92-55c2-4593-b128-9570a69db4d8")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "CanIn1")
 					(unit 1)
@@ -3292,7 +3600,7 @@
 			(uuid "d5e3a40e-e527-4e0e-bee4-124fee578049")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "#PWR06")
 					(unit 1)
@@ -3302,16 +3610,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 81.28 52.07 0)
+		(at 81.28 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e43d9582-a5df-472f-b9c0-224d0d128178")
 		(property "Reference" "C2"
-			(at 85.09 50.7999 0)
+			(at 84.074 49.276 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3319,8 +3626,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u"
-			(at 85.09 53.3399 0)
+		(property "Value" "1u"
+			(at 84.074 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3329,7 +3636,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 82.2452 55.88 0)
+			(at 82.2452 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3338,7 +3645,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 81.28 52.07 0)
+			(at 81.28 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3347,7 +3654,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 81.28 52.07 0)
+			(at 81.28 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3362,7 +3669,7 @@
 			(uuid "4f392c58-76c9-465b-8638-d7c4f101e90a")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "C2")
 					(unit 1)
@@ -3432,80 +3739,9 @@
 			(uuid "90cb888c-8664-4f91-a9df-f00a0b8cd426")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:AMS1117-3.3")
-		(at 68.58 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f80cc190-6cf6-4284-a70b-f2c811feec37")
-		(property "Reference" "U2"
-			(at 68.58 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AMS1117-3.3"
-			(at 68.58 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 68.58 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-			(at 71.12 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
-			(at 68.58 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cb7f7662-fedd-4f87-8e0a-93233b196825")
-		)
-		(pin "2"
-			(uuid "4128ce7d-0958-4229-ae0f-c0b2e7223e6a")
-		)
-		(pin "3"
-			(uuid "0d045644-c38a-4d6a-aae4-595087dc0a6a")
-		)
-		(instances
-			(project "TMAG_Carrier"
-				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
-					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -3585,7 +3821,7 @@
 			(uuid "f89bbed5-4b5b-4bc3-b90e-4cc97c7caa90")
 		)
 		(instances
-			(project "TMAG_Carrier"
+			(project "MiniatureTMAG_Carrier"
 				(path "/8af2571c-c9e6-416d-aafd-49244c17c3fc"
 					(reference "U1")
 					(unit 1)
