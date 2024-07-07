@@ -5,14 +5,14 @@
 	(layer "F.Cu")
 	(tags "SlimSMA")
 	(property "Reference" "REF**"
-		(at 0 -0.5 0)
+		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "fe153128-dc08-4fed-8a9f-4c7f6e3e6bdb")
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.1)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -42,7 +42,7 @@
 			)
 		)
 	)
-	(property "Datasheet" "https://www.diodes.com/assets/Package-Files/DO-221AC.pdf"
+	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -70,18 +70,8 @@
 	)
 	(attr smd)
 	(fp_line
-		(start -4 0.5)
-		(end -4 4.42)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "6e802156-c6a3-40d3-94d0-c72ddc90ff1a")
-	)
-	(fp_line
-		(start -4 4.42)
-		(end 3 4.42)
+		(start -2.175 3.86)
+		(end 2.175 3.86)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -150,8 +140,8 @@
 		(uuid "bbf46420-b424-4673-8530-bee2eff699a2")
 	)
 	(fp_line
-		(start 3 0.5)
-		(end -4 0.5)
+		(start 2.175 1.06)
+		(end -2.175 1.06)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -170,22 +160,22 @@
 		(uuid "1cbde5bd-0e0b-43f7-9a46-2a2bcb48db2d")
 	)
 	(pad "1" smd roundrect
-		(at -2.6 2.46)
-		(size 2.3 2.4)
+		(at -2.36 2.46)
+		(size 1.4 1.52)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.222222)
 		(uuid "cb642107-6869-45c2-b0d9-2b8767f3f906")
 	)
 	(pad "2" smd roundrect
-		(at 2.6 2.46)
-		(size 2.3 2.4)
+		(at 2.36 2.46)
+		(size 1.4 1.52)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.222222)
 		(uuid "6d8d9751-8640-4873-b4af-eac8970b830b")
 	)
 	(model "C:/Users/Brend/Documents/GitHub/urc-electrical-2026/common/models/DO-221AC (SlimSMA).step"
 		(offset
-			(xyz 0 -2.5 0)
+			(xyz 0 -2.45 0)
 		)
 		(scale
 			(xyz 1 1 1)
