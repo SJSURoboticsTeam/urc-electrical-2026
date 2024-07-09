@@ -8122,28 +8122,6 @@
 	)
 	(global_label "CAN_N"
 		(shape input)
-		(at 148.59 170.18 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1c0e44a6-86d6-4a2c-8819-f2ed3a5bd73a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 157.26 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CAN_N"
-		(shape input)
 		(at 68.58 71.12 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8362,28 +8340,6 @@
 			)
 		)
 	)
-	(global_label "CAN_P"
-		(shape input)
-		(at 148.59 167.64 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7f6b8eb9-e18a-4727-ae9a-2a6f813261e2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 157.5624 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "CAN_TX"
 		(shape input)
 		(at 189.23 86.36 180)
@@ -8560,28 +8516,6 @@
 			)
 		)
 	)
-	(global_label "CAN_P"
-		(shape input)
-		(at 127 167.64 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "defc0d58-5a7a-415d-a5db-ec6982d255d5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.9724 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "USB_IN_D-"
 		(shape input)
 		(at 123.19 72.39 180)
@@ -8661,28 +8595,6 @@
 		(uuid "ed51bbf1-8476-42ef-be8e-084cf4bc296c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 140.75 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CAN_N"
-		(shape input)
-		(at 127 170.18 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f5c767fe-4ed4-4237-9767-de21ce97bc14")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.67 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8779,73 +8691,6 @@
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
 					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-BATT")
-		(at 121.92 175.26 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0c3a4ba6-686b-4a38-9c63-8a612201371a")
-		(property "Reference" "#PWR033"
-			(at 121.92 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-BATT"
-			(at 121.92 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 121.92 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 121.92 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 121.92 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1d6d7f1e-c674-4b52-9381-fb4cef480551")
-		)
-		(instances
-			(project "Robotics Arm"
-				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -9540,86 +9385,6 @@
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
-		(at 121.92 165.1 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "27cc7d37-be3e-42f2-9181-f70c3c84fbca")
-		(property "Reference" "CanOut3"
-			(at 136.144 163.322 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x04_MountingPin"
-			(at 119.38 165.4557 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical"
-			(at 121.92 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 121.92 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 121.92 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "c8891f30-ade1-4f55-83ab-b66c265ae98d")
-		)
-		(pin "4"
-			(uuid "3abb0000-6353-4900-a9c0-786e7334fb85")
-		)
-		(pin "2"
-			(uuid "15b279fb-1817-4d95-9b1d-20ee5a832ec9")
-		)
-		(pin "1"
-			(uuid "babc3953-84cf-409d-9e3f-4c81d1f43c22")
-		)
-		(pin "MP"
-			(uuid "590f7802-1df2-4022-93a9-f1f3a2f3b122")
-		)
-		(instances
-			(project "Robotics Arm"
-				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "CanOut3")
 					(unit 1)
 				)
 			)
@@ -12470,86 +12235,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
-		(at 143.51 165.1 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8155fb7c-ed4b-4cb2-8f27-cd6357a7fa10")
-		(property "Reference" "CanOut4"
-			(at 157.988 163.576 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x04_MountingPin"
-			(at 140.97 165.4557 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical"
-			(at 143.51 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 143.51 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 143.51 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "ef240e2b-adb1-449a-aa68-21e5bb71264d")
-		)
-		(pin "4"
-			(uuid "ce63e904-d15b-498b-a394-4c0d5b124064")
-		)
-		(pin "2"
-			(uuid "7a516f79-137d-474f-9c79-5dfabd4e6b3f")
-		)
-		(pin "1"
-			(uuid "78507181-910f-40ee-8817-fbdc2be513d2")
-		)
-		(pin "MP"
-			(uuid "9bb813e5-e865-44bf-bd0b-61ab0b8efd9d")
-		)
-		(instances
-			(project "Robotics Arm"
-				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "CanOut4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 78.74 73.66 0)
 		(unit 1)
@@ -13711,73 +13396,6 @@
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-BATT")
-		(at 143.51 175.26 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "af33d9b0-6719-4965-ab26-54ee43a05a3b")
-		(property "Reference" "#PWR039"
-			(at 143.51 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-BATT"
-			(at 143.51 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 143.51 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 143.51 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a5297eba-717f-442d-866d-056f1a846a9c")
-		)
-		(instances
-			(project "Robotics Arm"
-				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "#PWR039")
 					(unit 1)
 				)
 			)
