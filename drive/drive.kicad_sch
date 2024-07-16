@@ -1643,16 +1643,6 @@
 			)
 			(uuid "cc7f0513-5288-412e-8ca5-88f019d7bb41")
 		)
-		(pin "CAN{H+, L-}" bidirectional
-			(at 140.97 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "86157ed5-967a-44ba-ba9b-c7a129510416")
-		)
 		(pin "A1" input
 			(at 140.97 73.66 0)
 			(effects
@@ -1683,10 +1673,20 @@
 			)
 			(uuid "cf1eda06-f50c-442e-b9c5-cde170baca68")
 		)
+		(pin "CAN{P, N}" bidirectional
+			(at 140.97 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "832d7205-b350-4680-948b-99070ba53997")
+		)
 		(instances
 			(project "drive"
 				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
-					(page "4")
+					(page "3")
 				)
 			)
 		)
@@ -1809,16 +1809,6 @@
 			)
 			(uuid "de8c364a-5bdd-4ae3-bcc5-7bbb5ef5c15a")
 		)
-		(pin "CAN{H+, L-}" input
-			(at 140.97 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "a6d9ef48-df1c-4789-9705-a2b4d317cf3f")
-		)
 		(pin "VBAT" output
 			(at 140.97 31.75 0)
 			(effects
@@ -1858,6 +1848,16 @@
 				(justify right)
 			)
 			(uuid "97036708-1f27-4e4f-ba3c-ddfdd5d154a6")
+		)
+		(pin "CAN{P, N}" input
+			(at 140.97 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4dd0b106-747a-448c-8239-cfc19344dea5")
 		)
 		(instances
 			(project "drive"
@@ -1998,7 +1998,7 @@
 		(instances
 			(project "drive"
 				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
-					(page "3")
+					(page "4")
 				)
 			)
 		)

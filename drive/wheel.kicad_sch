@@ -526,7 +526,7 @@
 		)
 		(uuid "f3d983d1-08b6-4171-b254-247e951653ed")
 	)
-	(label "I2C.SCL"
+	(label "I2C.SDA"
 		(at 83.82 96.52 0)
 		(fields_autoplaced yes)
 		(effects
@@ -535,9 +535,9 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "95495039-bcbf-4473-8db2-a5a41f24f779")
+		(uuid "702f2ca1-65d0-43ba-acca-3be2fd9d64ac")
 	)
-	(label "I2C.SDA"
+	(label "I2C.SCL"
 		(at 83.82 93.98 0)
 		(fields_autoplaced yes)
 		(effects
@@ -546,7 +546,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "c29f7f5a-cabf-48a3-bb56-cb088b604652")
+		(uuid "b0cc62d8-f00e-4cb1-bcb6-277bf12b163f")
 	)
 	(hierarchical_label "5V"
 		(shape input)
@@ -770,7 +770,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_4-G-3.5_1x04_P3.50mm_Vertical"
+		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_4P_Vertical"
 			(at 73.66 91.44 0)
 			(effects
 				(font

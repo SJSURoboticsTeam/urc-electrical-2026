@@ -5348,7 +5348,7 @@
 		)
 		(uuid "0c717259-992a-4266-adea-ed05d8ca47a6")
 	)
-	(label "CAN.L-"
+	(label "CAN.N"
 		(at 86.36 113.03 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5359,7 +5359,7 @@
 		)
 		(uuid "113392a7-b706-4b66-9f8c-7439a134a6f1")
 	)
-	(label "CAN.H+"
+	(label "CAN.P"
 		(at 45.72 81.28 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5383,6 +5383,7 @@
 	)
 	(label "SPI1.SCK"
 		(at 194.31 125.73 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5435,7 +5436,7 @@
 		)
 		(uuid "3d99cfdf-ca12-4539-abb0-2917cfca0973")
 	)
-	(label "CAN.H+"
+	(label "CAN.P"
 		(at 86.36 110.49 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5514,6 +5515,7 @@
 	)
 	(label "SPI1.CIPO"
 		(at 194.31 130.81 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5522,7 +5524,7 @@
 		)
 		(uuid "867747f1-9ad1-47ac-afa1-0ba92e151c6c")
 	)
-	(label "CAN.L-"
+	(label "CAN.N"
 		(at 45.72 83.82 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5535,6 +5537,7 @@
 	)
 	(label "SPI1.DATA2"
 		(at 194.31 135.89 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5578,6 +5581,7 @@
 	)
 	(label "SPI1.DATA1"
 		(at 194.31 133.35 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5621,6 +5625,7 @@
 	)
 	(label "SPI1.COPI"
 		(at 194.31 128.27 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5653,6 +5658,7 @@
 	)
 	(label "SPI1.DATA3"
 		(at 194.31 138.43 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5672,7 +5678,7 @@
 		)
 		(uuid "ed940508-7c1f-430c-ad4c-9fd60dc45401")
 	)
-	(hierarchical_label "CAN{H+, L-}"
+	(hierarchical_label "CAN{P, N}"
 		(shape bidirectional)
 		(at 34.29 96.52 180)
 		(fields_autoplaced yes)
@@ -5696,7 +5702,7 @@
 		)
 		(uuid "2707c587-f6a3-4f1a-9111-7ef75bfc9581")
 	)
-	(hierarchical_label "CAN{H+, L-}"
+	(hierarchical_label "CAN{P, N}"
 		(shape bidirectional)
 		(at 74.93 125.73 180)
 		(fields_autoplaced yes)
@@ -6735,7 +6741,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "90Ohm"
+		(property "Value" "120Ω"
 			(at 93.98 113.0299 0)
 			(effects
 				(font
