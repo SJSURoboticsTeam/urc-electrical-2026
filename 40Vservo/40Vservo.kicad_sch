@@ -1040,6 +1040,304 @@
 				)
 			)
 		)
+		(symbol "Device:Resonator"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at 0 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Resonator"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -0.635 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at -0.635 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Three pin ceramic resonator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "ceramic resonator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Filter* Resonator*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Resonator_0_1"
+				(rectangle
+					(start -3.429 -3.175)
+					(end -1.397 -3.429)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -3.429 -2.413)
+					(end -1.397 -2.667)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center -2.413 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.016 2.032)
+					(end 1.016 -2.032)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -3.81)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.413 -2.413) (xy -2.413 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0) (xy -3.175 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.27) (xy -1.778 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 -1.27) (xy 1.778 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.413 0) (xy 2.413 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.413 -3.302) (xy 2.413 -3.81) (xy -2.413 -3.81) (xy -2.413 -3.302)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.397 -3.175)
+					(end 3.429 -3.429)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 1.397 -2.413)
+					(end 3.429 -2.667)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.413 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "Resonator_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:Thermistor_NTC"
 			(pin_numbers hide)
 			(pin_names
@@ -3397,16 +3695,8 @@
 		(uuid "5c871ee9-7db0-4317-a7a1-d073aa213d38")
 	)
 	(no_connect
-		(at 66.04 105.41)
-		(uuid "67ab1117-a9c3-44bc-8d4d-9153553f14f5")
-	)
-	(no_connect
 		(at 66.04 140.97)
 		(uuid "7557b1ca-f6ac-4d9c-808e-adab19f20e0b")
-	)
-	(no_connect
-		(at 66.04 151.13)
-		(uuid "90c7ae5c-5c5b-4311-a776-610e51d5947e")
 	)
 	(no_connect
 		(at 35.56 135.89)
@@ -3423,6 +3713,16 @@
 	(no_connect
 		(at 66.04 138.43)
 		(uuid "ee8e1d49-fc5d-45a6-bd15-4054f33bc72f")
+	)
+	(wire
+		(pts
+			(xy 71.12 107.95) (xy 71.12 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "011fe3b0-245d-41e2-a084-007b9374338c")
 	)
 	(wire
 		(pts
@@ -3463,6 +3763,16 @@
 			(type default)
 		)
 		(uuid "18743848-0140-47ef-99b0-6e5f1b544f15")
+	)
+	(wire
+		(pts
+			(xy 66.04 105.41) (xy 71.12 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ccb59fe-2c5c-4eee-a4f0-de3488a64244")
 	)
 	(wire
 		(pts
@@ -3536,16 +3846,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 107.95) (xy 66.04 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c25c6a7-a48f-4e6e-9aa0-46600453a4ef")
-	)
-	(wire
-		(pts
 			(xy 109.22 124.46) (xy 116.84 124.46)
 		)
 		(stroke
@@ -3616,6 +3916,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 102.87) (xy 80.01 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "705f9950-fdac-4f05-91ac-8ed80fbcc80b")
+	)
+	(wire
+		(pts
 			(xy 160.02 116.84) (xy 147.32 116.84)
 		)
 		(stroke
@@ -3646,6 +3956,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 105.41) (xy 71.12 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c019732-8064-4342-a1c2-257db9065e94")
+	)
+	(wire
+		(pts
 			(xy 187.96 124.46) (xy 187.96 127)
 		)
 		(stroke
@@ -3663,6 +3983,16 @@
 			(type default)
 		)
 		(uuid "a7eb4182-27f2-4c0b-bb28-cc4f6c0209a4")
+	)
+	(wire
+		(pts
+			(xy 71.12 110.49) (xy 80.01 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a82944d5-a0b2-4bcb-9e49-d1911792fc02")
 	)
 	(wire
 		(pts
@@ -3764,6 +4094,16 @@
 		)
 		(uuid "f197438e-7216-4ab7-bc3f-5846a590c62d")
 	)
+	(wire
+		(pts
+			(xy 66.04 107.95) (xy 71.12 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdfb1302-2b3c-4404-ad67-85ab22720188")
+	)
 	(text "R2=V_{REF} / (I_{TRIP} A_{IPROPI})\n2.7k=3.3V / ( 0.8 * 1575 )\nSEE PAGE 15 OF DRV8251A DATASHEET\n"
 		(exclude_from_sim no)
 		(at 150.622 67.056 0)
@@ -3851,6 +4191,17 @@
 		)
 		(uuid "1ab399ca-aa58-4a5e-af42-b113bdaec9e4")
 	)
+	(label "IN1"
+		(at 66.04 148.59 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "24dfe04b-be7c-4b76-aed4-cbd82c1d71fe")
+	)
 	(label "~{ALERT}"
 		(at 160.02 116.84 180)
 		(fields_autoplaced yes)
@@ -3873,6 +4224,17 @@
 		)
 		(uuid "42eefed5-9c27-4f35-8ed2-df7981191ebc")
 	)
+	(label "IN2"
+		(at 66.04 146.05 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "44a8c234-ca06-4615-963b-89ce5905dbce")
+	)
 	(label "RX"
 		(at 66.04 133.35 0)
 		(fields_autoplaced yes)
@@ -3894,28 +4256,6 @@
 			(justify right bottom)
 		)
 		(uuid "4ee8f16c-87fd-40a3-9a57-2d9c5fba2892")
-	)
-	(label "IN2"
-		(at 66.04 148.59 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5653e5df-2ef5-43bf-a370-bfd20970e23b")
-	)
-	(label "~{ALERT}"
-		(at 73.66 107.95 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5d5195ba-e6cb-4c98-97f4-41730fbc855b")
 	)
 	(label "RESET"
 		(at 63.5 34.29 180)
@@ -3982,6 +4322,17 @@
 			(justify left bottom)
 		)
 		(uuid "80b62b3f-654e-483a-b2f4-a98ec7061308")
+	)
+	(label "~{ALERT}"
+		(at 66.04 151.13 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "97dac163-e2bf-470e-aba6-edf4ea50d148")
 	)
 	(label "RESET"
 		(at 69.85 181.61 180)
@@ -4070,17 +4421,6 @@
 			(justify left bottom)
 		)
 		(uuid "e90795c9-9550-401b-b429-4dce8603eccf")
-	)
-	(label "IN1"
-		(at 66.04 146.05 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "eccb3086-afbc-423a-9375-c8948ee47177")
 	)
 	(label "MISO"
 		(at 116.84 121.92 180)
@@ -5008,6 +5348,72 @@
 			(project "40Vservo"
 				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 85.09 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "56c37822-6673-43cb-bfaf-452d47b8bb53")
+		(property "Reference" "#PWR029"
+			(at 91.44 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 89.408 104.648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 85.09 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "69a9ba84-0e40-4e72-9510-e8b43c60058d")
+		)
+		(instances
+			(project "40Vservo"
+				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -6841,6 +7247,78 @@
 			(project "40Vservo"
 				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Resonator")
+		(at 80.01 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9c1c0bba-920e-449d-bec1-96f10e37da4b")
+		(property "Reference" "Y1"
+			(at 82.804 98.552 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CSTNE16M0VH3C000R0"
+			(at 92.964 101.092 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Crystal:Resonator_SMD_Murata_CSTxExxV-3Pin_3.0x1.1mm_HandSoldering"
+			(at 80.01 107.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/en/products/productdata/8801162264606/SPEC-CSTNE16M0VH3C000R0.pdf"
+			(at 80.01 107.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Three pin ceramic resonator"
+			(at 80.01 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "bc1a52e2-843c-45e7-891a-f7579a18be51")
+		)
+		(pin "1"
+			(uuid "3d5faa94-788a-4e61-9256-4093335c16e4")
+		)
+		(pin "2"
+			(uuid "de9fc371-c0c9-4df9-97f0-d93b1326da31")
+		)
+		(instances
+			(project "40Vservo"
+				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
+					(reference "Y1")
 					(unit 1)
 				)
 			)
