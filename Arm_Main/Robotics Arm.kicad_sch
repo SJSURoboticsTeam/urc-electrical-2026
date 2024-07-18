@@ -1116,6 +1116,164 @@
 				)
 			)
 		)
+		(symbol "Device:C_Polarized"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -6378,6 +6536,12 @@
 		(uuid "0cdf9822-45f2-4926-b0f3-01b125d7083a")
 	)
 	(junction
+		(at 50.8 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1126eed9-0ed5-4422-a2b2-f8b9c57eaf18")
+	)
+	(junction
 		(at 40.64 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6406,6 +6570,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "45ce16da-c9f1-4086-9d6c-baf2fd5b5b93")
+	)
+	(junction
+		(at 50.8 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5309f287-4de9-47cf-9ba4-dc32d7e67561")
 	)
 	(junction
 		(at 86.36 149.86)
@@ -6732,6 +6902,16 @@
 			(type default)
 		)
 		(uuid "41504960-0b21-468e-b82c-bb9826794753")
+	)
+	(wire
+		(pts
+			(xy 59.69 146.05) (xy 59.69 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a9d2a21-6cfe-4033-a952-2034f2fabb4f")
 	)
 	(wire
 		(pts
@@ -7165,7 +7345,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 151.13) (xy 59.69 151.13)
+			(xy 50.8 153.67) (xy 59.69 153.67)
 		)
 		(stroke
 			(width 0)
@@ -7375,6 +7555,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 153.67) (xy 59.69 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2549ccd-f041-4de5-97c8-33237e454dab")
+	)
+	(wire
+		(pts
 			(xy 115.57 114.3) (xy 118.11 114.3)
 		)
 		(stroke
@@ -7545,7 +7735,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 148.59) (xy 59.69 148.59)
+			(xy 50.8 146.05) (xy 59.69 146.05)
 		)
 		(stroke
 			(width 0)
@@ -8571,7 +8761,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05e16a26-9bb8-44e1-a17b-43ca3c09eeef")
-		(property "Reference" "C7"
+		(property "Reference" "C8"
 			(at 113.03 146.0562 0)
 			(effects
 				(font
@@ -8625,7 +8815,7 @@
 		(instances
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "C7")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -8711,7 +8901,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1353c241-a6db-4642-afcd-88fcaf6e470f")
-		(property "Reference" "C9"
+		(property "Reference" "C10"
 			(at 158.75 146.0562 0)
 			(effects
 				(font
@@ -8765,7 +8955,7 @@
 		(instances
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "C9")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -8850,7 +9040,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 50.8 151.13 180)
+		(at 50.8 153.67 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8858,8 +9048,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a04f650-250f-4a71-b610-77d0e6ed7fc9")
-		(property "Reference" "#PWR08"
-			(at 50.8 147.32 0)
+		(property "Reference" "#PWR07"
+			(at 50.8 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8868,7 +9058,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 50.8 156.21 0)
+			(at 50.8 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8876,7 +9066,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 151.13 0)
+			(at 50.8 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8885,7 +9075,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 151.13 0)
+			(at 50.8 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8894,7 +9084,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 50.8 151.13 0)
+			(at 50.8 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8908,7 +9098,7 @@
 		(instances
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "#PWR08")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -9270,7 +9460,7 @@
 	)
 	(symbol
 		(lib_id "power:-BATT")
-		(at 50.8 148.59 0)
+		(at 50.8 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9278,8 +9468,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f42d962-3839-47b9-80d1-250e385789c7")
-		(property "Reference" "#PWR07"
-			(at 50.8 152.4 0)
+		(property "Reference" "#PWR06"
+			(at 50.8 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9288,7 +9478,7 @@
 			)
 		)
 		(property "Value" "-BATT"
-			(at 50.8 143.51 0)
+			(at 50.8 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9296,7 +9486,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 148.59 0)
+			(at 50.8 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9305,7 +9495,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 148.59 0)
+			(at 50.8 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9314,7 +9504,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 50.8 148.59 0)
+			(at 50.8 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9328,7 +9518,7 @@
 		(instances
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "#PWR07")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -10328,7 +10518,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "53a88db7-2ac6-4acf-9357-05be537d123e")
-		(property "Reference" "C8"
+		(property "Reference" "C9"
 			(at 137.16 146.0562 0)
 			(effects
 				(font
@@ -10382,7 +10572,7 @@
 		(instances
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "C8")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -10398,7 +10588,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54323f20-7d98-47ea-8cab-f8a4b941df7c")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR016"
 			(at 101.6 78.74 0)
 			(effects
 				(font
@@ -10448,7 +10638,7 @@
 		(instances
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "#PWR017")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -10804,7 +10994,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61f4f6b5-425f-4180-8620-44b03fae3ef2")
-		(property "Reference" "C6"
+		(property "Reference" "C7"
 			(at 88.9 146.0562 0)
 			(effects
 				(font
@@ -10858,7 +11048,7 @@
 		(instances
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "C6")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -11346,7 +11536,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "718fa73e-73c6-432a-8461-d450cde600ad")
-		(property "Reference" "C5"
+		(property "Reference" "C6"
 			(at 76.2 62.2362 0)
 			(effects
 				(font
@@ -11400,7 +11590,7 @@
 		(instances
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "C5")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -12165,7 +12355,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "949775cd-ceba-4ee0-b2d4-47729e5de960")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR08"
 			(at 54.61 125.73 0)
 			(effects
 				(font
@@ -12215,7 +12405,7 @@
 		(instances
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "#PWR06")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -12659,7 +12849,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 111.76 116.078 90)
 			(effects
 				(font
@@ -13137,7 +13327,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cbddc3c5-dd7f-4be2-aa33-918be70f7177")
-		(property "Reference" "C4"
+		(property "Reference" "C5"
 			(at 71.12 110.4899 0)
 			(effects
 				(font
@@ -13191,7 +13381,7 @@
 		(instances
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "C4")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -13365,7 +13555,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0b90e2e-2cef-4209-a652-33f909727598")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR017"
 			(at 104.14 120.65 0)
 			(effects
 				(font
@@ -13415,7 +13605,77 @@
 		(instances
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "#PWR016")
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 50.8 149.86 180)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "d16c05ef-dad3-4d84-8db4-4d1e1f45d062")
+		(property "Reference" "C4"
+			(at 54.61 149.4789 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "47u"
+			(at 54.61 152.0189 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+			(at 49.8348 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 50.8 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7641df1a-03c2-4e77-8a7c-63fdb94143b4")
+		)
+		(pin "2"
+			(uuid "9f0c14c9-1f7e-49b0-9442-a37d71efa5be")
+		)
+		(instances
+			(project "Robotics Arm"
+				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
+					(reference "C4")
 					(unit 1)
 				)
 			)
