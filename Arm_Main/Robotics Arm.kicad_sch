@@ -7069,6 +7069,12 @@
 		(uuid "45ce16da-c9f1-4086-9d6c-baf2fd5b5b93")
 	)
 	(junction
+		(at 140.97 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c34cf5e-26cd-47f4-8278-225e628d0430")
+	)
+	(junction
 		(at 86.36 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7121,6 +7127,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a4a9e7dc-6ad1-4a2a-a01a-298bb6d69920")
+	)
+	(junction
+		(at 140.97 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a766ada1-465e-4cdb-84dc-1328e90ed580")
 	)
 	(junction
 		(at 222.25 26.67)
@@ -7576,13 +7588,23 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 111.76) (xy 138.43 111.76)
+			(xy 148.59 113.03) (xy 140.97 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "52d942b4-a9e8-4714-937d-47d1ec0b109e")
+	)
+	(wire
+		(pts
+			(xy 140.97 107.95) (xy 138.43 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54fb75d3-9d5f-46f5-b494-a64fb9048664")
 	)
 	(wire
 		(pts
@@ -7663,6 +7685,16 @@
 			(type default)
 		)
 		(uuid "67b8154b-0674-465b-8f39-6a227eb53423")
+	)
+	(wire
+		(pts
+			(xy 138.43 107.95) (xy 138.43 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67e7d092-b0c3-44e9-adaf-cd9e1be4eb1a")
 	)
 	(wire
 		(pts
@@ -7793,6 +7825,16 @@
 			(type default)
 		)
 		(uuid "731ee257-61da-4ae4-8f9a-c7677f0bd9d5")
+	)
+	(wire
+		(pts
+			(xy 140.97 113.03) (xy 138.43 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74894d98-fd16-48d3-86db-cba385cc3f21")
 	)
 	(wire
 		(pts
@@ -8266,7 +8308,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 109.22) (xy 138.43 109.22)
+			(xy 148.59 107.95) (xy 140.97 107.95)
 		)
 		(stroke
 			(width 0)
@@ -8363,6 +8405,16 @@
 			(type default)
 		)
 		(uuid "c7a095c7-3835-4f4e-9742-0a6b69443ff7")
+	)
+	(wire
+		(pts
+			(xy 138.43 113.03) (xy 138.43 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca79f5ec-ed3e-46ec-8fc8-8fec167d31fb")
 	)
 	(wire
 		(pts
@@ -8764,7 +8816,7 @@
 	)
 	(rectangle
 		(start 162.56 132.08)
-		(end 280.67 165.1)
+		(end 284.48 165.1)
 		(stroke
 			(width 0)
 			(type default)
@@ -9026,7 +9078,7 @@
 	)
 	(global_label "CAN_P"
 		(shape input)
-		(at 139.7 109.22 0)
+		(at 148.59 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9036,7 +9088,7 @@
 		)
 		(uuid "0d150d45-1b8a-4c5e-9fa4-d88fcdf53a1c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 148.6724 109.22 0)
+			(at 157.5624 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9884,7 +9936,7 @@
 	)
 	(global_label "CAN_N"
 		(shape input)
-		(at 139.7 111.76 0)
+		(at 148.59 113.03 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9894,7 +9946,7 @@
 		)
 		(uuid "ed51bbf1-8476-42ef-be8e-084cf4bc296c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 148.37 111.76 0)
+			(at 157.5624 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10345,6 +10397,76 @@
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 140.97 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f32864c-62b5-44e9-babe-09ef1f24c680")
+		(property "Reference" "R14"
+			(at 143.51 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "120"
+			(at 143.51 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 140.97 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b676498a-74b6-40e5-b854-2a3c5a620bb8")
+		)
+		(pin "1"
+			(uuid "64791a66-2ac2-4e27-819c-8c5f9251dd08")
+		)
+		(instances
+			(project "Robotics Arm"
+				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
+					(reference "R14")
 					(unit 1)
 				)
 			)
