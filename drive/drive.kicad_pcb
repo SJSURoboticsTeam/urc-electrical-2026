@@ -3746,7 +3746,7 @@
 		(uuid "4d6a2e4a-a777-4009-8c04-6865726e23f9")
 		(at 217.39 111.05 180)
 		(property "Reference" "J5"
-			(at 0 -1 180)
+			(at 7.14 3.55 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "b8f47331-6825-42e5-85f9-38f298397e0c")
@@ -7702,7 +7702,7 @@
 		(descr "SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U1"
-			(at 5.25 3.05 0)
+			(at 4.9 2.6 0)
 			(layer "F.SilkS")
 			(uuid "997b0728-059b-4320-afa9-93cb4e861ebe")
 			(effects
@@ -10803,10 +10803,218 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "GND"
+		(at 199.75 86.5 90)
+		(layer "F.SilkS")
+		(uuid "17dedf6c-1c82-4482-a831-91fb63eb10c2")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "5V\n"
+		(at 217 85.5 90)
+		(layer "F.SilkS")
+		(uuid "214d0a6d-e424-40e5-b7e9-288dc1b7d710")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "SCL"
+		(at 163.25 86 90)
+		(layer "F.SilkS")
+		(uuid "21b717d8-4872-42f3-800d-b367d88a7efe")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "SDA"
+		(at 205 86.5 90)
+		(layer "F.SilkS")
+		(uuid "3b31d900-9756-4132-9b45-c6913ca7d5d7")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "SDA"
+		(at 224.75 86.25 90)
+		(layer "F.SilkS")
+		(uuid "652b8eb1-0a50-40bc-a0de-bed40ca9612c")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "5V\n"
+		(at 158 85.5 90)
+		(layer "F.SilkS")
+		(uuid "850fe005-b1d4-4a74-a85d-dd7f122b0315")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "3.3V"
 		(at 227 102 0)
 		(layer "F.SilkS")
 		(uuid "8541af60-5f3f-47e5-bd7a-64eed0d7d673")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "5V"
+		(at 220.5 112.5 0)
+		(layer "F.SilkS")
+		(uuid "8ab4f1e0-fdf9-488b-a750-38eb12e871d1")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "SCL"
+		(at 222.25 86 90)
+		(layer "F.SilkS")
+		(uuid "a59a85f6-ff96-4e50-b83b-fb816468a576")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "GND"
+		(at 217.5 112.5 0)
+		(layer "F.SilkS")
+		(uuid "b69029ba-15b7-494c-ba4b-248ee79eec48")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "GND"
+		(at 160.5 86.25 90)
+		(layer "F.SilkS")
+		(uuid "d6529c41-5f80-4c8c-8ed1-f57dbc921ea7")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "SDA"
+		(at 165.75 86.25 90)
+		(layer "F.SilkS")
+		(uuid "d7a6d83d-7ac6-4d56-a2cb-e7815e18f4cc")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "GND"
+		(at 219.5 86.25 90)
+		(layer "F.SilkS")
+		(uuid "d9931a6c-6aac-4f1c-863f-bfbfe44b5baa")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "CANH"
+		(at 211.5 112.5 0)
+		(layer "F.SilkS")
+		(uuid "df05093b-ba24-4f15-8135-bce0a26ae606")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "CANL"
+		(at 214.75 113.25 0)
+		(layer "F.SilkS")
+		(uuid "e5eab0e3-068e-4579-8ff4-be5e73cb6e59")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "5V\n"
+		(at 197.25 85.75 90)
+		(layer "F.SilkS")
+		(uuid "e76069de-71f9-4db5-933b-17841e5ac7fe")
+		(effects
+			(font
+				(size 0.8128 0.8128)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "SCL"
+		(at 202.5 86.25 90)
+		(layer "F.SilkS")
+		(uuid "fbc6dbff-d4b8-4fc9-9090-16391b36ad0f")
 		(effects
 			(font
 				(size 0.8128 0.8128)
