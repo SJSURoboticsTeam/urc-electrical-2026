@@ -4262,6 +4262,139 @@
 				)
 			)
 		)
+		(symbol "Switch:SW_SPST"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPST"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_SPST_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers hide)
@@ -4483,12 +4616,6 @@
 		(members "SCK" "COPI" "CIPO" "DATA1" "DATA2" "DATA3")
 	)
 	(junction
-		(at 222.25 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "20c52c28-eb6e-4047-b22d-001c39d11a07")
-	)
-	(junction
 		(at 49.53 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4499,12 +4626,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "43d6049e-ce5d-48fa-85f3-1ff1a46c1012")
-	)
-	(junction
-		(at 90.17 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6c7a2e5c-6a1d-455a-a5bd-c9cc3ef146d5")
 	)
 	(junction
 		(at 101.6 36.83)
@@ -4535,6 +4656,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d439c727-43dd-4cfe-84e6-eb065665213c")
+	)
+	(junction
+		(at 90.17 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f47906b0-2792-4a64-954c-2b4ecc0033b7")
 	)
 	(junction
 		(at 121.92 36.83)
@@ -4872,16 +4999,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 36.83) (xy 101.6 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b395536-396f-4f7b-87db-226c770d4ccf")
-	)
-	(wire
-		(pts
 			(xy 185.42 82.55) (xy 194.31 82.55)
 		)
 		(stroke
@@ -4939,6 +5056,16 @@
 			(type default)
 		)
 		(uuid "6164522c-4041-437e-9b3d-703844b9017b")
+	)
+	(wire
+		(pts
+			(xy 90.17 36.83) (xy 101.6 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "639a48bf-35dd-4088-b3d6-32223de248d0")
 	)
 	(bus
 		(pts
@@ -5142,6 +5269,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 36.83) (xy 90.17 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae38ae42-e586-4f60-b878-e42e09f15aae")
+	)
+	(wire
+		(pts
 			(xy 86.36 107.95) (xy 86.36 110.49)
 		)
 		(stroke
@@ -5229,16 +5366,6 @@
 			(type default)
 		)
 		(uuid "ceec660d-85e4-4547-8634-2276745c2b89")
-	)
-	(wire
-		(pts
-			(xy 87.63 36.83) (xy 90.17 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4563d82-6179-472d-ac4e-44964d2a11d9")
 	)
 	(bus
 		(pts
@@ -6998,73 +7125,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 217.17 43.18 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41f1fac2-f815-44db-b2bb-fec60c26a55e")
-		(property "Reference" "#PWR07"
-			(at 210.82 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 213.36 43.1799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 217.17 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 217.17 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 217.17 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2fe26fde-5dd5-4dec-a073-c5d9f6153929")
-		)
-		(instances
-			(project "drive"
-				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3/00803d3e-f05e-4811-b470-ee5b23e97bfe"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 121.92 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7900,6 +7960,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 90.17 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6faf858d-cd4a-477a-bee7-fc8ff513977e")
+		(property "Reference" "#PWR07"
+			(at 90.17 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 90.17 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 90.17 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8bbc81f1-ae6a-42fa-b170-15cc3b7af6f8")
+		)
+		(instances
+			(project "drive"
+				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3/00803d3e-f05e-4811-b470-ee5b23e97bfe"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 140.97 95.25 0)
 		(unit 1)
@@ -8718,72 +8844,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 90.17 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ac0c4292-0a8e-4e3c-b9ee-720c03229dab")
-		(property "Reference" "#PWR040"
-			(at 90.17 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 90.17 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 90.17 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 90.17 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 90.17 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1867dbe5-0b25-4898-a544-4579bdf3b7df")
-		)
-		(instances
-			(project "drive"
-				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3/00803d3e-f05e-4811-b470-ee5b23e97bfe"
-					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 115.57 87.63 90)
 		(unit 1)
@@ -8848,85 +8908,6 @@
 			(project "drive"
 				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3/00803d3e-f05e-4811-b470-ee5b23e97bfe"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 90.17 41.91 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "af51fb8b-9ede-4e93-ac8f-19a02d53deed")
-		(property "Reference" "SW1"
-			(at 91.44 40.6399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 91.44 43.1799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_CK_RS282G05A3"
-			(at 85.09 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 85.09 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 90.17 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey #" "CKN10384TR-ND"
-			(at 90.17 41.91 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b384df5f-b372-406b-8495-9cb79080a0b9")
-		)
-		(pin "1"
-			(uuid "1f0ab629-ad6c-4873-a725-308dd59df970")
-		)
-		(instances
-			(project "drive"
-				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3/00803d3e-f05e-4811-b470-ee5b23e97bfe"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -9001,73 +8982,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 219.71 43.18 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "eb56412e-eb30-4b57-951c-6a799b96587e")
-		(property "Reference" "C3"
-			(at 219.71 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.2pF"
-			(at 219.202 40.132 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 219.71 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 219.71 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 219.71 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e5cc96d9-e0d8-4cbf-8f8d-4ca292dd7575")
-		)
-		(pin "1"
-			(uuid "84970bef-a785-4c71-be34-f38677f65878")
-		)
-		(instances
-			(project "drive"
-				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3/00803d3e-f05e-4811-b470-ee5b23e97bfe"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 58.42 73.66 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9128,6 +9042,76 @@
 			(project "drive"
 				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3/00803d3e-f05e-4811-b470-ee5b23e97bfe"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 90.17 41.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f460a286-1eb5-44ac-a04b-d4ae75557be9")
+		(property "Reference" "SW1"
+			(at 91.948 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 91.44 43.1799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 90.17 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.17 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 90.17 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9e17724b-dccd-4713-ac32-b75f582e5d0e")
+		)
+		(pin "1"
+			(uuid "57536262-d963-472b-8fc3-02a49858bc13")
+		)
+		(instances
+			(project ""
+				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3/00803d3e-f05e-4811-b470-ee5b23e97bfe"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
