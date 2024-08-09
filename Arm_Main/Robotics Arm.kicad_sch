@@ -9790,7 +9790,7 @@
 	)
 	(global_label "CAN_N"
 		(shape input)
-		(at 43.18 165.1 180)
+		(at 40.64 165.1 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9800,7 +9800,7 @@
 		)
 		(uuid "4f75bcf4-a666-4172-a54f-4f55da9d6ee0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 34.51 165.1 0)
+			(at 31.97 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10384,7 +10384,7 @@
 	)
 	(global_label "CAN_P"
 		(shape input)
-		(at 43.18 162.56 180)
+		(at 40.64 162.56 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10394,7 +10394,7 @@
 		)
 		(uuid "eafdcce4-2413-49e2-8e6d-35c3b307c416")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 34.2076 162.56 0)
+			(at 31.6676 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10451,7 +10451,7 @@
 	(symbol
 		(lib_name "WE-TVS-824015043_1")
 		(lib_id "Power_Protection:WE-TVS-824015043")
-		(at 50.8 162.56 0)
+		(at 48.26 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10460,7 +10460,7 @@
 		(fields_autoplaced yes)
 		(uuid "01926fda-213a-4a63-9006-cb0b686d4b5a")
 		(property "Reference" "U4"
-			(at 57.15 162.4329 0)
+			(at 54.61 162.4329 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10468,8 +10468,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DRTR5V0U2SRQ"
-			(at 57.15 164.9729 0)
+		(property "Value" "PRTR5V0U2AX-QVL"
+			(at 54.61 164.9729 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10478,7 +10478,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-143_Handsoldering"
-			(at 52.07 171.45 0)
+			(at 49.53 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10486,8 +10486,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/2/115/DRTR5V0U2SRQ-2940787.pdf"
-			(at 52.07 172.72 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2AX-Q.pdf"
+			(at 49.53 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10496,7 +10496,7 @@
 			)
 		)
 		(property "Description" "Low Capacitance TVS Diode Array, 2 Channels, SOT-23-6"
-			(at 50.8 162.56 0)
+			(at 48.26 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11722,7 +11722,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 50.8 172.72 0)
+		(at 48.26 172.72 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11732,7 +11732,7 @@
 		(fields_autoplaced yes)
 		(uuid "368466d3-128f-48fd-9ebd-4ac4e23f60b2")
 		(property "Reference" "#PWR046"
-			(at 50.8 179.07 0)
+			(at 48.26 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11741,7 +11741,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 50.8 177.8 0)
+			(at 48.26 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11749,7 +11749,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 172.72 0)
+			(at 48.26 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11758,7 +11758,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 172.72 0)
+			(at 48.26 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11767,7 +11767,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 172.72 0)
+			(at 48.26 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13587,7 +13587,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 50.8 154.94 0)
+		(at 48.26 154.94 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13596,7 +13596,7 @@
 		(dnp no)
 		(uuid "6a02cc36-62c5-4f62-b2b7-4d15edab654f")
 		(property "Reference" "#PWR041"
-			(at 50.8 158.75 0)
+			(at 48.26 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13605,7 +13605,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 50.8 149.86 0)
+			(at 48.26 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13613,7 +13613,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 154.94 0)
+			(at 48.26 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13622,7 +13622,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 154.94 0)
+			(at 48.26 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13631,7 +13631,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 50.8 154.94 0)
+			(at 48.26 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
