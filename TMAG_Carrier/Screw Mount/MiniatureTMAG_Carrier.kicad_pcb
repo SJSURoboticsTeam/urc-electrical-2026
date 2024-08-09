@@ -2632,6 +2632,17 @@
 			)
 		)
 	)
+	(gr_rect
+		(start 62.8 23.7)
+		(end 64.8 34.9)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill solid)
+		(layer "B.SilkS")
+		(uuid "f3fd76ac-327b-44d3-93a9-d87d7cd78181")
+	)
 	(gr_line
 		(start 60.75 34)
 		(end 61.25 34)
@@ -2704,6 +2715,32 @@
 		(fill none)
 		(layer "Edge.Cuts")
 		(uuid "c611e807-605c-4eb1-90e3-ce38cb21c2fb")
+	)
+	(gr_text "ADR:"
+		(at 63.8 20.2 90)
+		(layer "B.SilkS" knockout)
+		(uuid "3a115f6c-fbf3-4457-a67b-7ae3804276cd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(gr_text "3D Hall"
+		(at 61 21 0)
+		(layer "B.SilkS" knockout)
+		(uuid "acbd203b-ed08-42bd-9356-f7ee1efab725")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
 	)
 	(gr_text "GND"
 		(at 54.2 28.26 0)
