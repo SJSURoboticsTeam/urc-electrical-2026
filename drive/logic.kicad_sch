@@ -4616,12 +4616,6 @@
 		(members "SCK" "COPI" "CIPO" "DATA1" "DATA2" "DATA3")
 	)
 	(junction
-		(at 30.48 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "20496ccc-5e29-4c7f-b2ae-94095d37ae49")
-	)
-	(junction
 		(at 49.53 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4842,6 +4836,16 @@
 			(type default)
 		)
 		(uuid "faa7f4ed-c8bc-4bbe-af54-c785a2451135")
+	)
+	(wire
+		(pts
+			(xy 45.72 165.1) (xy 49.53 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "043ae6ea-0644-4168-810f-78ab903d0130")
 	)
 	(wire
 		(pts
@@ -5082,16 +5086,6 @@
 			(type default)
 		)
 		(uuid "63d8bb9f-3fdc-4469-b55c-80526e854f66")
-	)
-	(wire
-		(pts
-			(xy 30.48 165.1) (xy 49.53 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "644ad7ec-6d0c-4692-a85e-3851f6ed4e3a")
 	)
 	(wire
 		(pts
@@ -5362,16 +5356,6 @@
 			(type default)
 		)
 		(uuid "c29e7147-75dc-4e0e-9bf8-b362e39f50e4")
-	)
-	(wire
-		(pts
-			(xy 27.94 165.1) (xy 30.48 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c61cd079-d34a-4598-8ceb-7fb153e758bc")
 	)
 	(wire
 		(pts
@@ -5759,17 +5743,6 @@
 		)
 		(uuid "3d426fe3-145b-4fb5-95e9-47a68b01fc10")
 	)
-	(label "EN"
-		(at 27.94 165.1 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3d99cfdf-ca12-4539-abb0-2917cfca0973")
-	)
 	(label "CAN.P"
 		(at 86.36 110.49 180)
 		(fields_autoplaced yes)
@@ -6116,6 +6089,18 @@
 		)
 		(uuid "899c6e7b-be5a-46f0-961c-1075b03c6e05")
 	)
+	(hierarchical_label "5V"
+		(shape input)
+		(at 45.72 165.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c2749aa8-65ca-42d0-a658-68988a8c1966")
+	)
 	(hierarchical_label "A0"
 		(shape input)
 		(at 251.46 97.79 0)
@@ -6225,72 +6210,6 @@
 			(project "drive"
 				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3/00803d3e-f05e-4811-b470-ee5b23e97bfe"
 					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 30.48 157.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0dc41dfe-21d7-4f4f-8655-a2010220a27f")
-		(property "Reference" "#PWR040"
-			(at 30.48 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 30.48 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 30.48 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 30.48 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 30.48 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5f0824a3-2cd1-41ef-85fc-6d618cfdaf78")
-		)
-		(instances
-			(project "drive"
-				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3/00803d3e-f05e-4811-b470-ee5b23e97bfe"
-					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -7608,76 +7527,6 @@
 			(project "drive"
 				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3/00803d3e-f05e-4811-b470-ee5b23e97bfe"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 30.48 161.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "64d59d9b-4a51-4bff-a383-966c356b377f")
-		(property "Reference" "R11"
-			(at 33.02 160.0199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "11k"
-			(at 33.02 162.5599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 31.496 161.544 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 30.48 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 30.48 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0c975116-7add-4670-a31c-922dc1622d60")
-		)
-		(pin "2"
-			(uuid "3bf5ac60-ba11-43f6-a06c-04a9cf02e863")
-		)
-		(instances
-			(project "drive"
-				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3/00803d3e-f05e-4811-b470-ee5b23e97bfe"
-					(reference "R11")
 					(unit 1)
 				)
 			)
