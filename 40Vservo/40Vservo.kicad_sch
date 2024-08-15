@@ -3448,12 +3448,6 @@
 		(uuid "273b8542-8779-4b7a-9800-5720e496a05e")
 	)
 	(junction
-		(at 31.75 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4fb93f1b-814c-4080-92af-aa4498ec1fa1")
-	)
-	(junction
 		(at 120.65 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3640,16 +3634,6 @@
 			(type default)
 		)
 		(uuid "1f4dfd4f-c81c-4a34-846f-17e356281929")
-	)
-	(wire
-		(pts
-			(xy 31.75 113.03) (xy 33.02 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2146330b-503e-4bf7-9d39-6b99f89d3719")
 	)
 	(wire
 		(pts
@@ -3893,6 +3877,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 113.03) (xy 33.02 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8f894db-cf6e-48a6-96cb-2111d6b15a17")
+	)
+	(wire
+		(pts
 			(xy 48.26 99.06) (xy 48.26 104.14)
 		)
 		(stroke
@@ -3970,16 +3964,6 @@
 			(type default)
 		)
 		(uuid "dd8eb3fa-1bd1-4ca7-b7c8-e2fe5c04a319")
-	)
-	(wire
-		(pts
-			(xy 30.48 113.03) (xy 31.75 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e025cdb5-52be-4859-853c-fb23c808dc72")
 	)
 	(wire
 		(pts
@@ -6226,73 +6210,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 30.48 113.03 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ebe17e1-41e0-4923-b298-cff61c3f5fc7")
-		(property "Reference" "#PWR017"
-			(at 34.29 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 26.67 113.0299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 30.48 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 30.48 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 30.48 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f9fed392-e6aa-4864-9754-954ee9142e73")
-		)
-		(instances
-			(project "40Vservo"
-				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 96.52 62.23 0)
 		(unit 1)
@@ -6819,7 +6736,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 31.75 116.84 180)
+		(at 29.21 116.84 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6827,7 +6744,7 @@
 		(dnp no)
 		(uuid "7411a4e5-ba1b-459c-ac18-a97dd7493b5c")
 		(property "Reference" "C4"
-			(at 26.162 117.094 0)
+			(at 23.622 117.094 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6836,7 +6753,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 27.94 119.126 0)
+			(at 25.4 119.126 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6845,7 +6762,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 30.7848 113.03 0)
+			(at 28.2448 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6854,7 +6771,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 116.84 0)
+			(at 29.21 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6863,7 +6780,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 31.75 116.84 0)
+			(at 29.21 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6872,7 +6789,7 @@
 			)
 		)
 		(property "LCSC Part #" "C23630"
-			(at 31.75 116.84 0)
+			(at 29.21 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7522,7 +7439,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 31.75 120.65 0)
+		(at 29.21 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7530,7 +7447,7 @@
 		(dnp no)
 		(uuid "9c950630-8c24-44ca-be82-fdd8d3e572bb")
 		(property "Reference" "#PWR025"
-			(at 31.75 127 0)
+			(at 29.21 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7539,7 +7456,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 31.75 123.698 90)
+			(at 31.242 125.222 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7548,7 +7465,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 31.75 120.65 0)
+			(at 29.21 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7557,7 +7474,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 120.65 0)
+			(at 29.21 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7566,7 +7483,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 31.75 120.65 0)
+			(at 29.21 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
