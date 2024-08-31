@@ -2373,7 +2373,7 @@
 				)
 			)
 		)
-		(symbol "Regulator_Linear:MCP1792x-5002xDB"
+		(symbol "Regulator_Linear:MCP1792x-3302xDB"
 			(pin_names
 				(offset 0.254)
 			)
@@ -2388,7 +2388,7 @@
 					)
 				)
 			)
-			(property "Value" "MCP1792x-5002xDB"
+			(property "Value" "MCP1792x-3302xDB"
 				(at 0 3.175 0)
 				(effects
 					(font
@@ -2415,7 +2415,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Low Quiescent Current LDO Regulator, 4.5-55V input, 5.0V, 100mA, SOT-223"
+			(property "Description" "Low Quiescent Current LDO Regulator, 4.5-55V input, 3.3V, 100mA, SOT-223"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2442,7 +2442,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "MCP1792x-5002xDB_0_1"
+			(symbol "MCP1792x-3302xDB_0_1"
 				(rectangle
 					(start -5.08 -5.08)
 					(end 5.08 1.905)
@@ -2455,7 +2455,7 @@
 					)
 				)
 			)
-			(symbol "MCP1792x-5002xDB_1_1"
+			(symbol "MCP1792x-3302xDB_1_1"
 				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -3490,12 +3490,6 @@
 		(uuid "8c2ae1ff-0a7b-4f23-9f5a-5a08e4a13433")
 	)
 	(junction
-		(at 38.1 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "94f7ad42-3c4d-4736-94f5-0e6cb7bc825b")
-	)
-	(junction
 		(at 198.12 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3512,6 +3506,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b2cb3378-c7e4-4c92-80ae-327c0f03e3d3")
+	)
+	(junction
+		(at 38.1 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bb523963-eee2-49a9-8b1a-ce216f1861dd")
 	)
 	(junction
 		(at 120.65 38.1)
@@ -3817,16 +3817,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 67.31) (xy 38.1 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "958e8fc7-4139-456a-9032-acfbb45344cc")
-	)
-	(wire
-		(pts
 			(xy 68.58 128.27) (xy 68.58 125.73)
 		)
 		(stroke
@@ -3897,13 +3887,23 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 67.31) (xy 43.18 67.31)
+			(xy 35.56 67.31) (xy 38.1 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b1c7879c-115a-4a08-9e1e-2ff5db06e080")
+	)
+	(wire
+		(pts
+			(xy 38.1 67.31) (xy 43.18 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b28e56c9-95e7-496c-9707-5312430b86c7")
 	)
 	(wire
 		(pts
@@ -4087,7 +4087,7 @@
 		)
 		(uuid d96f8733-6c43-4c4e-b19b-3c0632e00587)
 	)
-	(text "4 MHz"
+	(text "8 MHz"
 		(exclude_from_sim no)
 		(at 87.884 133.858 0)
 		(effects
@@ -4386,17 +4386,6 @@
 			(justify left bottom)
 		)
 		(uuid "97dac163-e2bf-470e-aba6-edf4ea50d148")
-	)
-	(label "RESET"
-		(at 22.86 43.18 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9913292d-44a2-43d1-b12d-c648efd57426")
 	)
 	(label "I_{PROPI}"
 		(at 63.5 135.89 0)
@@ -4913,73 +4902,6 @@
 			(project "40Vservo"
 				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
-		(at 35.56 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "2027a23b-b476-4a51-951d-042bb02d6f53")
-		(property "Reference" "J4"
-			(at 37.592 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x01"
-			(at 38.1 44.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
-			(at 35.56 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 35.56 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 35.56 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1b6852a2-33f8-4258-a52a-6bd4b5ac2b6d")
-		)
-		(instances
-			(project "40Vservo"
-				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -6658,6 +6580,84 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 38.1 71.12 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6b60c260-1675-4bd2-a725-2a1bf59a615a")
+		(property "Reference" "C2"
+			(at 34.544 70.358 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 35.052 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 37.1348 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 38.1 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C23630"
+			(at 38.1 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88cbd072-5c55-4e0b-b6bd-8ea3eea5d0f1")
+		)
+		(pin "2"
+			(uuid "3aec0adb-6f4f-4251-a89d-3f8b7d7c8999")
+		)
+		(instances
+			(project "40Vservo"
+				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 44.45 104.14 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7280,6 +7280,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:MCP1792x-3302xDB")
+		(at 50.8 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99271d04-5b1c-4a7a-b901-9609a4817eb3")
+		(property "Reference" "U3"
+			(at 50.8 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP1792x-3302xDB"
+			(at 50.8 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 50.8 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP1792-Family-Data-Sheet-DS20006229D.pdf"
+			(at 50.8 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low Quiescent Current LDO Regulator, 4.5-55V input, 3.3V, 100mA, SOT-223"
+			(at 50.8 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "54013d5d-635a-4785-9bb1-eff708d8b5ea")
+		)
+		(pin "1"
+			(uuid "f3b9f3db-88df-4ce9-b6cf-6354e5cb7d92")
+		)
+		(pin "3"
+			(uuid "fe6cc965-15b1-48f3-9c59-cf13e568fe1b")
+		)
+		(instances
+			(project ""
+				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Sensor_Magnetic:TMAG5170-Q1")
 		(at 218.44 57.15 0)
 		(unit 1)
@@ -7383,7 +7454,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "CSTCR16M00G53-R0"
+		(property "Value" "CSTNE8M00G550000R0"
 			(at 90.424 123.952 90)
 			(effects
 				(font
@@ -7412,6 +7483,15 @@
 		)
 		(property "Description" "Three pin ceramic resonator"
 			(at 77.47 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" " C341522"
+			(at 77.47 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7564,84 +7644,6 @@
 			(project "40Vservo"
 				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
 					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 26.67 43.18 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a0e3bd7d-7b27-44a7-9cf1-a79bdd20f0a5")
-		(property "Reference" "C2"
-			(at 28.448 38.608 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 29.21 40.132 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 30.48 42.2148 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 26.67 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C14663"
-			(at 26.67 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2636c8c1-86a5-4927-b113-a256132083f4")
-		)
-		(pin "2"
-			(uuid "c446d6ac-63ab-457d-8d9f-1cd2b8dde4d3")
-		)
-		(instances
-			(project "40Vservo"
-				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
-					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -7907,77 +7909,6 @@
 			(project "40Vservo"
 				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:MCP1792x-5002xDB")
-		(at 50.8 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cce28599-f4dd-4c0f-befb-ef51c1d11a28")
-		(property "Reference" "U3"
-			(at 50.8 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP1792x-5002xDB"
-			(at 50.8 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 50.8 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP1792-Family-Data-Sheet-DS20006229D.pdf"
-			(at 50.8 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low Quiescent Current LDO Regulator, 4.5-55V input, 5.0V, 100mA, SOT-223"
-			(at 50.8 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "98ded352-5e02-49c9-9557-381129429aa0")
-		)
-		(pin "2"
-			(uuid "761f4e18-9b8b-49bc-a197-42b2fe53124a")
-		)
-		(pin "3"
-			(uuid "6197e3d0-6242-4cfa-b900-df4504bdef10")
-		)
-		(instances
-			(project ""
-				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
-					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -8477,84 +8408,6 @@
 			(project "40Vservo"
 				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
 					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 38.1 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e6879634-9e10-436a-8893-348e746c46ce")
-		(property "Reference" "C3"
-			(at 41.148 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2.2uF"
-			(at 40.386 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 39.0652 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 38.1 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 38.1 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C23630"
-			(at 38.1 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "214eb794-32c5-48d3-8d9e-083e65bd1631")
-		)
-		(pin "2"
-			(uuid "ef439977-d0d2-458c-9e55-df53c52463cd")
-		)
-		(instances
-			(project "40Vservo"
-				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
-					(reference "C3")
 					(unit 1)
 				)
 			)
