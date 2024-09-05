@@ -1959,24 +1959,6 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 16.51 -95.25 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "36"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin bidirectional line
 					(at 45.72 -25.4 180)
 					(length 2.54)
@@ -1998,7 +1980,7 @@
 				(pin output line
 					(at 45.72 -52.07 180)
 					(length 2.54)
-					(name "A0"
+					(name "A1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2716,9 +2698,9 @@
 					)
 				)
 				(pin power_in line
-					(at 16.51 -95.25 90)
+					(at 16.51 5.08 270)
 					(length 2.54) hide
-					(name "GND"
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7705,9 +7687,6 @@
 		)
 		(pin "20"
 			(uuid "289f1601-d725-4347-8209-77e0d15ef6dc")
-		)
-		(pin "36"
-			(uuid "38469795-6af4-41b6-99fe-decdb0f70f0e")
 		)
 		(pin "39"
 			(uuid "7ca745f8-6bbe-449a-be05-2f5aace97892")
