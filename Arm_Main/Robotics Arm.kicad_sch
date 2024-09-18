@@ -2696,251 +2696,6 @@
 				)
 			)
 		)
-		(symbol "Jumper:SolderJumper_3_Open"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at -2.54 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SolderJumper_3_Open"
-				(at 0 2.794 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Solder Jumper, 3-pole, open"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Solder Jumper SPDT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SolderJumper*Open*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SolderJumper_3_Open_0_1"
-				(arc
-					(start -1.016 1.016)
-					(mid -2.0276 0)
-					(end -1.016 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.016 1.016)
-					(mid -2.0276 0)
-					(end -1.016 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -0.508 1.016)
-					(end 0.508 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -2.032 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 1.016) (xy -1.016 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 1.016) (xy 1.016 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 2.032 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.016 -1.016)
-					(mid 2.0276 0)
-					(end 1.016 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.016 -1.016)
-					(mid 2.0276 0)
-					(end 1.016 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "SolderJumper_3_Open_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
 				(offset 1.016)
@@ -4348,24 +4103,6 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 16.51 -95.25 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "36"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin bidirectional line
 					(at 45.72 -25.4 180)
 					(length 2.54)
@@ -4387,7 +4124,7 @@
 				(pin output line
 					(at 45.72 -52.07 180)
 					(length 2.54)
-					(name "A0"
+					(name "A1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5105,9 +4842,9 @@
 					)
 				)
 				(pin power_in line
-					(at 16.51 -95.25 90)
+					(at 16.51 5.08 270)
 					(length 2.54) hide
-					(name "GND"
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -9542,28 +9279,6 @@
 		)
 		(uuid "f7cdc369-f700-4d99-b0f4-17a340afec08")
 	)
-	(global_label "CAN_R"
-		(shape input)
-		(at 116.84 109.22 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "008880fb-f220-4f2f-a21e-c3cf3236796b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.9281 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "CC2"
 		(shape input)
 		(at 127 69.85 180)
@@ -9762,28 +9477,6 @@
 			)
 		)
 	)
-	(global_label "CAN_RX"
-		(shape input)
-		(at 255.27 146.05 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3dd50aeb-6806-43c9-ab10-c6c48f2cef0c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 265.3914 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SWDIO"
 		(shape input)
 		(at 53.34 34.29 0)
@@ -9863,28 +9556,6 @@
 		(uuid "52c498b3-9e5a-4f24-8b5a-6d4005137a7a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 18.9676 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CAN_R"
-		(shape input)
-		(at 251.46 156.21 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5e644c5e-836f-4b85-a453-cd5c5002673e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.5481 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9995,28 +9666,6 @@
 		(uuid "7e9997b4-1262-4895-a453-37da69e73fb7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 262.1861 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CAN_RX"
-		(shape input)
-		(at 255.27 151.13 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "892e1952-7954-4d33-a587-f23daaf4a587")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 265.3914 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10158,9 +9807,9 @@
 			)
 		)
 	)
-	(global_label "CAN_T"
+	(global_label "CAN_RX"
 		(shape input)
-		(at 116.84 106.68 180)
+		(at 116.84 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10168,9 +9817,9 @@
 			)
 			(justify right)
 		)
-		(uuid "b2f0898e-890c-4b1a-ac65-10e4f067252b")
+		(uuid "acbdab23-4227-4cfe-8590-82cf8b9bb69e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 108.2305 106.68 0)
+			(at 106.7186 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10198,28 +9847,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CAN_TX"
-		(shape input)
-		(at 255.27 135.89 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b8392496-7a1a-49d0-a260-25458a7ee848")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 265.089 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -10268,50 +9895,6 @@
 			)
 		)
 	)
-	(global_label "CAN_T"
-		(shape input)
-		(at 251.46 140.97 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c0d89b43-b79a-4010-8cb8-440296647b71")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.8505 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CAN_TX"
-		(shape input)
-		(at 255.27 161.29 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d45f4e2c-ca90-4e26-a600-54fceb24b19f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 265.089 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "USB_IN_D-"
 		(shape input)
 		(at 148.59 48.26 0)
@@ -10330,6 +9913,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CAN_TX"
+		(shape input)
+		(at 116.84 106.68 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d60b09a9-2a2a-4f7b-9b99-2cfd075d5fab")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 107.021 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -11264,79 +10869,6 @@
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
 					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 255.27 140.97 270)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "26db0c98-2a74-450b-8199-0ed74d6e01f6")
-		(property "Reference" "JP1"
-			(at 257.81 139.6999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 257.81 142.2399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 255.27 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 255.27 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 3-pole, open"
-			(at 255.27 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9f87c2f7-2312-4e50-a9ec-e3275a66fd67")
-		)
-		(pin "2"
-			(uuid "7384496b-2a8a-42a2-ba18-039f9cbe6a39")
-		)
-		(pin "3"
-			(uuid "dc927d42-c46f-4b0e-b43e-6160ad337909")
-		)
-		(instances
-			(project "Robotics Arm"
-				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -12491,9 +12023,6 @@
 		)
 		(pin "70"
 			(uuid "fdd66cda-5b85-4bf8-8d08-03c9ee7c0cd7")
-		)
-		(pin "36"
-			(uuid "4e10afd9-833b-4346-820c-f19dffcaf5d0")
 		)
 		(pin "14"
 			(uuid "8149248b-e4f3-46fe-950c-ee3e8b57b942")
@@ -13888,79 +13417,6 @@
 			(project "Robotics Arm"
 				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
 					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 255.27 156.21 270)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "700d6b71-0674-43f9-81fc-7c232f37c66c")
-		(property "Reference" "JP2"
-			(at 257.81 154.9399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 257.81 157.4799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 255.27 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 255.27 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 3-pole, open"
-			(at 255.27 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0aba1d24-7c06-4058-8751-54e890831d15")
-		)
-		(pin "2"
-			(uuid "76754f8b-3415-4ace-b29b-477d5d4d2936")
-		)
-		(pin "3"
-			(uuid "b34cd94c-64a7-4253-a3e7-d7a5e7ff860f")
-		)
-		(instances
-			(project "Robotics Arm"
-				(path "/2a437642-2626-490c-b713-52e14a8e02c1"
-					(reference "JP2")
 					(unit 1)
 				)
 			)
