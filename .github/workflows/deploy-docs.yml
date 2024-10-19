@@ -50,7 +50,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: github-pages
-    needs: [build, generate]
+    needs: [build, gen_servo]
     permissions:
       pages: write
       id-token: write
