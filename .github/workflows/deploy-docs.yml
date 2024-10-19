@@ -2,9 +2,6 @@ name: Deploy Documentation
 on:
   workflow_dispatch:
   push:
-    branches:
-      - 'main'
-      - 'cloudflare-docs'
     paths:
         - 'docs/*'
         - '*.kicad_sch'
