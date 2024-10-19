@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 'main'
+      - 'cloudflare-docs'
     paths:
         - 'docs/*'
         - '*.kicad_sch'
@@ -51,9 +52,6 @@ jobs:
     permissions:
       pages: write
       id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
     - name: Download website artifact
       uses: actions/download-artifact@v4
@@ -66,10 +64,9 @@ jobs:
         pattern: '*-out'
         path: resources
 
-    - name: Upload docs artifact
-      uses: actions/upload-pages-artifact@v3
+    - name: Deploy
+      uses: cloudflare/wrangler-action@v3
       with:
-        path: '.'
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+        apiToken: ${{ secrets.CLOUDFLARE_TOKEN }}
+        accountId: ${{ secrets.CLOUDFLARE_ID }}
+        command: pages deploy . --project-name=eedocs
