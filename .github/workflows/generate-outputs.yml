@@ -6,6 +6,10 @@ on:
       project:
         required: true
         type: string
+      folder:
+        required: true
+        type: string
+
 env:
   GIT_COMMITTER_NAME: ci-bot
   GIT_COMMITTER_EMAIL: sjsurobotics@gmail.com
@@ -20,22 +24,22 @@ jobs:
       uses: sparkengineering/kicad-action@v2
       if: '!cancelled()'
       with:
-        kicad_sch: ${{ inputs.project }}/${{ inputs.project }}.kicad_sch
+        kicad_sch: ${{ inputs.folder }}/${{ inputs.project }}.kicad_sch
         sch_pdf: true
-        sch_pdf_file:  ${{ inputs.project }}.pdf
+        sch_pdf_file:  ${{ inputs.folder }}.pdf
 
     - name: Render Image
       uses: linalinn/kicad-render@main
       with:
-        pcb_file: ${{ inputs.project }}/${{ inputs.project }}.kicad_pcb
-        output_path: ${{ inputs.project }}
+        pcb_file: ${{ inputs.folder }}/${{ inputs.project }}.kicad_pcb
+        output_path: ${{ inputs.folder }}
 
     - name: Upload production files
       uses: actions/upload-artifact@v4
       if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
       with:
-        name: ${{ inputs.project }}-out
+        name: ${{ inputs.folder }}-out
         path: |
-          ${{ inputs.project }}/${{ inputs.project }}.pdf
-          ${{ inputs.project }}/top.png
-          ${{ inputs.project }}/bottom.png
+          ${{ inputs.folder }}/${{ inputs.project }}.pdf
+          ${{ inputs.folder }}/top.png
+          ${{ inputs.folder }}/bottom.png
