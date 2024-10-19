@@ -4837,6 +4837,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 59.69) (xy 193.04 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f7e87ae-1e4b-4a4e-a576-5bf3eb88f84b")
+	)
+	(wire
+		(pts
 			(xy 46.99 171.45) (xy 59.69 171.45)
 		)
 		(stroke
@@ -5435,6 +5445,16 @@
 		)
 		(uuid "f889114d-5892-4359-a6ac-8ca93dad106e")
 	)
+	(wire
+		(pts
+			(xy 193.04 60.96) (xy 194.31 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa49582f-bc8f-4daa-80e8-55e8d25729cb")
+	)
 	(rectangle
 		(start 111.76 12.7)
 		(end 142.24 64.77)
@@ -6007,6 +6027,28 @@
 		)
 		(uuid "fb85b0f2-46b9-457b-84fd-9de165928ea4")
 	)
+	(global_label "VUSB"
+		(shape input)
+		(at 193.04 59.69 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "43e38c61-227f-460c-9c34-0412be3a4f99")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.8104 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(hierarchical_label "CAN{P, N}"
 		(shape bidirectional)
 		(at 34.29 96.52 180)
@@ -6066,18 +6108,6 @@
 			(justify right)
 		)
 		(uuid "899c6e7b-be5a-46f0-961c-1075b03c6e05")
-	)
-	(hierarchical_label "5V"
-		(shape input)
-		(at 194.31 60.96 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "aa4584e4-e241-44e7-b7e6-2534c44608a6")
 	)
 	(hierarchical_label "5V"
 		(shape input)
