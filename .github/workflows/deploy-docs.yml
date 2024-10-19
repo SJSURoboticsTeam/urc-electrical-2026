@@ -14,10 +14,11 @@ env:
   GIT_COMMITTER_NAME: ci-bot
   GIT_COMMITTER_EMAIL: sjsurobotics@gmail.com
 jobs:
-  generate:
+  gen_servo:
     uses: ./.github/workflows/generate-outputs.yml
     with:
       project: 40Vservo
+      folder: 40Vservo
   build:
     runs-on: ubuntu-latest
     steps:
@@ -70,4 +71,4 @@ jobs:
       with:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        command: pages deploy . --project-name=eedocs --branch "$GITHUB_REF_NAME"
+        command: pages deploy . --project-name=eedocs --branch ${{env.GITHUB_REF_NAME}}
