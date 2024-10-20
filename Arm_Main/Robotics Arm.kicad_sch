@@ -7699,6 +7699,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 45.72) (xy 194.31 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "281058a1-fdcd-45f8-b446-d2696dcaa2bd")
+	)
+	(wire
+		(pts
 			(xy 222.25 25.4) (xy 222.25 26.67)
 		)
 		(stroke
@@ -9301,6 +9311,28 @@
 			)
 		)
 	)
+	(global_label "VBUS_Det"
+		(shape input)
+		(at 191.77 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "086cb26f-1957-4721-b8bb-79ba547d0cb1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 179.8343 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "I2C_SDA"
 		(shape input)
 		(at 190.5 55.88 180)
@@ -9908,6 +9940,28 @@
 		(uuid "d5a92f9e-79c3-4361-acfe-6fdf6ffe7d46")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 162.0981 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VBUS_Det"
+		(shape input)
+		(at 146.05 31.75 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d604ca37-61c7-4722-800f-9c7bed2efdde")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 146.05 19.8143 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15850,7 +15904,7 @@
 			)
 		)
 		(property "Value" "SN65HVD230"
-			(at 109.728 101.346 90)
+			(at 109.474 96.774 0)
 			(effects
 				(font
 					(size 1.27 1.27)
