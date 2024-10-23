@@ -6,7 +6,7 @@ on:
       project:
         required: true
         type: string
-      folder:
+      export_name:
         required: true
         type: string
 
@@ -19,27 +19,36 @@ jobs:
     steps:
     - uses: actions/checkout@v4
   
+    - name: Get project name
+      run: file=${${{inputs.project}}##*/};base=${file%.*};echo "PROJECT_BASENAME=$base" >> "$GITHUB_ENV"
+
+    - uses: rlespinasse/slugify-value@v1.x
+      with:
+        key: EXPORT_NAME
+        value: ${{ env.PROJECT_BASENAME }}
+
+    - run: echo ${{ env.EXPORT_NAME }}
+
     - name: Export PDF
       id: production
-      uses: sparkengineering/kicad-action@v2
-      if: '!cancelled()'
+      uses: SJSURoboticsTeam/kicad-action@v1.0.0
       with:
-        kicad_sch: ${{ inputs.folder }}/${{ inputs.project }}.kicad_sch
+        kicad_sch: ${{ inputs.project }}.kicad_sch
+        kicad_pcb: ${{ inputs.project }}.kicad_pcb
         sch_pdf: true
-        sch_pdf_file:  ${{ inputs.folder }}.pdf
+        sch_pdf_file:  ${{ inputs.export_name }}.pdf
+        pcb_image: true
+        pcb_image_path: .
 
-    - name: Render Image
-      uses: linalinn/kicad-render@main
-      with:
-        pcb_file: ${{ inputs.folder }}/${{ inputs.project }}.kicad_pcb
-        output_path: ${{ inputs.folder }}
+    - name: Get directory of outputs
+      run: echo "OUTPUT_DIRECTORIES='dirname ${{ inputs.project }}'" >> "$GITHUB_ENV"
 
     - name: Upload production files
       uses: actions/upload-artifact@v4
       if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
       with:
-        name: ${{ inputs.folder }}-out
+        name: ${{ inputs.export_name }}-out
         path: |
-          ${{ inputs.folder }}/${{ inputs.project }}.pdf
-          ${{ inputs.folder }}/top.png
-          ${{ inputs.folder }}/bottom.png
+          $OUTPUT_DIRECTORIES/${{ inputs.project }}.pdf
+          $OUTPUT_DIRECTORIES/top.png
+          $OUTPUT_DIRECTORIES/bottom.png
