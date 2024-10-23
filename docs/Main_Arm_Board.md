@@ -11,15 +11,22 @@ Documentation: Brendan Parvin
 ## Active Revisions
 Revision 1, 8/21/2024
 
+Revision 2, 9/18/2024
+Revision 3, 
+
 ## Summary
 This board is both a power distribution and controller board for the arm. It is the interface between the chassis CAN bus and all arm modules.
 
 ## Application Description
-  There are five main application notes
+  There are five main application notes:
+
   1. It accepts 40V power, CAN, and 5V from the chassis with connectors on the left side of the board
+
   2. It outputs 40V power and CAN to the arm motors with connectors on the bottom of the board
+
   3. It outputs 40V power, 5V, and I2C up the arm using connectors on the top of the board
-  4. It contains a micromod connector to control the arm — and allows programming using USB-C or JTAG
+
+  4. It contains a micromod connector to control the arm — and allows programming using either USB-C or JTAG
 
 ## Implementation Details
 ### Mounting Points
