@@ -1,6 +1,6 @@
 # 40V Servo
 
-![Top of PCB](https://sjsuroboticsteam.github.io/urc-electrical-2026/resources/40Vservo-out/top.png)
+![Top of PCB](/resources/servo-out/top.png)
 
 ## Features
 
