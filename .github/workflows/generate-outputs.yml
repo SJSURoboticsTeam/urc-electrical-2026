@@ -1,6 +1,7 @@
 name: Generate KiCad outputs
 on:
   workflow_dispatch:
+  workflow_call:
 env:
   GIT_COMMITTER_NAME: ci-bot
   GIT_COMMITTER_EMAIL: sjsurobotics@gmail.com
