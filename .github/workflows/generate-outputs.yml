@@ -29,7 +29,7 @@ jobs:
         pcb_image_path: .
 
     - name: Get directory of outputs
-      run: echo "OUTPUT_DIRECTORIES='dirname ${{ matrix.projects.path }}'" >> "$GITHUB_ENV"
+      run: echo "OUTPUT_DIRECTORIES=`dirname ${{ matrix.projects.path }}`" >> "$GITHUB_ENV"
 
     - name: Upload production files
       uses: actions/upload-artifact@v4
