@@ -91,7 +91,7 @@ To solve this problem, you must remove the pin from the micromod connector befor
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/55808f19-8cd1-4a9b-aeef-18302ffa6ba2">
 
 ### USB Error
-2. Pin 9 should be connected to VBUS, but was left unconnected
+2. Pin 9 should be connected to VBUS, but was left unconnected  
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/4b47dd09-1c86-41cc-96a8-79f1b62e9683">
 
 To solve this problem, you must solder a wire or resistor to an exposed power joint as shown.  
