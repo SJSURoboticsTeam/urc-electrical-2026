@@ -12,18 +12,7 @@ env:
   GIT_COMMITTER_EMAIL: sjsurobotics@gmail.com
 jobs:
   generate:
-    strategy:
-      matrix:
-        projects:
-          - servo:
-            path: 40Vservo/40Vservo
-            name: servo
-    runs-on: ubuntu-latest
-    steps:
-      - uses: ./.github/workflows/generate-outputs.yml
-        with:
-          project: ${{ matrix.projects.path }}
-          export_name: ${{ matrix.projects.name }}
+    uses: ./.github/workflows/generate-outputs.yml
   build:
     runs-on: ubuntu-latest
     steps:

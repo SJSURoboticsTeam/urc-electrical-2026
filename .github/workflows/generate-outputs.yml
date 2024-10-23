@@ -1,21 +1,18 @@
 name: Generate KiCad outputs
 on:
   workflow_dispatch:
-  workflow_call:
-    inputs:
-      project:
-        required: true
-        type: string
-      export_name:
-        required: true
-        type: string
-
 env:
   GIT_COMMITTER_NAME: ci-bot
   GIT_COMMITTER_EMAIL: sjsurobotics@gmail.com
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        projects:
+          - servo:
+            path: 40Vservo/40Vservo
+            name: servo
     steps:
     - uses: actions/checkout@v4
   
@@ -23,22 +20,22 @@ jobs:
       id: production
       uses: SJSURoboticsTeam/kicad-action@v1.0.0
       with:
-        kicad_sch: ${{ inputs.project }}.kicad_sch
-        kicad_pcb: ${{ inputs.project }}.kicad_pcb
+        kicad_sch: ${{ matrix.projects.path }}.kicad_sch
+        kicad_pcb: ${{ matrix.projects.path }}.kicad_pcb
         sch_pdf: true
-        sch_pdf_file:  ${{ inputs.export_name }}.pdf
+        sch_pdf_file:  ${{ matrix.projects.name }}.pdf
         pcb_image: true
         pcb_image_path: .
 
     - name: Get directory of outputs
-      run: echo "OUTPUT_DIRECTORIES='dirname ${{ inputs.project }}'" >> "$GITHUB_ENV"
+      run: echo "OUTPUT_DIRECTORIES='dirname ${{ matrix.projects.path }}'" >> "$GITHUB_ENV"
 
     - name: Upload production files
       uses: actions/upload-artifact@v4
       if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
       with:
-        name: ${{ inputs.export_name }}-out
+        name: ${{ matrix.projects.name }}-out
         path: |
-          ${{ env.OUTPUT_DIRECTORIES }}/${{ inputs.export_name }}.pdf
+          ${{ env.OUTPUT_DIRECTORIES }}/${{ matrix.projects.name }}.pdf
           ${{ env.OUTPUT_DIRECTORIES }}/top.png
           ${{ env.OUTPUT_DIRECTORIES }}/bottom.png
