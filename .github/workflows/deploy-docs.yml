@@ -11,10 +11,19 @@ env:
   GIT_COMMITTER_NAME: ci-bot
   GIT_COMMITTER_EMAIL: sjsurobotics@gmail.com
 jobs:
-  gen_servo:
-    uses: ./.github/workflows/generate-outputs.yml
-    with:
-      project: 40Vservo/40Vservo
+  generate:
+    strategy:
+      matrix:
+        projects:
+          - servo:
+            path: 40Vservo/40Vservo
+            name: servo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/workflows/generate-outputs.yml
+        with:
+          project: ${{ matrix.projects.path }}
+          export_name: ${{ matrix.projects.name }}
   build:
     runs-on: ubuntu-latest
     steps:
@@ -44,7 +53,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: github-pages
-    needs: [build, gen_servo]
+    needs: [build, generate]
     permissions:
       pages: write
       id-token: write

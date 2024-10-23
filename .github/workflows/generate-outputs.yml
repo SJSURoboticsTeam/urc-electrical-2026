@@ -6,6 +6,9 @@ on:
       project:
         required: true
         type: string
+      export_name:
+        required: true
+        type: string
 
 env:
   GIT_COMMITTER_NAME: ci-bot
@@ -16,14 +19,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
   
-    - name: Get project name
-      run: path=${{inputs.project}};file=${path##*/};base=${file%.*};echo "PROJECT_BASENAME=$base" >> "$GITHUB_ENV"
-
-    - uses: rlespinasse/slugify-value@v1.x
-      with:
-        key: EXPORT_NAME
-        value: ${{ env.PROJECT_BASENAME }}
-
     - name: Export PDF
       id: production
       uses: SJSURoboticsTeam/kicad-action@v1.0.0
@@ -31,7 +26,7 @@ jobs:
         kicad_sch: ${{ inputs.project }}.kicad_sch
         kicad_pcb: ${{ inputs.project }}.kicad_pcb
         sch_pdf: true
-        sch_pdf_file:  ${{ env.EXPORT_NAME }}.pdf
+        sch_pdf_file:  ${{ inputs.export_name }}.pdf
         pcb_image: true
         pcb_image_path: .
 
@@ -42,8 +37,8 @@ jobs:
       uses: actions/upload-artifact@v4
       if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
       with:
-        name: ${{ env.EXPORT_NAME }}-out
+        name: ${{ inputs.export_name }}-out
         path: |
-          $OUTPUT_DIRECTORIES/${{ inputs.project }}.pdf
-          $OUTPUT_DIRECTORIES/top.png
-          $OUTPUT_DIRECTORIES/bottom.png
+          ${{ env.OUTPUT_DIRECTORIES }}/${{ inputs.export_name }}.pdf
+          ${{ env.OUTPUT_DIRECTORIES }}/top.png
+          ${{ env.OUTPUT_DIRECTORIES }}/bottom.png
