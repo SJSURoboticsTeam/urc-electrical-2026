@@ -6,9 +6,6 @@ on:
       project:
         required: true
         type: string
-      export_name:
-        required: true
-        type: string
 
 env:
   GIT_COMMITTER_NAME: ci-bot
@@ -27,8 +24,6 @@ jobs:
         key: EXPORT_NAME
         value: ${{ env.PROJECT_BASENAME }}
 
-    - run: echo ${{ env.EXPORT_NAME }}
-
     - name: Export PDF
       id: production
       uses: SJSURoboticsTeam/kicad-action@v1.0.0
@@ -36,7 +31,7 @@ jobs:
         kicad_sch: ${{ inputs.project }}.kicad_sch
         kicad_pcb: ${{ inputs.project }}.kicad_pcb
         sch_pdf: true
-        sch_pdf_file:  ${{ inputs.export_name }}.pdf
+        sch_pdf_file:  ${{ env.EXPORT_NAME }}.pdf
         pcb_image: true
         pcb_image_path: .
 
@@ -47,7 +42,7 @@ jobs:
       uses: actions/upload-artifact@v4
       if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
       with:
-        name: ${{ inputs.export_name }}-out
+        name: ${{ env.EXPORT_NAME }}-out
         path: |
           $OUTPUT_DIRECTORIES/${{ inputs.project }}.pdf
           $OUTPUT_DIRECTORIES/top.png

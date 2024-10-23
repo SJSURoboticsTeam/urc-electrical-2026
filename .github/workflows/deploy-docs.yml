@@ -15,7 +15,6 @@ jobs:
     uses: ./.github/workflows/generate-outputs.yml
     with:
       project: 40Vservo/40Vservo
-      export_name: 40Vservo
   build:
     runs-on: ubuntu-latest
     steps:
