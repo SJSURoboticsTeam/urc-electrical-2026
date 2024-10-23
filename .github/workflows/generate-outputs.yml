@@ -20,7 +20,7 @@ jobs:
     - uses: actions/checkout@v4
   
     - name: Get project name
-      run: file=${${{inputs.project}}##*/};base=${file%.*};echo "PROJECT_BASENAME=$base" >> "$GITHUB_ENV"
+      run: path=${{inputs.project}};file=${path##*/};base=${file%.*};echo "PROJECT_BASENAME=$base" >> "$GITHUB_ENV"
 
     - uses: rlespinasse/slugify-value@v1.x
       with:
