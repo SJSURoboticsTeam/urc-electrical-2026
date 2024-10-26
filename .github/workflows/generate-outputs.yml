@@ -14,6 +14,9 @@ jobs:
           - servo:
             path: 40Vservo/40Vservo
             name: servo
+          - drive:
+            path: drive/drive
+            name: drive
     steps:
     - uses: actions/checkout@v4
   
