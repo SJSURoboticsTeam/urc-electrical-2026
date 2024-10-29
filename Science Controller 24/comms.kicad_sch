@@ -3196,10 +3196,6 @@
 		(uuid "76e50041-d768-417e-9edf-7d16f157f227")
 	)
 	(no_connect
-		(at 91.44 111.76)
-		(uuid "79eb069c-b136-4847-98a0-11b6480264af")
-	)
-	(no_connect
 		(at 34.29 74.93)
 		(uuid "7bded1e9-6a6b-4afc-b141-b2283c1f66ca")
 	)
@@ -3208,8 +3204,8 @@
 		(uuid "82c86b94-ccf3-4f61-84a4-c5c0274e8543")
 	)
 	(no_connect
-		(at 91.44 114.3)
-		(uuid "8b5795fa-152a-44ca-988f-30bbd1a91ff0")
+		(at 91.44 48.26)
+		(uuid "91b7ec5f-b92a-47a9-b263-7b0b693270eb")
 	)
 	(no_connect
 		(at 91.44 64.77)
@@ -3337,28 +3333,6 @@
 		)
 		(uuid "14f099ec-17ea-476c-bea6-280e69aae08c")
 	)
-	(global_label "CLR_DO"
-		(shape input)
-		(at 91.44 48.26 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "033836ec-5c8a-4bd4-898e-1c7520de7227")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 101.5614 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "EMTR5"
 		(shape input)
 		(at 91.44 101.6 0)
@@ -3469,6 +3443,28 @@
 			)
 		)
 	)
+	(global_label "CLR2"
+		(shape input)
+		(at 91.44 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3ec5cc31-759c-4947-96a3-5f053ebfaee2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 99.2028 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "I2C_SDA"
 		(shape bidirectional)
 		(at 34.29 55.88 180)
@@ -3509,6 +3505,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CLR1"
+		(shape input)
+		(at 91.44 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5cf2c35f-3f75-4a70-aa4f-097d3897ef86")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 99.2028 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
