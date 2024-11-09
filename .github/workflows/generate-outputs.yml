@@ -54,7 +54,6 @@ jobs:
         sch_pdf: true
         pcb_image: true
         pcb_image_path: .
-        pcb_model: true
 
     - name: Get directory of outputs
       run: echo "OUTPUT_DIRECTORIES=`dirname ${{ matrix.projects.path }}`" >> "$GITHUB_ENV"
@@ -62,7 +61,7 @@ jobs:
     - name: Create navigation file
       run: echo "* ${{ matrix.projects.name }}
         * (Schematic)[sch.pdf]
-        * (Model)[pcb.step]" > nav.md
+        * (PCB)[top.png]
 
     - name: Upload production files
       uses: actions/upload-artifact@v4
@@ -71,6 +70,5 @@ jobs:
         name: ${{ matrix.projects.name }}-out
         path: |
           ${{ env.OUTPUT_DIRECTORIES }}/sch.pdf
-          ${{ env.OUTPUT_DIRECTORIES }}/pcb.step
           ${{ env.OUTPUT_DIRECTORIES }}/top.png
           ${{ env.OUTPUT_DIRECTORIES }}/bottom.png

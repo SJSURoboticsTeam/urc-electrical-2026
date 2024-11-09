@@ -40,7 +40,7 @@ Any motor can be used with this, since current is controlled by the H-bridge.
 
 ### Schematic
 
-[Schematic](outputs/servo-out/servo.pdf)
+[Schematic](outputs/servo-out/sch.pdf)
 
 ### Datasheets
 
