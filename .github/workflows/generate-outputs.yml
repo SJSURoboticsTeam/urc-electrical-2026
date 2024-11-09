@@ -17,6 +17,31 @@ jobs:
           - drive:
             path: drive/drive
             name: drive
+          - arm:
+            path: 'Arm_Main/Robotics Arm'
+            name: arm
+          - hub:
+            path: 'HUB/HUB'
+            name: hub
+          - science:
+            path: 'Science Controller 24/Science Controller 24'
+            name: science
+          - PoE:
+            path: 'POE/POE'
+            name: POE
+          - battery-amp:
+            path: 'BatteryAmp/BatteryAmp'
+            name: battery-amp
+          - tla-dev:
+            path: 'tla_dev/tla_dev'
+            name: tla
+          - tmag:
+            path: 'TMAG_Carrier/Screw Mount/MiniatureTMAG_Carrier'
+            name: tmag
+          - usb:
+            path: 'USB/USB'
+            name: usb
+
     steps:
     - uses: actions/checkout@v4
   
