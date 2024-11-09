@@ -2,44 +2,44 @@ name: Generate KiCad outputs
 on:
   workflow_dispatch:
   workflow_call:
-    inputs:
-      project:
-        required: true
-        type: string
-      folder:
-        required: true
-        type: string
-
 env:
   GIT_COMMITTER_NAME: ci-bot
   GIT_COMMITTER_EMAIL: sjsurobotics@gmail.com
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        projects:
+          - servo:
+            path: 40Vservo/40Vservo
+            name: servo
+          - drive:
+            path: drive/drive
+            name: drive
     steps:
     - uses: actions/checkout@v4
   
     - name: Export PDF
       id: production
-      uses: sparkengineering/kicad-action@v2
-      if: '!cancelled()'
+      uses: SJSURoboticsTeam/kicad-action@v1.0.0
       with:
-        kicad_sch: ${{ inputs.folder }}/${{ inputs.project }}.kicad_sch
+        kicad_sch: ${{ matrix.projects.path }}.kicad_sch
+        kicad_pcb: ${{ matrix.projects.path }}.kicad_pcb
         sch_pdf: true
-        sch_pdf_file:  ${{ inputs.folder }}.pdf
+        sch_pdf_file:  ${{ matrix.projects.name }}.pdf
+        pcb_image: true
+        pcb_image_path: .
 
-    - name: Render Image
-      uses: linalinn/kicad-render@main
-      with:
-        pcb_file: ${{ inputs.folder }}/${{ inputs.project }}.kicad_pcb
-        output_path: ${{ inputs.folder }}
+    - name: Get directory of outputs
+      run: echo "OUTPUT_DIRECTORIES=`dirname ${{ matrix.projects.path }}`" >> "$GITHUB_ENV"
 
     - name: Upload production files
       uses: actions/upload-artifact@v4
       if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
       with:
-        name: ${{ inputs.folder }}-out
+        name: ${{ matrix.projects.name }}-out
         path: |
-          ${{ inputs.folder }}/${{ inputs.project }}.pdf
-          ${{ inputs.folder }}/top.png
-          ${{ inputs.folder }}/bottom.png
+          ${{ env.OUTPUT_DIRECTORIES }}/${{ matrix.projects.name }}.pdf
+          ${{ env.OUTPUT_DIRECTORIES }}/top.png
+          ${{ env.OUTPUT_DIRECTORIES }}/bottom.png

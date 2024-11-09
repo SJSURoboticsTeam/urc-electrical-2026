@@ -11,17 +11,12 @@ env:
   GIT_COMMITTER_NAME: ci-bot
   GIT_COMMITTER_EMAIL: sjsurobotics@gmail.com
 jobs:
-  gen_servo:
+  generate:
     uses: ./.github/workflows/generate-outputs.yml
-    with:
-      project: 40Vservo
-      folder: 40Vservo
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
     - uses: actions/cache@v4
       name: Define a cache for the virtual environment based on the dependencies lock file
       with:
@@ -47,7 +42,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: github-pages
-    needs: [build, gen_servo]
+    needs: [build, generate]
     permissions:
       pages: write
       id-token: write
@@ -65,7 +60,13 @@ jobs:
 
     - name: Deploy
       uses: cloudflare/wrangler-action@v3
+      id: deploy
       with:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         command: pages deploy . --project-name=eedocs --branch ${{ github.ref_name }}
+
+    - name: Echo preview url
+      env:
+        DEPLOYMENT_ALIAS_URL: ${{ steps.deploy.outputs.deployment-alias-url }}
+      run: echo $DEPLOYMENT_ALIAS_URL

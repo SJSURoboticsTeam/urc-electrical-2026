@@ -1,6 +1,6 @@
 # 40V Servo
 
-![Top of PCB](https://sjsuroboticsteam.github.io/urc-electrical-2026/resources/40Vservo-out/top.png)
+![Top of PCB](/resources/servo-out/top.png)
 
 ## Features
 
@@ -35,12 +35,12 @@ Any motor can be used with this, since current is controlled by the H-bridge.
 
 ### PCB Images
 
-![Top of PCB](https://sjsuroboticsteam.github.io/urc-electrical-2026/resources/40Vservo-out/top.png)
-![Bottom of PCB](https://sjsuroboticsteam.github.io/urc-electrical-2026/resources/40Vservo-out/bottom.png)
+![Top of PCB](/resources/servo-out/top.png)
+![Bottom of PCB](/resources/servo-out/bottom.png)
 
 ### Schematic
 
-[Schematic](https://sjsuroboticsteam.github.io/urc-electrical-2026/resources/40Vservo-out/40Vservo.pdf)
+[Schematic](/resources/servo-out/servo.pdf)
 
 ### Datasheets
 
