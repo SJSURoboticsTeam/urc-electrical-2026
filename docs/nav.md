@@ -4,4 +4,4 @@
 * [Drive](drive.md)
 * [Main Arm](Main_Arm_Board.md)
 * Outputs
-    * outputs/servo-out/nav.md
+    * [link](outputs/servo-out/nav.md)
