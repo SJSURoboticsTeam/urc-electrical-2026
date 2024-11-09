@@ -60,9 +60,8 @@ jobs:
 
     - name: Create navigation file
       run: |
-        echo "* ${{ matrix.projects.name }}
-          * [Schematic](sch.pdf)
-          * [PCB](top.png)" > ${{ env.OUTPUT_DIRECTORIES }}/nav.md
+        echo "* [Schematic](sch.pdf)
+              * [PCB](top.png)" > ${{ env.OUTPUT_DIRECTORIES }}/nav.md
 
     - name: Upload production files
       uses: actions/upload-artifact@v4
