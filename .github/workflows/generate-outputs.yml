@@ -18,13 +18,13 @@ jobs:
             path: drive/drive
             name: drive
           - arm:
-            path: 'Arm_Main/Robotics Arm'
+            path: main_arm/main_arm,
             name: arm
           - hub:
             path: 'HUB/HUB'
             name: hub
           - science:
-            path: 'Science Controller 24/Science Controller 24'
+            path: Science/Science
             name: science
           - PoE:
             path: 'POE/POE'
@@ -36,7 +36,7 @@ jobs:
             path: 'tla_dev/tla_dev'
             name: tla
           - tmag:
-            path: 'TMAG_Carrier/Screw Mount/MiniatureTMAG_Carrier'
+            path: 'TMAG_Carrier/tmag_screwed/tmag_screwed'
             name: tmag
           - usb:
             path: 'USB/USB'
