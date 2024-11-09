@@ -70,6 +70,7 @@ jobs:
       with:
         name: ${{ matrix.projects.name }}-out
         path: |
+          nav.md
           ${{ env.OUTPUT_DIRECTORIES }}/sch.pdf
           ${{ env.OUTPUT_DIRECTORIES }}/top.png
           ${{ env.OUTPUT_DIRECTORIES }}/bottom.png
