@@ -4,4 +4,4 @@
 * [Drive](drive.md)
 * [Main Arm](Main_Arm_Board.md)
 * Outputs
-    * [POE Top](outputs/POE-out/top.png)
+    * outputs/*/
