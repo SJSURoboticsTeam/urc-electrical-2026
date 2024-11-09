@@ -59,9 +59,10 @@ jobs:
       run: echo "OUTPUT_DIRECTORIES=`dirname ${{ matrix.projects.path }}`" >> "$GITHUB_ENV"
 
     - name: Create navigation file
-      run: echo "* ${{ matrix.projects.name }}
-        * (Schematic)[sch.pdf]
-        * (PCB)[top.png]
+      run: |
+        echo "* ${{ matrix.projects.name }}
+          * (Schematic)[sch.pdf]
+          * (PCB)[top.png]" > nav.md
 
     - name: Upload production files
       uses: actions/upload-artifact@v4
