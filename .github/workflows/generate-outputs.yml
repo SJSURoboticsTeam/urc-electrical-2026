@@ -67,7 +67,7 @@ jobs:
       uses: actions/upload-artifact@v4
       if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
       with:
-        name: ${{ matrix.projects.name }}-out
+        name: ${{ matrix.projects.name }}
         path: |
           ${{ env.OUTPUT_DIRECTORIES }}/nav.md
           ${{ env.OUTPUT_DIRECTORIES }}/sch.pdf
