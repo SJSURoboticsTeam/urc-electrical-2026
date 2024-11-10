@@ -47,7 +47,7 @@ jobs:
   
     - name: Export PDF
       id: production
-      uses: SJSURoboticsTeam/kicad-action@v1.2.1
+      uses: SJSURoboticsTeam/kicad-action@v1.2.2
       with:
         kicad_sch: ${{ matrix.projects.path }}.kicad_sch
         kicad_pcb: ${{ matrix.projects.path }}.kicad_pcb

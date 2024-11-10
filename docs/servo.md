@@ -1,6 +1,6 @@
 # 40V Servo
 
-![Top of PCB](outputs/servo-out/top.png)
+![Top of PCB](outputs/servo/top.png)
 
 ## Features
 
