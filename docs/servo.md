@@ -35,12 +35,12 @@ Any motor can be used with this, since current is controlled by the H-bridge.
 
 ### PCB Images
 
-![Top of PCB](outputs/servo-out/top.png)
-![Bottom of PCB](outputs/servo-out/bottom.png)
+![Top of PCB](outputs/servo/top.png)
+![Bottom of PCB](outputs/servo/bottom.png)
 
 ### Schematic
 
-[Schematic](outputs/servo-out/sch.pdf)
+[Schematic](outputs/servo/sch.pdf)
 
 ### Datasheets
 
