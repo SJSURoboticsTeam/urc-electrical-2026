@@ -1,4 +1,4 @@
-# INSERT TITLE
+# E-Stop
 
 ![Top of PCB](outputs/science/top.png)
 

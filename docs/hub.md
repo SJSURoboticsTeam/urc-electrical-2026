@@ -1,4 +1,4 @@
-# INSERT TITLE
+# Hub
 
 ![Top of PCB](outputs/hub/top.png)
 
