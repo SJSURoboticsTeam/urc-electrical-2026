@@ -17,29 +17,59 @@ jobs:
           - drive:
             path: drive/drive
             name: drive
+          - arm:
+            path: main_arm/main_arm
+            name: arm
+          - hub:
+            path: 'HUB/HUB'
+            name: hub
+          - science:
+            path: Science/Science
+            name: science
+          - PoE:
+            path: 'POE/POE'
+            name: POE
+          - battery-amp:
+            path: 'BatteryAmp/BatteryAmp'
+            name: battery-amp
+          - tla-dev:
+            path: 'tla_dev/tla_dev'
+            name: tla
+          - tmag:
+            path: 'TMAG_Carrier/tmag_screwed/tmag_screwed'
+            name: tmag
+          - usb:
+            path: 'USB/USB'
+            name: usb
+
     steps:
     - uses: actions/checkout@v4
   
     - name: Export PDF
       id: production
-      uses: SJSURoboticsTeam/kicad-action@v1.0.0
+      uses: SJSURoboticsTeam/kicad-action@v1.2.2
       with:
         kicad_sch: ${{ matrix.projects.path }}.kicad_sch
         kicad_pcb: ${{ matrix.projects.path }}.kicad_pcb
         sch_pdf: true
-        sch_pdf_file:  ${{ matrix.projects.name }}.pdf
         pcb_image: true
         pcb_image_path: .
 
     - name: Get directory of outputs
       run: echo "OUTPUT_DIRECTORIES=`dirname ${{ matrix.projects.path }}`" >> "$GITHUB_ENV"
 
+    - name: Create navigation file
+      run: |
+        echo "* [Schematic](sch.pdf)
+        * [PCB](top.png)" > ${{ env.OUTPUT_DIRECTORIES }}/nav.md
+
     - name: Upload production files
       uses: actions/upload-artifact@v4
       if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
       with:
-        name: ${{ matrix.projects.name }}-out
+        name: ${{ matrix.projects.name }}
         path: |
-          ${{ env.OUTPUT_DIRECTORIES }}/${{ matrix.projects.name }}.pdf
+          ${{ env.OUTPUT_DIRECTORIES }}/nav.md
+          ${{ env.OUTPUT_DIRECTORIES }}/sch.pdf
           ${{ env.OUTPUT_DIRECTORIES }}/top.png
           ${{ env.OUTPUT_DIRECTORIES }}/bottom.png

@@ -1,6 +1,6 @@
 # 40V Servo
 
-![Top of PCB](/resources/servo-out/top.png)
+![Top of PCB](outputs/servo/top.png)
 
 ## Features
 
@@ -35,12 +35,12 @@ Any motor can be used with this, since current is controlled by the H-bridge.
 
 ### PCB Images
 
-![Top of PCB](/resources/servo-out/top.png)
-![Bottom of PCB](/resources/servo-out/bottom.png)
+![Top of PCB](outputs/servo/top.png)
+![Bottom of PCB](outputs/servo/bottom.png)
 
 ### Schematic
 
-[Schematic](/resources/servo-out/servo.pdf)
+[Schematic](outputs/servo/sch.pdf)
 
 ### Datasheets
 

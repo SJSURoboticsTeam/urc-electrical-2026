@@ -1,3 +1,3 @@
 # Drive
 
-![Top of PCB](/resources/drive-out/top.png)
+![Top of PCB](outputs/drive/top.png)

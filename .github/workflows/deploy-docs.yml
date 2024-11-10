@@ -7,6 +7,7 @@ on:
         - '*.kicad_sch'
         - '*.kicad_pcb'
         - '.github/workflows/*'
+        - 'mkdocs.yml'
 env:
   GIT_COMMITTER_NAME: ci-bot
   GIT_COMMITTER_EMAIL: sjsurobotics@gmail.com
@@ -15,6 +16,7 @@ jobs:
     uses: ./.github/workflows/generate-outputs.yml
   build:
     runs-on: ubuntu-latest
+    needs: generate
     steps:
     - uses: actions/checkout@v4
     - uses: actions/cache@v4
@@ -22,17 +24,26 @@ jobs:
       with:
         path: ./.venv
         key: venv-${{ hashFiles('poetry.lock') }}
+
     - uses: actions/setup-python@v5
       with:
         python-version: '3.11'
     - name: Install poetry
       uses: abatilo/actions-poetry@v2
+
+
+    - name: Download Output Artifacts
+      uses: actions/download-artifact@v4
+      with:
+        pattern: '*'
+        path: docs/outputs
+
     - name: Install the project dependencies
       run: poetry install --no-root
+
     - name: Build documenation
       run: poetry run mkdocs build
-    - name: Remove unnecessary files
-      run: rm -rdf .git .venv
+
     - name: Upload production files
       uses: actions/upload-artifact@v4
       with:
@@ -42,7 +53,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: github-pages
-    needs: [build, generate]
+    needs: build
     permissions:
       pages: write
       id-token: write
@@ -51,12 +62,6 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: documentation
-
-    - name: Download Output Artifacts
-      uses: actions/download-artifact@v4
-      with:
-        pattern: '*-out'
-        path: resources
 
     - name: Deploy
       uses: cloudflare/wrangler-action@v3

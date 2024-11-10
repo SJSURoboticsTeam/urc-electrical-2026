@@ -1,7 +1,7 @@
 # Main Arm Board
 
-![Top View](https://github.com/user-attachments/assets/2846094a-2b24-4493-96c2-ea83b116c498)
-![Bottom View](https://github.com/user-attachments/assets/6349db9e-a966-4c8f-b6c0-2b1a4ba87a84)
+![Top View](outputs/main_arm/top.png)
+![Bottom View](outputs/main_arm/top.png)
 
 
 ## Authors
