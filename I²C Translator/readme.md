@@ -12,7 +12,17 @@ This devices allows for a signle, selectable I²C address to be translated to a 
 6. An additionall pull-up resistor must be placed on the output SDA line.   
 7. The chosen output address must be the only device wired to the output side of the microcontroller, as the specific address will be the only device that can communicate through the translator.   
 ### Schematic Example   
-![image](https://github.com/user-attachments/assets/d5dff7b4-3a7f-4783-b8b8-ca2350691f94)
-## Programming Instructions  
+![image](https://github.com/user-attachments/assets/d7cd1e41-f194-4fd0-b017-3fd010141ad3)  
+## Code Modification Instructions
+
+## ATTINY10 Programming Instructions  
 The ATTINY10 Uses the proprietary TPI interface and is only supported by newer firmware versions of the USBASP programmer.   
 However, the process of configuring the USBASP programmer is extremely tedious, and I instead recommend using an Ardunio UNO for programming.
+### Step 1:
+Connect the ATTINY10 to the Arduino Uno as shown  
+![image](https://github.com/user-attachments/assets/fff65086-e519-4714-888d-d45532debae9)
+### Step 2: 
+Upload the sketch provided at https://github.com/james-tate/Arduino-TPI-Programmer/blob/master/TPI_Programmer.ino to the Arduino Uno  
+### Step 3:
+Type "P" into the serial monitor and paste the compiled hex code
+
