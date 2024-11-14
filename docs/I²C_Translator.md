@@ -35,9 +35,15 @@ Next, open a command prompt by typing "cmd" in the path bar
 ![image](https://github.com/user-attachments/assets/003a0d46-6c1c-4f8a-9e83-08c5e001050c)  
 
 Finally, run the following commands to compile and build your file  
-1. ```"avr8-gnu-toolchain-win32_x86_64\bin\avr-gcc.exe" -o "output.o" -c -fno-threadsafe-statics -mmcu=attiny10 -O3 -Wall -flto -DF_CPU=1000000L -Isrc "I2CAddressTranslator.cpp"```  
-2. ```"avr8-gnu-toolchain-win32_x86_64\bin\avr-gcc.exe" -g -O3 -w -mmcu=attiny10 "output.o" -o "output.elf"```
-3. ```"avr8-gnu-toolchain-win32_x86_64\bin\avr-objcopy" -O ihex "output.elf" "output.hex"```
+``` bash
+"avr8-gnu-toolchain-win32_x86_64\bin\avr-gcc.exe" -o "output.o" -c -fno-threadsafe-statics -mmcu=attiny10 -O3 -Wall -flto -DF_CPU=1000000L -Isrc "I2CAddressTranslator.cpp"
+```
+``` bash
+"avr8-gnu-toolchain-win32_x86_64\bin\avr-gcc.exe" -g -O3 -w -mmcu=attiny10 "output.o" -o "output.elf"
+```
+``` bash
+"avr8-gnu-toolchain-win32_x86_64\bin\avr-objcopy" -O ihex "output.elf" "output.hex"
+```
 
 ```"output.hex"``` contains the compiled binary.  
 ![image](https://github.com/user-attachments/assets/2a624e45-f6b9-4c1c-a40e-fa8b69737c0d)
@@ -56,4 +62,3 @@ Check to serial monitor to see if the connection was successsful
 ### Step 3:
 Type "P" into the serial monitor and paste the compiled hex code
 ![image](https://github.com/user-attachments/assets/a67eada1-98f5-4823-a323-3e5545f6066b)  
-
