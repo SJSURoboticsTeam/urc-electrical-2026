@@ -4,7 +4,7 @@ Author - Brendan Parvin
 This devices allows for a signle, selectable I²C address to be translated to a different, selectable I²C address --- on the fly. This allows slaves with the same hardwired address to coexist on a single I²C bus.  
 ![image](https://github.com/user-attachments/assets/3a0603a6-0fbe-471c-bf71-87b2919359b6)
 ## PCB Implementation Instructions   
-1. The code was optimized and tested for an ATTINY10 Microcontroller (Programming Instructions). However, the code should run on any AVR based microcontroller (with minor modifications)   
+1. The code was optimized and tested for an ATTINY10 Microcontroller. However, the code should run on any AVR based microcontroller (with minor modifications)   
 2. The ATTINY10 microcontroller can only be programmed at 5V, so connect the VCC of the microcontroller to a 5V net/power source.   
 3. Ensure that the periperhal I²C device has 5V tolerant SDA and SCL pins, or program the microcontroller before placing the I²C peripheral.   
 4. Pin 3 (RESET) of the microcontroller cannot be used   
@@ -14,6 +14,14 @@ This devices allows for a signle, selectable I²C address to be translated to a 
 ### Schematic Example   
 ![image](https://github.com/user-attachments/assets/d7cd1e41-f194-4fd0-b017-3fd010141ad3)  
 ## Code Modification Instructions  
+All relevent configuration options are located at the top of the supplied code  
+![image](https://github.com/user-attachments/assets/a1b8ac34-270f-44cf-ad0f-af9dc620b64b)
+
+If using a different microcontroller, remove the following lines:  
+#ifndef __AVR_ATtiny10__  
+#define __AVR_ATtiny10__  
+#endif  
+
 ## Code Compilation Instructions  
 Start by downloading the cpp file and placing it in its own folder. Edit the file to include the required I2C Addresses. 
 ![image](https://github.com/user-attachments/assets/4be3bf14-690e-4bdd-8d27-389d9b306f65)  
@@ -32,7 +40,6 @@ Finally, run the following commands to compile and build your file
 ```"output.hex"``` contains the compiled binary.  
 ![image](https://github.com/user-attachments/assets/2a624e45-f6b9-4c1c-a40e-fa8b69737c0d)
 
-
 ## ATTINY10 Programming Instructions  
 The ATTINY10 Uses the proprietary TPI interface and is only supported by newer firmware versions of the USBASP programmer.   
 However, the process of configuring the USBASP programmer is extremely tedious, and I instead recommend using an Ardunio UNO for programming.
@@ -41,6 +48,8 @@ Connect the ATTINY10 to the Arduino Uno as shown
 ![image](https://github.com/user-attachments/assets/fff65086-e519-4714-888d-d45532debae9)
 ### Step 2: 
 Upload the sketch provided at https://github.com/james-tate/Arduino-TPI-Programmer/blob/master/TPI_Programmer.ino to the Arduino Uno  
+Check to serial monitor to see if the connection was successsful  
+<img width="947" alt="image" src="https://github.com/user-attachments/assets/a4474cb2-e34a-4ff7-8940-08206eefeca0">  
+
 ### Step 3:
 Type "P" into the serial monitor and paste the compiled hex code
-
