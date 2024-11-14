@@ -53,3 +53,5 @@ Check to serial monitor to see if the connection was successsful
 
 ### Step 3:
 Type "P" into the serial monitor and paste the compiled hex code
+![image](https://github.com/user-attachments/assets/a67eada1-98f5-4823-a323-3e5545f6066b)  
+
