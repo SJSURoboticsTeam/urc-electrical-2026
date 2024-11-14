@@ -17,10 +17,12 @@ This devices allows for a signle, selectable I²C address to be translated to a 
 All relevent configuration options are located at the top of the supplied code  
 ![image](https://github.com/user-attachments/assets/a1b8ac34-270f-44cf-ad0f-af9dc620b64b)
 
-If using a different microcontroller, remove the following lines:  
+If using a different microcontroller, remove the following lines:
+``` cpp
 #ifndef __AVR_ATtiny10__  
 #define __AVR_ATtiny10__  
-#endif  
+#endif
+```
 
 ## Code Compilation Instructions  
 Start by downloading the cpp file and placing it in its own folder. Edit the file to include the required I2C Addresses. 
