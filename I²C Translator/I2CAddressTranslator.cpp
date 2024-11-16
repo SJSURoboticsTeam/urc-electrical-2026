@@ -74,17 +74,6 @@ const uint8_t rInAddress = Reverse(inAddress) >> (8-7); //must do >> 1 because t
 const uint8_t rOutAddress = Reverse(outAddress) >> (8-7); //must do >> 1 because the address is only 7 bits long
 const uint8_t rXorAddress = rInAddress ^ rOutAddress;
 
-//returns the [isolateBit]'s bit of [number] shifted into bit [locationBit]
-//ex: filterAlign(0b10010010, 4, 6) -> 0b10010010 & 0b00010000 == 0b00010000 -> 0b0001000 << (6-4) -> 0b01000000
-constexpr uint8_t filterAlign(const uint8_t number, const uint8_t isolateBit, const uint8_t locationBit){
-    return ((number & _BV(isolateBit)) >> (isolateBit)) << locationBit;
-}
-
-//inverts a bit in a number
-constexpr uint8_t invert(const uint8_t number, const uint8_t bit){
-    return number ^ _BV(bit);
-}
-
 inline bool digitalReadFast(const uint8_t pin){
   if((PINB & _BV(pin)) != 0){
     return true;
@@ -102,12 +91,6 @@ inline void pinModeFast(const uint8_t pin, bool state){
     } else {
         DDRB |= _BV(pin); //Set pin to output = LOW
     } 
-}
-
-//set all pins at once
-//allows for single instruction seting, but be careful not to mess with pins that you don't care about
-inline void pinModeFast(const uint8_t state){ 
-    asm volatile("out %0, %1" : : "X"(DDRB), "r"(state));
 }
 
 inline void openCollectorWrite(const uint8_t pin, const bool state){
@@ -150,7 +133,7 @@ inline bool checkAddressBit(uint8_t bit, bool& sdaState){
   do{
     //Note: This if statement should be evaluated at compile time
     if(rXorAddress & _BV(bit)){ //need to flip the bit
-      pinModeFast(peripheralSDApin, rInAddress & _BV(bit)); //outputs the oposite of the in address
+      pinModeFast(peripheralSDApin, digitalReadFast(controllerSDApin)); //Passthrough the opposite 
     } else { //do not need to flip the bit
       openCollectorWrite(peripheralSDApin, digitalReadFast(controllerSDApin)); //Passthrough 
     }
@@ -185,7 +168,12 @@ int main(void){
 
   uint8_t bitCount; //stores current bit number in message
   bool sdaState;    //stores the current SDA state
-  bool previousSDAState;  //stores the last SDA state
+  union{
+    bool previousSDAState;  //stores the last SDA state
+    bool isWrongAddress; //set to TRUE if the wrong address was recieved
+    bool readOrWrite; //stores the state of the current communication
+  } scratchVar; //only stores 1 in byte total
+  
   
   while(true){
     start:
@@ -195,7 +183,7 @@ int main(void){
       wdt_reset(); //This is the defualt state, so a watchdog reset should not occur
 
       //Need to detect a falling edge for START
-      previousSDAState = sdaState;
+      scratchVar.previousSDAState = sdaState;
 
       //This logic must occur within a maximum of 600ns for 400kHz, and 4000ns for 100kHz
       sdaState = digitalReadFast(controllerSDApin);
@@ -205,7 +193,7 @@ int main(void){
       openCollectorWrite(peripheralSDApin, sdaState);
 
       if(digitalReadFast(sclPin)){ //START or STOP is allowed only while clock is high
-        if(previousSDAState == 1 && sdaState == 0){ //Falling-Edge means START Condition
+        if(scratchVar.previousSDAState == 1 && sdaState == 0){ //Falling-Edge means START Condition
           break;
         }
       }
@@ -219,38 +207,45 @@ int main(void){
     wdt_reset(); //a repeated start and stop are well defined, so if either is detected then we are definitely here correctly
 
     //State 1: Read Peripheral Device Address. Note*: a repeated start or stop can not be detected during this state because it cannot be passed on to the device anyway
+    scratchVar.isWrongAddress = false;
     //Bit 0:
     if(checkAddressBit(0, sdaState)){
-      continue;
+      scratchVar.isWrongAddress = true;
     }
 
     //Bit 1:
     if(checkAddressBit(1, sdaState)){
-      continue;
+      scratchVar.isWrongAddress = true;
     }
 
     //Bit 2:
     if(checkAddressBit(2, sdaState)){
-      continue;
+      scratchVar.isWrongAddress = true;
     }
 
     //Bit 3:
     if(checkAddressBit(3, sdaState)){
-      continue;
+      scratchVar.isWrongAddress = true;
     }
 
     //Bit 4:
     if(checkAddressBit(4, sdaState)){
-      continue;
+      scratchVar.isWrongAddress = true;
     }
 
     //Bit 5:
     if(checkAddressBit(5, sdaState)){
-      continue;
+      scratchVar.isWrongAddress = true;
     }
+
+    
 
     //Bit 6:
     if(checkAddressBit(6, sdaState)){
+      scratchVar.isWrongAddress = true;
+    }
+
+    if(scratchVar.isWrongAddress == true){ //wrong address detected -> wait for next communication
       continue;
     }
 
@@ -258,8 +253,8 @@ int main(void){
     while(digitalReadFast(sclPin) == 1); //wait for the previous clock cycle to end
 
     do{
-      previousSDAState = digitalReadFast(controllerSDApin);
-      openCollectorWrite(peripheralSDApin, previousSDAState);
+      scratchVar.readOrWrite = digitalReadFast(controllerSDApin);
+      openCollectorWrite(peripheralSDApin, scratchVar.readOrWrite);
     }while(digitalReadFast(sclPin) == 0);
 
     //State 2: Reply with Peripheral ACK Response
@@ -268,7 +263,7 @@ int main(void){
       continue; //Restart I2C Transmission
     }
 
-    if(previousSDAState == 1){ //State 3R: Read
+    if(scratchVar.readOrWrite == 1){ //State 3R: Read
         do{ // This allows for autoincrement behaivor
             bitCount = 0;
             TransmitByte(peripheralSDApin, controllerSDApin, bitCount, sdaState);
@@ -284,15 +279,15 @@ int main(void){
         do{
             bitCount = 1;
             do{
-                previousSDAState = digitalReadFast(controllerSDApin);
-                openCollectorWrite(peripheralSDApin, previousSDAState);
+                scratchVar.previousSDAState = digitalReadFast(controllerSDApin);
+                openCollectorWrite(peripheralSDApin, scratchVar.previousSDAState);
             } while(digitalReadFast(sclPin) == 0);
 
             do{ //check if the data pin changes while the clock is high
                 sdaState = digitalReadFast(controllerSDApin);
-                if(sdaState ^ previousSDAState){ //START OR STOP = PANIC
+                if(sdaState ^ scratchVar.previousSDAState){ //START OR STOP = PANIC
                     openCollectorWrite(peripheralSDApin, sdaState);
-                    if(previousSDAState){ //repeated start
+                    if(scratchVar.previousSDAState){ //repeated start
                         goto repeatedStart;
                     } else {
                         goto start;
