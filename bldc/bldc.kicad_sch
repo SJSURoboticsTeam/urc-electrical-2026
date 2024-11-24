@@ -1,0 +1,425 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "277f1ac8-dc34-41d4-888e-4cee9bc5b3a6")
+	(paper "A4")
+	(lib_symbols)
+	(bus_alias "USB"
+		(members "VUSB" "D+" "D-")
+	)
+	(bus
+		(pts
+			(xy 87.63 40.64) (xy 104.14 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52a0c3ec-8df5-44af-b8ab-5ad4c80fcbef")
+	)
+	(wire
+		(pts
+			(xy 143.51 39.37) (xy 157.48 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6350df5a-b07f-443a-b3a7-f96b654ec168")
+	)
+	(wire
+		(pts
+			(xy 143.51 55.88) (xy 157.48 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75e7b74e-aba9-4730-9ec0-10025d0896ac")
+	)
+	(bus
+		(pts
+			(xy 143.51 67.31) (xy 157.48 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7980c943-b21f-4e67-935d-e145471aea8b")
+	)
+	(bus
+		(pts
+			(xy 143.51 36.83) (xy 157.48 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8da5de87-9d49-46b9-9b34-4d10399d5165")
+	)
+	(bus
+		(pts
+			(xy 143.51 53.34) (xy 157.48 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e44f664-3ced-4489-85df-30054f52a57f")
+	)
+	(wire
+		(pts
+			(xy 143.51 69.85) (xy 157.48 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c37d30b5-ff21-4282-adaf-51bc19bdbef4")
+	)
+	(sheet
+		(at 104.14 31.75)
+		(size 39.37 49.53)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2e123f61-40e9-4340-90dc-de43e3477977")
+		(property "Sheetname" "Logic"
+			(at 104.14 31.0384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "logic.kicad_sch"
+			(at 104.14 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 104.14 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "A{GATE}" output
+			(at 143.51 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "54f17c15-ac80-4c22-903b-5bf99e29bacf")
+		)
+		(pin "B{GATE}" output
+			(at 143.51 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ec4ae6e7-1ca9-469d-8274-bf718a8ce2cb")
+		)
+		(pin "USB{USB}" input
+			(at 104.14 40.64 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4a9bd839-88e4-44c5-9213-43148cb90bef")
+		)
+		(pin "CURRENT_C" input
+			(at 143.51 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "dc8268f8-41eb-4a19-97bb-bd9f4c372ad5")
+		)
+		(pin "CURRENT_B" input
+			(at 143.51 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d8caebcc-2f2f-4004-90e5-88e4fcbb53a0")
+		)
+		(pin "CURRENT_A" input
+			(at 143.51 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e205d8df-871a-4a82-a221-2e516412cdc5")
+		)
+		(pin "C{GATE}" output
+			(at 143.51 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a379a3fd-a31a-453e-b531-07e699cacd18")
+		)
+		(instances
+			(project "bldc"
+				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 157.48 47.625)
+		(size 16.51 10.16)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "38b3435c-ec9f-4540-81f2-7b940bfa31f6")
+		(property "Sheetname" "Switching1"
+			(at 157.48 46.9134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "switching.kicad_sch"
+			(at 157.48 58.3696 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SENSE" output
+			(at 157.48 55.88 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4e714d80-7b74-40e5-9e89-311ac191ed3f")
+		)
+		(pin "IN{GATE}" input
+			(at 157.48 53.34 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c22ce887-f8e7-4abe-84f7-2b20a65a4dcf")
+		)
+		(instances
+			(project "bldc"
+				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 157.48 62.23)
+		(size 16.51 10.16)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "50bb2d0a-89a1-46b1-9583-6fc9ef41509e")
+		(property "Sheetname" "Switching2"
+			(at 157.48 61.5184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "switching.kicad_sch"
+			(at 157.48 72.9746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SENSE" output
+			(at 157.48 69.85 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "83b3193a-163c-4a05-9aa0-08dc6d58e145")
+		)
+		(pin "IN{GATE}" input
+			(at 157.48 67.31 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1172474b-8171-4800-8ac4-bc10d94425c5")
+		)
+		(instances
+			(project "bldc"
+				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 157.48 31.75)
+		(size 16.51 10.16)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c1072f84-6c58-4519-93b0-855da48bb19d")
+		(property "Sheetname" "Switching"
+			(at 157.48 31.0384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "switching.kicad_sch"
+			(at 157.48 42.4946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SENSE" output
+			(at 157.48 39.37 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d373a3d3-4fcc-45d7-93cb-5f2dab5ada2a")
+		)
+		(pin "IN{GATE}" input
+			(at 157.48 36.83 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "51f3befc-7d85-46f4-9e35-7d2e21fb959a")
+		)
+		(instances
+			(project "bldc"
+				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 71.12 31.75)
+		(size 16.51 16.51)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "dea4fde7-9257-416e-97c7-abdd431e1e68")
+		(property "Sheetname" "Power"
+			(at 71.12 31.0384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 71.12 48.8446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB{USB}" output
+			(at 87.63 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "cddbcd77-e31d-4060-800a-5a664c462c1d")
+		)
+		(instances
+			(project "bldc"
+				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
