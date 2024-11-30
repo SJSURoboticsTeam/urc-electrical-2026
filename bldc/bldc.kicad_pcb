@@ -3324,7 +3324,7 @@
 		(descr "Capacitor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C16"
-			(at 0 2.3 360)
+			(at 0 2.3 0)
 			(layer "F.SilkS")
 			(uuid "b200664c-78f2-4b97-a0ea-fa586067e490")
 			(effects
@@ -3335,7 +3335,7 @@
 			)
 		)
 		(property "Value" "2.2uF"
-			(at 0 2.3 360)
+			(at 0 2.3 0)
 			(layer "F.Fab")
 			(uuid "231fb4a2-b86c-4b79-afee-e53da1f73e6b")
 			(effects
@@ -3490,7 +3490,7 @@
 			(uuid "2868eb6e-af70-46d4-9d15-9ba8d8876d9d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "8e609a4a-dd4a-4b00-a857-7aca77ae0e78")
 			(effects
@@ -14379,7 +14379,8 @@
 			(solder_mask_margin 0.05)
 			(uuid "9433337b-f258-471e-9d11-6a34a3108c87")
 		)
-		(model "C:/Users/Brend/Documents/GitHub/urc-electrical-2026/common/models/to252-4_p1-27_l6-8_w5-8.stp"
+		(model "${KIPRJMOD}/../common/models/to252-4_p1-27_l6-8_w5-8.stp"
+			(hide yes)
 			(offset
 				(xyz -0.25 -3.75 0)
 			)
@@ -14388,6 +14389,17 @@
 			)
 			(rotate
 				(xyz -90 0 90)
+			)
+		)
+		(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/TO-252-4.wrl"
+			(offset
+				(xyz 0 -3.75 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -20808,7 +20820,7 @@
 			)
 		)
 		(property "Value" "2.2uF"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "B.Fab")
 			(uuid "7b535268-b071-4600-b31a-f559868a4f0f")
 			(effects
@@ -20967,7 +20979,7 @@
 			(uuid "a8be68f0-33e4-4307-86ce-67e86ba3d5cc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "5654f445-44be-4c07-ab28-74b0d6df4bcd")
 			(effects
