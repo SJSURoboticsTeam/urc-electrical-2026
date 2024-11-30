@@ -5033,16 +5033,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 99.06) (xy 130.81 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78d4a573-b7ee-4bf1-858b-8f947c837b05")
-	)
-	(wire
-		(pts
 			(xy 226.06 154.94) (xy 245.11 154.94)
 		)
 		(stroke
@@ -5393,6 +5383,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 99.06) (xy 124.46 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee6679c7-8475-4fc2-952a-270cb627462c")
+	)
+	(wire
+		(pts
 			(xy 148.59 46.99) (xy 154.94 46.99)
 		)
 		(stroke
@@ -5412,6 +5412,17 @@
 		)
 		(uuid "0c30083a-83d4-4643-a7ce-c34d8652ac7c")
 	)
+	(label "INLB"
+		(at 127 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0eddc206-65d2-4a7d-bbf9-191c2f572148")
+	)
 	(label "SWDIO"
 		(at 36.83 55.88 0)
 		(fields_autoplaced yes)
@@ -5422,6 +5433,17 @@
 			(justify left bottom)
 		)
 		(uuid "17381142-5d2d-4ef6-8916-c3c3da54e83f")
+	)
+	(label "INHB"
+		(at 127 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a2d64e2-b7f2-4fe7-a94e-f7f1f86566ea")
 	)
 	(label "SWDCK"
 		(at 124.46 50.8 0)
@@ -5577,17 +5599,6 @@
 		)
 		(uuid "6175816a-8d27-475d-9c53-ca336ec427ad")
 	)
-	(label "INHA"
-		(at 124.46 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "621c3ad8-c490-412f-a88a-d69376b0b1dd")
-	)
 	(label "CAN_TX"
 		(at 67.31 102.87 180)
 		(fields_autoplaced yes)
@@ -5609,6 +5620,17 @@
 			(justify right bottom)
 		)
 		(uuid "6909af3b-59a0-4a5a-9aa5-ae8234336811")
+	)
+	(label "INHC"
+		(at 127 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "69a6ab26-1265-46ff-ae07-0c815bfc9126")
 	)
 	(label "~{BOOT}"
 		(at 67.31 50.8 180)
@@ -5665,7 +5687,7 @@
 		)
 		(uuid "9251ba8e-2a80-4d87-adc5-cba19d446abe")
 	)
-	(label "INHB"
+	(label "INLA"
 		(at 127 101.6 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5674,7 +5696,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "9354dc51-a66c-4039-9526-b5041a53a3e9")
+		(uuid "9441b531-2261-43a6-88c0-debbf084951a")
 	)
 	(label "SWDCK"
 		(at 36.83 53.34 0)
@@ -5686,6 +5708,17 @@
 			(justify left bottom)
 		)
 		(uuid "978b9f0c-d122-4e1d-934b-99aff841b0f1")
+	)
+	(label "INHA"
+		(at 127 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a023be83-54a7-4996-8c96-f26cc96316a0")
 	)
 	(label "B.SOURCE"
 		(at 226.06 137.16 0)
@@ -5709,6 +5742,17 @@
 		)
 		(uuid "a3ab5984-a1a7-4539-aefe-0a5a0d901236")
 	)
+	(label "INLC"
+		(at 124.46 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad7b3bca-e5be-42ad-8958-4ae373ca28f1")
+	)
 	(label "B.GATEL"
 		(at 226.06 139.7 0)
 		(fields_autoplaced yes)
@@ -5720,17 +5764,6 @@
 		)
 		(uuid "b0a853ef-c719-4410-b52d-55b6c1c32c11")
 	)
-	(label "INLA"
-		(at 124.46 88.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b7c919ba-1213-4cb1-aab7-cb437bd411fc")
-	)
 	(label "CAN_TX"
 		(at 154.94 39.37 180)
 		(fields_autoplaced yes)
@@ -5741,17 +5774,6 @@
 			(justify right bottom)
 		)
 		(uuid "bb9ef056-1c18-42b0-bb79-41fc8508bdb6")
-	)
-	(label "INHC"
-		(at 127 106.68 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bed69364-5560-44d6-b091-e99d9504abd2")
 	)
 	(label "A.GATEH"
 		(at 226.06 113.03 0)
@@ -5786,17 +5808,6 @@
 		)
 		(uuid "cbf0f2a7-15f0-4fec-8dd7-31c1a82c52f8")
 	)
-	(label "INLC"
-		(at 127 109.22 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e1e4f305-39ed-46f8-bbc2-4543731f891a")
-	)
 	(label "INLA"
 		(at 228.6 74.93 180)
 		(fields_autoplaced yes)
@@ -5819,17 +5830,6 @@
 		)
 		(uuid "f0565d36-237e-4827-a539-21a99ed10aed")
 	)
-	(label "INLB"
-		(at 127 104.14 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f537e17a-b0e7-4faa-b022-afd2a4704c85")
-	)
 	(hierarchical_label "C{GATE}"
 		(shape output)
 		(at 247.65 147.32 0)
@@ -5841,6 +5841,18 @@
 			(justify left)
 		)
 		(uuid "01ade094-8723-43f5-be73-8a70199ea1b7")
+	)
+	(hierarchical_label "CURRENT_C"
+		(shape input)
+		(at 124.46 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "07d2ba5b-a522-4e74-9b65-973565fbf299")
 	)
 	(hierarchical_label "A{GATE}"
 		(shape output)
@@ -5877,18 +5889,6 @@
 			(justify left)
 		)
 		(uuid "bc77df3f-6b31-449f-a0b0-5fc2fa07fda3")
-	)
-	(hierarchical_label "CURRENT_C"
-		(shape input)
-		(at 130.81 99.06 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cec1f309-4ff6-4366-82b4-dd73e95569a2")
 	)
 	(hierarchical_label "CURRENT_B"
 		(shape input)
@@ -6007,7 +6007,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical"
 			(at 24.13 55.88 0)
 			(effects
 				(font
