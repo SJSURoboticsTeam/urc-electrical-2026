@@ -891,7 +891,7 @@
 				)
 			)
 		)
-		(symbol "power:+3V3"
+		(symbol "power:+5V"
 			(power)
 			(pin_numbers hide)
 			(pin_names
@@ -908,7 +908,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+3V3"
+			(property "Value" "+5V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -934,7 +934,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -952,7 +952,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+3V3_0_1"
+			(symbol "+5V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -990,7 +990,7 @@
 					)
 				)
 			)
-			(symbol "+3V3_1_1"
+			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -1954,80 +1954,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 138.43 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "468065ce-66ec-4279-8fac-b934c12bdc58")
-		(property "Reference" "#PWR024"
-			(at 138.43 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 138.43 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 138.43 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 138.43 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 138.43 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "23a2aeea-75d7-4516-b17f-9f8938bd9fb9")
-		)
-		(instances
-			(project "bldc"
-				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/38b3435c-ec9f-4540-81f2-7b940bfa31f6"
-					(reference "#PWR024")
-					(unit 1)
-				)
-				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/50bb2d0a-89a1-46b1-9583-6fc9ef41509e"
-					(reference "#PWR025")
-					(unit 1)
-				)
-				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/c1072f84-6c58-4519-93b0-855da48bb19d"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x01_Socket")
 		(at 127 76.2 0)
 		(unit 1)
@@ -2811,8 +2737,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
-			(at 102.362 73.406 90)
+		(property "Value" "100nF"
+			(at 100.838 73.406 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2865,6 +2791,80 @@
 				)
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/c1072f84-6c58-4519-93b0-855da48bb19d"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 138.43 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d33ad280-90b4-4937-abb0-34c5f57c373f")
+		(property "Reference" "#PWR06"
+			(at 138.43 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 138.43 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 138.43 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c2997236-84f4-4e1d-92a1-b051260eb893")
+		)
+		(instances
+			(project "bldc"
+				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/38b3435c-ec9f-4540-81f2-7b940bfa31f6"
+					(reference "#PWR024")
+					(unit 1)
+				)
+				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/50bb2d0a-89a1-46b1-9583-6fc9ef41509e"
+					(reference "#PWR025")
+					(unit 1)
+				)
+				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/c1072f84-6c58-4519-93b0-855da48bb19d"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
