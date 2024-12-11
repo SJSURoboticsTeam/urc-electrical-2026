@@ -93,6 +93,46 @@
 	)
 	(bus
 		(pts
+			(xy 143.51 72.39) (xy 154.94 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1df774c5-3042-44ff-ad81-d39182f79746")
+	)
+	(wire
+		(pts
+			(xy 180.34 68.58) (xy 180.34 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4544f42b-70f1-4d87-92da-f6a32cf26eb3")
+	)
+	(wire
+		(pts
+			(xy 177.8 38.1) (xy 177.8 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "470b5fbb-e1d3-44f4-9073-b0daf476b048")
+	)
+	(wire
+		(pts
+			(xy 180.34 76.2) (xy 176.53 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50f6a877-0edc-4775-bd21-dc13a5a5c7f8")
+	)
+	(bus
+		(pts
 			(xy 87.63 40.64) (xy 104.14 40.64)
 		)
 		(stroke
@@ -103,27 +143,37 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 39.37) (xy 157.48 39.37)
+			(xy 177.8 71.12) (xy 176.53 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6350df5a-b07f-443a-b3a7-f96b654ec168")
+		(uuid "56992b0b-e5e4-454e-8f80-4e4d97d5379c")
 	)
 	(wire
 		(pts
-			(xy 143.51 55.88) (xy 157.48 55.88)
+			(xy 185.42 54.61) (xy 179.07 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "75e7b74e-aba9-4730-9ec0-10025d0896ac")
+		(uuid "5a8d656a-59ce-478a-8097-9901cd9d7ddd")
+	)
+	(wire
+		(pts
+			(xy 179.07 54.61) (xy 179.07 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f8b0a3e-bb91-407d-acd3-5797111d9200")
 	)
 	(bus
 		(pts
-			(xy 143.51 67.31) (xy 157.48 67.31)
+			(xy 143.51 66.04) (xy 185.42 66.04)
 		)
 		(stroke
 			(width 0)
@@ -133,7 +183,7 @@
 	)
 	(bus
 		(pts
-			(xy 143.51 36.83) (xy 157.48 36.83)
+			(xy 143.51 35.56) (xy 185.42 35.56)
 		)
 		(stroke
 			(width 0)
@@ -141,9 +191,19 @@
 		)
 		(uuid "8da5de87-9d49-46b9-9b34-4d10399d5165")
 	)
+	(wire
+		(pts
+			(xy 185.42 68.58) (xy 180.34 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c2964db-8b7a-40f1-8eb8-c0ece1e04ed9")
+	)
 	(bus
 		(pts
-			(xy 143.51 53.34) (xy 157.48 53.34)
+			(xy 143.51 52.07) (xy 185.42 52.07)
 		)
 		(stroke
 			(width 0)
@@ -153,13 +213,23 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 69.85) (xy 157.48 69.85)
+			(xy 179.07 73.66) (xy 176.53 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c37d30b5-ff21-4282-adaf-51bc19bdbef4")
+		(uuid "cc8129fa-18ef-4a0f-acac-2609571a9e7b")
+	)
+	(wire
+		(pts
+			(xy 185.42 38.1) (xy 177.8 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e40af43a-2db1-4a1c-b567-847d546951f4")
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
@@ -329,7 +399,7 @@
 			)
 		)
 		(pin "A{GATE}" output
-			(at 143.51 36.83 0)
+			(at 143.51 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -339,7 +409,7 @@
 			(uuid "54f17c15-ac80-4c22-903b-5bf99e29bacf")
 		)
 		(pin "B{GATE}" output
-			(at 143.51 53.34 0)
+			(at 143.51 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -358,38 +428,8 @@
 			)
 			(uuid "4a9bd839-88e4-44c5-9213-43148cb90bef")
 		)
-		(pin "CURRENT_C" input
-			(at 143.51 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "dc8268f8-41eb-4a19-97bb-bd9f4c372ad5")
-		)
-		(pin "CURRENT_B" input
-			(at 143.51 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "d8caebcc-2f2f-4004-90e5-88e4fcbb53a0")
-		)
-		(pin "CURRENT_A" input
-			(at 143.51 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "e205d8df-871a-4a82-a221-2e516412cdc5")
-		)
 		(pin "C{GATE}" output
-			(at 143.51 67.31 0)
+			(at 143.51 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -397,6 +437,16 @@
 				(justify right)
 			)
 			(uuid "a379a3fd-a31a-453e-b531-07e699cacd18")
+		)
+		(pin "I2C{I2C}" output
+			(at 143.51 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4554da38-456e-4310-b2b4-480d4f505595")
 		)
 		(instances
 			(project "bldc"
@@ -407,7 +457,7 @@
 		)
 	)
 	(sheet
-		(at 157.48 47.625)
+		(at 185.42 46.355)
 		(size 16.51 10.16)
 		(fields_autoplaced yes)
 		(stroke
@@ -419,7 +469,7 @@
 		)
 		(uuid "38b3435c-ec9f-4540-81f2-7b940bfa31f6")
 		(property "Sheetname" "Switching1"
-			(at 157.48 46.9134 0)
+			(at 185.42 45.6434 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -428,7 +478,7 @@
 			)
 		)
 		(property "Sheetfile" "switching.kicad_sch"
-			(at 157.48 58.3696 0)
+			(at 185.42 57.0996 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -437,7 +487,7 @@
 			)
 		)
 		(pin "SENSE" output
-			(at 157.48 55.88 180)
+			(at 185.42 54.61 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -447,7 +497,7 @@
 			(uuid "4e714d80-7b74-40e5-9e89-311ac191ed3f")
 		)
 		(pin "IN{GATE}" input
-			(at 157.48 53.34 180)
+			(at 185.42 52.07 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -465,7 +515,7 @@
 		)
 	)
 	(sheet
-		(at 157.48 62.23)
+		(at 185.42 60.96)
 		(size 16.51 10.16)
 		(fields_autoplaced yes)
 		(stroke
@@ -477,7 +527,7 @@
 		)
 		(uuid "50bb2d0a-89a1-46b1-9583-6fc9ef41509e")
 		(property "Sheetname" "Switching2"
-			(at 157.48 61.5184 0)
+			(at 185.42 60.2484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -486,7 +536,7 @@
 			)
 		)
 		(property "Sheetfile" "switching.kicad_sch"
-			(at 157.48 72.9746 0)
+			(at 185.42 71.7046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -495,7 +545,7 @@
 			)
 		)
 		(pin "SENSE" output
-			(at 157.48 69.85 180)
+			(at 185.42 68.58 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -505,7 +555,7 @@
 			(uuid "83b3193a-163c-4a05-9aa0-08dc6d58e145")
 		)
 		(pin "IN{GATE}" input
-			(at 157.48 67.31 180)
+			(at 185.42 66.04 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -523,7 +573,7 @@
 		)
 	)
 	(sheet
-		(at 157.48 31.75)
+		(at 185.42 30.48)
 		(size 16.51 10.16)
 		(fields_autoplaced yes)
 		(stroke
@@ -535,7 +585,7 @@
 		)
 		(uuid "c1072f84-6c58-4519-93b0-855da48bb19d")
 		(property "Sheetname" "Switching"
-			(at 157.48 31.0384 0)
+			(at 185.42 29.7684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -544,7 +594,7 @@
 			)
 		)
 		(property "Sheetfile" "switching.kicad_sch"
-			(at 157.48 42.4946 0)
+			(at 185.42 41.2246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -553,7 +603,7 @@
 			)
 		)
 		(pin "SENSE" output
-			(at 157.48 39.37 180)
+			(at 185.42 38.1 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -563,7 +613,7 @@
 			(uuid "d373a3d3-4fcc-45d7-93cb-5f2dab5ada2a")
 		)
 		(pin "IN{GATE}" input
-			(at 157.48 36.83 180)
+			(at 185.42 35.56 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -571,6 +621,84 @@
 				(justify left)
 			)
 			(uuid "51f3befc-7d85-46f4-9e35-7d2e21fb959a")
+		)
+		(instances
+			(project "bldc"
+				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 154.94 69.215)
+		(size 21.59 13.335)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d77af19e-6066-4cb6-8b9d-9b60ec217d02")
+		(property "Sheetname" "Analog Sense"
+			(at 154.94 68.5034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "analog.kicad_sch"
+			(at 154.94 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C{I2C}" input
+			(at 154.94 72.39 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0202c741-f26c-4146-a443-cfce78ff03af")
+		)
+		(pin "ANALOG3" input
+			(at 176.53 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ebe34d3e-4b0d-4b4c-85c5-a3e0d82cefbe")
+		)
+		(pin "ANALOG1" input
+			(at 176.53 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "216a0567-659f-4f59-a3bb-ce435ad4601b")
+		)
+		(pin "ANALOG2" input
+			(at 176.53 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a451f308-6338-4c5b-80fd-bcdc7bd402da")
 		)
 		(instances
 			(project "bldc"
