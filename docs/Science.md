@@ -12,6 +12,7 @@
 - I^2 C communication
 - separate battery for fan
 - lasors
+- USB data
   
 ## Authors
 
@@ -24,7 +25,7 @@ Revision: D
 
 ## Summary
 
-The science board is used to control 
+The science board is used to control the different aspects of the rover used for science, including hall effect sensors, color sensors, lasors, servos, and the fan. I^2 C communication is used. USB data communications is used for controls testing.
 
 ## Design Notes
 
