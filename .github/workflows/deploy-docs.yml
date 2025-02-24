@@ -2,43 +2,48 @@ name: Deploy Documentation
 on:
   workflow_dispatch:
   push:
-    branches:
-      - 'main'
     paths:
         - 'docs/*'
         - '*.kicad_sch'
         - '*.kicad_pcb'
         - '.github/workflows/*'
+        - 'mkdocs.yml'
 env:
   GIT_COMMITTER_NAME: ci-bot
   GIT_COMMITTER_EMAIL: sjsurobotics@gmail.com
 jobs:
   generate:
     uses: ./.github/workflows/generate-outputs.yml
-    with:
-      project: 40Vservo
   build:
     runs-on: ubuntu-latest
+    needs: generate
     steps:
     - uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
     - uses: actions/cache@v4
       name: Define a cache for the virtual environment based on the dependencies lock file
       with:
         path: ./.venv
         key: venv-${{ hashFiles('poetry.lock') }}
+
     - uses: actions/setup-python@v5
       with:
         python-version: '3.11'
     - name: Install poetry
       uses: abatilo/actions-poetry@v2
+
+
+    - name: Download Output Artifacts
+      uses: actions/download-artifact@v4
+      with:
+        pattern: '*'
+        path: docs/outputs
+
     - name: Install the project dependencies
       run: poetry install --no-root
+
     - name: Build documenation
       run: poetry run mkdocs build
-    - name: Remove unnecessary files
-      run: rm -rdf .git .venv
+
     - name: Upload production files
       uses: actions/upload-artifact@v4
       with:
@@ -47,29 +52,26 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    needs: [build, generate]
+    environment: github-pages
+    needs: build
     permissions:
       pages: write
       id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
     - name: Download website artifact
       uses: actions/download-artifact@v4
       with:
         name: documentation
 
-    - name: Download Output Artifacts
-      uses: actions/download-artifact@v4
+    - name: Deploy
+      uses: cloudflare/wrangler-action@v3
+      id: deploy
       with:
-        pattern: '*-out'
-        path: resources
+        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        command: pages deploy . --project-name=eedocs --branch ${{ github.ref_name }}
 
-    - name: Upload docs artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: '.'
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+    - name: Echo preview url
+      env:
+        DEPLOYMENT_ALIAS_URL: ${{ steps.deploy.outputs.deployment-alias-url }}
+      run: echo $DEPLOYMENT_ALIAS_URL
