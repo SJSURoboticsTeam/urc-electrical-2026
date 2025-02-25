@@ -41,6 +41,9 @@ jobs:
           - usb:
             path: 'USB/USB'
             name: usb
+          - bldc:
+            path: 'bldc/bldc'
+            name: bldc
 
     steps:
     - uses: actions/checkout@v4
