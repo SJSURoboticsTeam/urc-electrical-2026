@@ -1,4 +1,4 @@
-# E-Stop
+# BLDC
 
 ![Top of PCB](outputs/bldc/top.png)
 
