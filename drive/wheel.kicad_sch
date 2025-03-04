@@ -438,53 +438,15 @@
 			)
 		)
 	)
-	(bus_entry
-		(at 92.71 96.52)
-		(size -2.54 -2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8fb66f71-151b-4dd9-9470-080a60d715da")
-	)
-	(bus_entry
-		(at 92.71 99.06)
-		(size -2.54 -2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb45e641-2759-434f-8777-6ec98ae3f6cd")
-	)
-	(bus
+	(wire
 		(pts
-			(xy 92.71 99.06) (xy 92.71 105.41)
+			(xy 85.09 93.98) (xy 78.74 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "099a3aac-498b-4465-b361-b28bc8df3c9e")
-	)
-	(bus
-		(pts
-			(xy 92.71 96.52) (xy 92.71 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74118afc-d0dd-4260-a6d7-445dc241ee48")
-	)
-	(bus
-		(pts
-			(xy 92.71 105.41) (xy 95.25 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7903a48f-2304-4160-833e-2054d0bb3033")
+		(uuid "5bfc893b-6106-4cee-91cf-63d1a372c849")
 	)
 	(wire
 		(pts
@@ -508,50 +470,17 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 96.52) (xy 90.17 96.52)
+			(xy 85.09 96.52) (xy 78.74 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e559be3a-7420-45e4-aa38-312658c6d489")
-	)
-	(wire
-		(pts
-			(xy 78.74 93.98) (xy 90.17 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3d983d1-08b6-4171-b254-247e951653ed")
-	)
-	(label "I2C.SDA"
-		(at 83.82 96.52 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "702f2ca1-65d0-43ba-acca-3be2fd9d64ac")
-	)
-	(label "I2C.SCL"
-		(at 83.82 93.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b0cc62d8-f00e-4cb1-bcb6-277bf12b163f")
+		(uuid "ce2fe048-b187-4872-ae46-7098adc26cfb")
 	)
 	(hierarchical_label "5V"
 		(shape input)
 		(at 78.74 88.9 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -560,22 +489,31 @@
 		)
 		(uuid "13ac2f10-afd5-40a8-927a-3da2551cd130")
 	)
-	(hierarchical_label "I2C{SDA, SCL}"
-		(shape input)
-		(at 95.25 105.41 0)
-		(fields_autoplaced yes)
+	(hierarchical_label "GPIO1"
+		(shape output)
+		(at 85.09 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "23f0abab-be85-4ba5-912d-07e746d710c1")
+		(uuid "67338bdf-4ae4-4144-9022-13ebca3a4292")
+	)
+	(hierarchical_label "GPIO2"
+		(shape output)
+		(at 85.09 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d0b8118b-216d-4c8a-98e4-16633bd9c2ef")
 	)
 	(hierarchical_label "VBAT"
 		(shape input)
 		(at 78.74 74.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -611,7 +549,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT60PW-M_1x02_P7.20mm_Horizontal"
+		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
 			(at 73.66 72.39 0)
 			(effects
 				(font
