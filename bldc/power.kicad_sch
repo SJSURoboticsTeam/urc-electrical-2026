@@ -3080,7 +3080,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 36.83) (xy 39.37 36.83)
+			(xy 39.37 36.83) (xy 57.15 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3167,6 +3167,16 @@
 			(type default)
 		)
 		(uuid "ae0eb903-cdf3-4155-b0ef-023371f09b2a")
+	)
+	(wire
+		(pts
+			(xy 57.15 36.83) (xy 57.15 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae6d9d2e-8fe2-4619-bb32-81aa8e4d9555")
 	)
 	(wire
 		(pts
@@ -4444,11 +4454,11 @@
 		(at 185.42 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "31a59e93-1bd8-434b-a844-4d2f98032cae")
-		(property "Reference" "TP5"
+		(property "Reference" "TP2"
 			(at 183.642 87.884 0)
 			(effects
 				(font
@@ -4500,7 +4510,7 @@
 		(instances
 			(project "bldc"
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/dea4fde7-9257-416e-97c7-abdd431e1e68"
-					(reference "TP5")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -4577,11 +4587,11 @@
 		(at 170.18 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "368f7cc3-2ea6-4c84-9ba9-17b23145869b")
-		(property "Reference" "TP2"
+		(property "Reference" "TP8"
 			(at 168.402 87.884 0)
 			(effects
 				(font
@@ -4633,7 +4643,7 @@
 		(instances
 			(project "bldc"
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/dea4fde7-9257-416e-97c7-abdd431e1e68"
-					(reference "TP2")
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -5116,11 +5126,11 @@
 		(at 165.1 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "597ffc2e-697c-4863-a5bd-c2eb42c5dbc3")
-		(property "Reference" "TP1"
+		(property "Reference" "TP9"
 			(at 163.322 87.884 0)
 			(effects
 				(font
@@ -5172,7 +5182,7 @@
 		(instances
 			(project "bldc"
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/dea4fde7-9257-416e-97c7-abdd431e1e68"
-					(reference "TP1")
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -5204,7 +5214,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SJSU_common:TO-252AD"
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-4"
 			(at 124.46 114.3 0)
 			(effects
 				(font
@@ -5545,7 +5555,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30U-M_1x02_P5.0mm_Vertical"
+		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
 			(at 34.29 36.83 0)
 			(effects
 				(font
@@ -5853,17 +5863,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+BATT")
-		(at 40.64 36.83 270)
+		(lib_id "power:GND")
+		(at 57.15 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8ad3868d-2f81-46b7-898a-664fbf513847")
-		(property "Reference" "#PWR02"
-			(at 36.83 36.83 0)
+		(uuid "8b2fd116-305b-4351-a46a-f672a5a7ca6a")
+		(property "Reference" "#PWR01"
+			(at 57.15 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5871,17 +5881,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+BATT"
-			(at 44.45 36.8299 90)
+		(property "Value" "GND"
+			(at 57.15 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 40.64 36.83 0)
+			(at 57.15 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5890,7 +5899,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 36.83 0)
+			(at 57.15 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5898,8 +5907,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 40.64 36.83 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 57.15 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5908,12 +5917,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "1f5f2230-a1d4-4c86-87a4-f219248b6a25")
+			(uuid "7e944e27-da85-47d9-96a1-82f2104d09d9")
 		)
 		(instances
-			(project ""
+			(project "bldc"
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/dea4fde7-9257-416e-97c7-abdd431e1e68"
-					(reference "#PWR02")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -5924,11 +5933,11 @@
 		(at 190.5 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "9512744a-39df-4d19-8f7d-85279c49a3db")
-		(property "Reference" "TP17"
+		(property "Reference" "TP10"
 			(at 188.722 87.884 0)
 			(effects
 				(font
@@ -5980,7 +5989,7 @@
 		(instances
 			(project "bldc"
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/dea4fde7-9257-416e-97c7-abdd431e1e68"
-					(reference "TP17")
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -6047,6 +6056,73 @@
 			(project "bldc"
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/dea4fde7-9257-416e-97c7-abdd431e1e68"
 					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 40.64 39.37 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c156af0-19f4-4f59-9d9e-f5bf5253f0c7")
+		(property "Reference" "#PWR02"
+			(at 36.83 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 44.45 39.3699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 40.64 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f1c4a45-2dbc-432a-8e14-0e5307821ec3")
+		)
+		(instances
+			(project "bldc"
+				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/dea4fde7-9257-416e-97c7-abdd431e1e68"
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -6541,81 +6617,15 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 40.64 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ba4f670e-fb2a-43a5-aa0b-b52ec6bab8d2")
-		(property "Reference" "#PWR01"
-			(at 40.64 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 40.64 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 40.64 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 40.64 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f7926e48-447a-46c1-8aa1-8c7538d1f8aa")
-		)
-		(instances
-			(project ""
-				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/dea4fde7-9257-416e-97c7-abdd431e1e68"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 175.26 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "c0bb9d0a-a6dd-4152-a8b8-0c3e24d26fc8")
-		(property "Reference" "TP3"
+		(property "Reference" "TP17"
 			(at 173.482 87.884 0)
 			(effects
 				(font
@@ -6667,7 +6677,7 @@
 		(instances
 			(project "bldc"
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/dea4fde7-9257-416e-97c7-abdd431e1e68"
-					(reference "TP3")
+					(reference "TP17")
 					(unit 1)
 				)
 			)
@@ -6748,11 +6758,11 @@
 		(at 180.34 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "d39b7c86-1557-4067-ba7c-ada8b757f16c")
-		(property "Reference" "TP4"
+		(property "Reference" "TP18"
 			(at 178.562 87.884 0)
 			(effects
 				(font
@@ -6804,7 +6814,7 @@
 		(instances
 			(project "bldc"
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/dea4fde7-9257-416e-97c7-abdd431e1e68"
-					(reference "TP4")
+					(reference "TP18")
 					(unit 1)
 				)
 			)

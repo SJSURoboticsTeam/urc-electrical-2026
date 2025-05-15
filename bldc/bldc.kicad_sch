@@ -91,15 +91,15 @@
 	(bus_alias "USB"
 		(members "VUSB" "D+" "D-")
 	)
-	(bus
+	(wire
 		(pts
-			(xy 143.51 72.39) (xy 154.94 72.39)
+			(xy 143.51 76.2) (xy 180.34 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1df774c5-3042-44ff-ad81-d39182f79746")
+		(uuid "1e069390-a256-42bd-880f-25b901943b33")
 	)
 	(wire
 		(pts
@@ -123,13 +123,23 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 76.2) (xy 176.53 76.2)
+			(xy 143.51 71.12) (xy 177.8 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "50f6a877-0edc-4775-bd21-dc13a5a5c7f8")
+		(uuid "4b655dca-033a-4f14-bccb-836f02580dc3")
+	)
+	(wire
+		(pts
+			(xy 143.51 73.66) (xy 179.07 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dff26be-5e01-4ddb-800e-28f54c4c385a")
 	)
 	(bus
 		(pts
@@ -140,16 +150,6 @@
 			(type default)
 		)
 		(uuid "52a0c3ec-8df5-44af-b8ab-5ad4c80fcbef")
-	)
-	(wire
-		(pts
-			(xy 177.8 71.12) (xy 176.53 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56992b0b-e5e4-454e-8f80-4e4d97d5379c")
 	)
 	(wire
 		(pts
@@ -213,16 +213,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 73.66) (xy 176.53 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc8129fa-18ef-4a0f-acac-2609571a9e7b")
-	)
-	(wire
-		(pts
 			(xy 185.42 38.1) (xy 177.8 38.1)
 		)
 		(stroke
@@ -259,7 +249,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
 			(at 173.99 108.585 0)
 			(effects
 				(font
@@ -323,7 +313,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
 			(at 173.99 102.87 0)
 			(effects
 				(font
@@ -438,15 +428,35 @@
 			)
 			(uuid "a379a3fd-a31a-453e-b531-07e699cacd18")
 		)
-		(pin "I2C{I2C}" output
-			(at 143.51 72.39 0)
+		(pin "SENSE1" input
+			(at 143.51 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "4554da38-456e-4310-b2b4-480d4f505595")
+			(uuid "a6be7a98-b25d-4397-bea9-e9a428561f2f")
+		)
+		(pin "SENSE2" input
+			(at 143.51 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4472657b-fab8-42c5-8458-b217fcec8e4a")
+		)
+		(pin "SENSE3" input
+			(at 143.51 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "85e67a5b-6d11-4010-a27b-586aa3cf9238")
 		)
 		(instances
 			(project "bldc"
@@ -621,84 +631,6 @@
 				(justify left)
 			)
 			(uuid "51f3befc-7d85-46f4-9e35-7d2e21fb959a")
-		)
-		(instances
-			(project "bldc"
-				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6"
-					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 154.94 69.215)
-		(size 21.59 13.335)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "d77af19e-6066-4cb6-8b9d-9b60ec217d02")
-		(property "Sheetname" "Analog Sense"
-			(at 154.94 68.5034 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "analog.kicad_sch"
-			(at 154.94 83.1346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "I2C{I2C}" input
-			(at 154.94 72.39 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "0202c741-f26c-4146-a443-cfce78ff03af")
-		)
-		(pin "ANALOG3" input
-			(at 176.53 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "ebe34d3e-4b0d-4b4c-85c5-a3e0d82cefbe")
-		)
-		(pin "ANALOG1" input
-			(at 176.53 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "216a0567-659f-4f59-a3bb-ce435ad4601b")
-		)
-		(pin "ANALOG2" input
-			(at 176.53 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "a451f308-6338-4c5b-80fd-bcdc7bd402da")
 		)
 		(instances
 			(project "bldc"
