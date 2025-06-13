@@ -3533,6 +3533,17 @@
 		)
 		(uuid "3f7d5c69-de12-4a39-b544-8d4df8816b55")
 	)
+	(label "VUSB"
+		(at 54.61 27.94 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "40453b86-4e7e-46c7-92cb-853668413e3b")
+	)
 	(label "CC2"
 		(at 111.76 48.26 0)
 		(fields_autoplaced yes)
@@ -3642,28 +3653,6 @@
 			(justify left bottom)
 		)
 		(uuid "f9a01009-35f9-42c8-ba73-301168396240")
-	)
-	(global_label "VUSB"
-		(shape input)
-		(at 54.61 27.94 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a0df4491-f9a6-41ad-9cb4-ccf2a3c55791")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.61 20.7104 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
 	)
 	(hierarchical_label "VBAT"
 		(shape output)
@@ -4707,7 +4696,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/824015043.pdf"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DT1446-04TS.pdf"
 			(at 102.87 60.96 0)
 			(effects
 				(font
