@@ -1,7 +1,7 @@
 # Main Arm Board
 
-![Top View](outputs/main_arm/top.png)
-![Bottom View](outputs/main_arm/top.png)
+![Top View](outputs/arm/top.png)
+![Bottom View](outputs/arm/top.png)
 
 
 ## Authors
