@@ -10,7 +10,7 @@ columns 6
     hand["End Effector"] 
     armarr1<["5V+CAN+I2C"]>(up)
     midarm["Sensor Breakout"]
-    armarr2<["40V+5V+I2C"]>(up)
+    armarr2<["40V+5V+CAN+I2C"]>(up)
     armboard["Arm Controller"]
   end
 
