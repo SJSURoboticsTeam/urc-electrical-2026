@@ -2,40 +2,74 @@ name: Generate KiCad outputs
 on:
   workflow_dispatch:
   workflow_call:
-    inputs:
-      project:
-        required: true
-        type: string
 env:
   GIT_COMMITTER_NAME: ci-bot
   GIT_COMMITTER_EMAIL: sjsurobotics@gmail.com
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        projects:
+          - servo:
+            path: 40Vservo/40Vservo
+            name: servo
+          - drive:
+            path: drive/drive
+            name: drive
+          - arm:
+            path: main_arm/main_arm
+            name: arm
+          - hub:
+            path: 'HUB/HUB'
+            name: hub
+          - science:
+            path: Science/Science
+            name: science
+          - PoE:
+            path: 'POE/POE'
+            name: POE
+          - battery-amp:
+            path: 'BatteryAmp/BatteryAmp'
+            name: battery-amp
+          - tla-dev:
+            path: 'tla_dev/tla_dev'
+            name: tla
+          - tmag:
+            path: 'TMAG_Carrier/tmag_screwed/tmag_screwed'
+            name: tmag
+          - usb:
+            path: 'USB/USB'
+            name: usb
+
     steps:
     - uses: actions/checkout@v4
   
     - name: Export PDF
       id: production
-      uses: sparkengineering/kicad-action@v2
-      if: '!cancelled()'
+      uses: SJSURoboticsTeam/kicad-action@v1.2.2
       with:
-        kicad_sch: ${{ inputs.project }}/${{ inputs.project }}.kicad_sch
+        kicad_sch: ${{ matrix.projects.path }}.kicad_sch
+        kicad_pcb: ${{ matrix.projects.path }}.kicad_pcb
         sch_pdf: true
-        sch_pdf_file:  ${{ inputs.project }}.pdf
+        pcb_image: true
+        pcb_image_path: .
 
-    - name: Render Image
-      uses: linalinn/kicad-render@main
-      with:
-        pcb_file: ${{ inputs.project }}/${{ inputs.project }}.kicad_pcb
-        output_path: ${{ inputs.project }}
+    - name: Get directory of outputs
+      run: echo "OUTPUT_DIRECTORIES=`dirname ${{ matrix.projects.path }}`" >> "$GITHUB_ENV"
+
+    - name: Create navigation file
+      run: |
+        echo "* [Schematic](sch.pdf)
+        * [PCB](top.png)" > ${{ env.OUTPUT_DIRECTORIES }}/nav.md
 
     - name: Upload production files
       uses: actions/upload-artifact@v4
       if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
       with:
-        name: ${{ inputs.project }}-out
+        name: ${{ matrix.projects.name }}
         path: |
-          ${{ inputs.project }}/${{ inputs.project }}.pdf
-          ${{ inputs.project }}/top.png
-          ${{ inputs.project }}/bottom.png
+          ${{ env.OUTPUT_DIRECTORIES }}/nav.md
+          ${{ env.OUTPUT_DIRECTORIES }}/sch.pdf
+          ${{ env.OUTPUT_DIRECTORIES }}/top.png
+          ${{ env.OUTPUT_DIRECTORIES }}/bottom.png
