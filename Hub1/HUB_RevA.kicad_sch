@@ -9121,6 +9121,126 @@
 				)
 			)
 		)
+		(symbol "power:+BATT"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+BATT"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+BATT\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power battery"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+BATT_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+BATT_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 763.27 74.93)
@@ -9627,32 +9747,196 @@
 		(uuid "f91c8e34-76ba-4968-aef0-f7fe06a1c58f")
 	)
 	(no_connect
+		(at 542.29 64.77)
+		(uuid "082d55ea-5741-4fce-bdd4-98751fc26a5c")
+	)
+	(no_connect
+		(at 485.14 41.91)
+		(uuid "09b76be0-557d-41ba-b591-0a120c50db06")
+	)
+	(no_connect
 		(at 143.51 212.09)
 		(uuid "09e426f5-15bc-4cef-b84a-9e8bcf8703e9")
+	)
+	(no_connect
+		(at 485.14 88.9)
+		(uuid "2183767e-d8ca-4254-a439-bf09ddf2214f")
+	)
+	(no_connect
+		(at 542.29 81.28)
+		(uuid "27230dde-34c3-4f88-9990-d60843500d65")
+	)
+	(no_connect
+		(at 542.29 93.98)
+		(uuid "27956cd7-295a-412a-a3e6-6eefe612c15f")
+	)
+	(no_connect
+		(at 485.14 121.92)
+		(uuid "2a32b00d-5cf9-4546-ac9c-30e3a9f6da5d")
+	)
+	(no_connect
+		(at 485.14 132.08)
+		(uuid "2a6e1afd-dadb-4ee0-a6c7-e62d0f02fda8")
+	)
+	(no_connect
+		(at 542.29 107.95)
+		(uuid "2e316175-5e6b-4f84-a8b4-7b07008fe940")
+	)
+	(no_connect
+		(at 542.29 41.91)
+		(uuid "38593ecc-1d30-4275-92b2-6dffbef16a8f")
+	)
+	(no_connect
+		(at 485.14 119.38)
+		(uuid "39a12823-e904-46c4-97ed-b3ba40b73043")
+	)
+	(no_connect
+		(at 542.29 76.2)
+		(uuid "3ba4f6a5-a759-41f3-9370-23fcbf20d05b")
+	)
+	(no_connect
+		(at 542.29 85.09)
+		(uuid "3cafee59-64ca-45bb-8d4e-5d72f9c4b829")
+	)
+	(no_connect
+		(at 542.29 120.65)
+		(uuid "42f2f8a1-6d33-4bdd-a96f-065840d463ba")
+	)
+	(no_connect
+		(at 485.14 105.41)
+		(uuid "507ed36d-61c1-4339-af53-23330e0f4ba3")
+	)
+	(no_connect
+		(at 485.14 95.25)
+		(uuid "548d0247-2851-4fc2-8188-4c82cae7018d")
 	)
 	(no_connect
 		(at 143.51 194.31)
 		(uuid "54b08186-f9a5-4c51-9cd9-cac107459c17")
 	)
 	(no_connect
+		(at 485.14 67.31)
+		(uuid "645c67c5-d30b-4532-823c-43e21345ba46")
+	)
+	(no_connect
+		(at 542.29 102.87)
+		(uuid "72072f76-fab6-4fbb-ac18-c4d5f4a4681a")
+	)
+	(no_connect
+		(at 485.14 110.49)
+		(uuid "74c2e370-5796-4f5f-a74d-acecdaf93a73")
+	)
+	(no_connect
+		(at 542.29 78.74)
+		(uuid "86fa503b-7d3c-44c4-a3b3-33923defcf05")
+	)
+	(no_connect
+		(at 485.14 107.95)
+		(uuid "873d602a-1ab7-4869-a267-5ec1446e7548")
+	)
+	(no_connect
 		(at 107.95 378.46)
 		(uuid "90c95ae5-1034-4022-b09d-cc145c7bc63a")
+	)
+	(no_connect
+		(at 485.14 69.85)
+		(uuid "925979fa-8b1c-4188-9e53-cb43bfc7cac5")
+	)
+	(no_connect
+		(at 485.14 86.36)
+		(uuid "9392543f-d021-4786-8c83-a676a837b0bb")
+	)
+	(no_connect
+		(at 485.14 64.77)
+		(uuid "9d455f43-b9d1-47dd-a317-445faacadcfb")
+	)
+	(no_connect
+		(at 485.14 124.46)
+		(uuid "9d7e2d7e-539a-4746-ae64-75bbdda9cc8b")
+	)
+	(no_connect
+		(at 542.29 105.41)
+		(uuid "aa20d994-cbf0-49a8-b105-4f5f9925c121")
+	)
+	(no_connect
+		(at 542.29 91.44)
+		(uuid "af96ec64-1533-49c8-b39e-ab039e0466be")
+	)
+	(no_connect
+		(at 485.14 129.54)
+		(uuid "b6bb3027-b144-4d00-949f-9964bebdf271")
+	)
+	(no_connect
+		(at 542.29 123.19)
+		(uuid "c1a9c46e-13b9-4ecd-9ff3-8ff7a6d74117")
+	)
+	(no_connect
+		(at 542.29 87.63)
+		(uuid "c5e0a34d-29e3-4e57-8d62-55c98e0a68c0")
 	)
 	(no_connect
 		(at 71.12 519.43)
 		(uuid "ce834ba6-cbd9-4a5a-bde7-c7f976766199")
 	)
 	(no_connect
+		(at 542.29 67.31)
+		(uuid "d057c993-c717-4631-a905-a7e9451a3c93")
+	)
+	(no_connect
+		(at 485.14 83.82)
+		(uuid "d05e90fb-2262-4672-a3e4-489518c4d006")
+	)
+	(no_connect
+		(at 485.14 127)
+		(uuid "d75906ea-e1bc-49f6-87ae-e9733c0f9480")
+	)
+	(no_connect
+		(at 542.29 57.15)
+		(uuid "d7e57e5e-1d1e-4bb8-a56c-2a18255f6fe0")
+	)
+	(no_connect
+		(at 485.14 81.28)
+		(uuid "dda81d1b-6c3c-4ac8-a0bd-a8439b6d7b4b")
+	)
+	(no_connect
 		(at 143.51 191.77)
 		(uuid "e358d6ff-4315-42ee-a2fa-e62564bb6a16")
+	)
+	(no_connect
+		(at 542.29 59.69)
+		(uuid "e3fe4f49-d9d3-43ec-92ab-f05cff785b5c")
+	)
+	(no_connect
+		(at 542.29 73.66)
+		(uuid "e4679187-8413-4aa4-b642-95991d4bc966")
 	)
 	(no_connect
 		(at 143.51 189.23)
 		(uuid "e9641bf7-1f33-4104-9790-15f9a7e100f7")
 	)
 	(no_connect
+		(at 542.29 44.45)
+		(uuid "ed6f43c6-1106-4126-ba41-6dde2c9021ff")
+	)
+	(no_connect
 		(at 243.84 308.61)
 		(uuid "edf7ff4c-b644-4c99-8586-ff83cf25ecd3")
+	)
+	(no_connect
+		(at 485.14 92.71)
+		(uuid "ee045a37-fb9a-4c7d-ae30-417317a6eb69")
+	)
+	(no_connect
+		(at 542.29 71.12)
+		(uuid "ee88ab65-1a55-481c-990f-f47f2480a174")
+	)
+	(no_connect
+		(at 485.14 113.03)
+		(uuid "f6fc3bae-41b5-4fb0-93ac-fb3dc6e62101")
+	)
+	(no_connect
+		(at 542.29 118.11)
+		(uuid "fb4211a5-2ee1-4fdc-b87c-4444c4793f76")
 	)
 	(wire
 		(pts
@@ -9673,6 +9957,16 @@
 			(type default)
 		)
 		(uuid "014f24bf-cac6-4452-a63b-fadea6d00d83")
+	)
+	(wire
+		(pts
+			(xy 266.7 123.19) (xy 270.51 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "018a7042-b800-4055-babb-0f8a18173ccc")
 	)
 	(wire
 		(pts
@@ -9716,13 +10010,23 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 295.91) (xy 93.98 295.91)
+			(xy 86.36 295.91) (xy 93.98 295.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "080eb8e8-9e16-4af6-9831-07b8ce54dd48")
+	)
+	(wire
+		(pts
+			(xy 210.82 127) (xy 210.82 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08513898-befc-411a-9f51-7ae9d147ac87")
 	)
 	(wire
 		(pts
@@ -9753,6 +10057,16 @@
 			(type default)
 		)
 		(uuid "0a1caf11-65c5-459c-a46e-6b0dd43da905")
+	)
+	(wire
+		(pts
+			(xy 95.25 213.36) (xy 95.25 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0af8eab7-6994-45cf-b433-b771474fd6c3")
 	)
 	(wire
 		(pts
@@ -9906,13 +10220,23 @@
 	)
 	(wire
 		(pts
-			(xy 278.13 97.79) (xy 280.67 97.79)
+			(xy 276.86 90.17) (xy 280.67 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "114657b1-a9b9-4e7c-a3ad-a06e1cbad729")
+	)
+	(wire
+		(pts
+			(xy 257.81 496.57) (xy 260.35 496.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11c4eb3c-2d87-4230-946c-3dd80f07bba3")
 	)
 	(wire
 		(pts
@@ -9996,16 +10320,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 123.19) (xy 205.74 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b3de433-0f02-4896-aef0-ddad99974487")
-	)
-	(wire
-		(pts
 			(xy 750.57 34.29) (xy 750.57 31.75)
 		)
 		(stroke
@@ -10023,6 +10337,16 @@
 			(type default)
 		)
 		(uuid "1d9afc4c-e33d-4cb7-84d6-4fcf8e6063c9")
+	)
+	(wire
+		(pts
+			(xy 114.3 110.49) (xy 119.38 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1da0088a-f119-4271-b1d9-1ab1d587394e")
 	)
 	(wire
 		(pts
@@ -10046,7 +10370,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 97.79) (xy 205.74 100.33)
+			(xy 205.74 87.63) (xy 205.74 100.33)
 		)
 		(stroke
 			(width 0)
@@ -10076,7 +10400,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 97.79) (xy 148.59 100.33)
+			(xy 148.59 90.17) (xy 148.59 100.33)
 		)
 		(stroke
 			(width 0)
@@ -10176,16 +10500,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 288.29) (xy 96.52 299.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a4cda1c-6fcb-46f0-8480-d985d7264514")
-	)
-	(wire
-		(pts
 			(xy 245.11 300.99) (xy 243.84 300.99)
 		)
 		(stroke
@@ -10226,6 +10540,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 354.33) (xy 95.25 354.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cd4f69c-e423-4670-8cd9-b518e205c539")
+	)
+	(wire
+		(pts
 			(xy 753.11 105.41) (xy 753.11 102.87)
 		)
 		(stroke
@@ -10236,13 +10560,23 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 97.79) (xy 205.74 97.79)
+			(xy 200.66 87.63) (xy 205.74 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2e1ecbea-8f53-40a7-b612-2c4169e93108")
+	)
+	(wire
+		(pts
+			(xy 283.21 496.57) (xy 280.67 496.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e3da581-448c-4142-9c25-53d34f92b2c3")
 	)
 	(wire
 		(pts
@@ -10296,6 +10630,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 303.53) (xy 119.38 302.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "303c240e-875a-4e88-ad93-2581c39ccb96")
+	)
+	(wire
+		(pts
 			(xy 143.51 217.17) (xy 109.22 217.17)
 		)
 		(stroke
@@ -10336,6 +10680,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 303.53) (xy 124.46 303.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "318c5864-0583-459d-b90d-8852b665c32c")
+	)
+	(wire
+		(pts
 			(xy 727.71 80.01) (xy 730.25 80.01)
 		)
 		(stroke
@@ -10373,6 +10727,16 @@
 			(type default)
 		)
 		(uuid "33d15db0-de92-4075-9ceb-0f928fd20d18")
+	)
+	(wire
+		(pts
+			(xy 97.79 231.14) (xy 97.79 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33e340fa-4b74-48e5-b490-329a6b30fa81")
 	)
 	(wire
 		(pts
@@ -10433,6 +10797,16 @@
 			(type default)
 		)
 		(uuid "36465378-7f4e-4cb3-94fb-4246763908af")
+	)
+	(wire
+		(pts
+			(xy 280.67 127) (xy 280.67 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36dbccf6-769c-4a57-9823-8c3c7fb264a7")
 	)
 	(wire
 		(pts
@@ -10586,7 +10960,7 @@
 	)
 	(wire
 		(pts
-			(xy 280.67 97.79) (xy 280.67 100.33)
+			(xy 280.67 90.17) (xy 280.67 100.33)
 		)
 		(stroke
 			(width 0)
@@ -11076,7 +11450,7 @@
 	)
 	(wire
 		(pts
-			(xy 289.56 506.73) (xy 292.1 506.73)
+			(xy 287.02 506.73) (xy 292.1 506.73)
 		)
 		(stroke
 			(width 0)
@@ -11086,7 +11460,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 368.3) (xy 86.36 368.3)
+			(xy 80.01 368.3) (xy 86.36 368.3)
 		)
 		(stroke
 			(width 0)
@@ -11103,6 +11477,16 @@
 			(type default)
 		)
 		(uuid "67b7ed91-d69e-4de5-b1cb-4be490cafdc7")
+	)
+	(wire
+		(pts
+			(xy 124.46 303.53) (xy 124.46 288.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67ea52ea-b428-4b01-96e2-158b50f8fceb")
 	)
 	(wire
 		(pts
@@ -11136,6 +11520,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 355.6) (xy 132.08 355.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b029de6-5f8e-45b7-ba3a-1fb6b4e5dd65")
+	)
+	(wire
+		(pts
 			(xy 245.11 306.07) (xy 243.84 306.07)
 		)
 		(stroke
@@ -11143,6 +11537,16 @@
 			(type default)
 		)
 		(uuid "6eb48dd5-59c5-48db-a863-ef7a246051b6")
+	)
+	(wire
+		(pts
+			(xy 95.25 212.09) (xy 90.17 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ed6c8a4-d356-4fcd-a330-2b9b8384e52d")
 	)
 	(wire
 		(pts
@@ -11176,7 +11580,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 295.91) (xy 121.92 295.91)
+			(xy 114.3 295.91) (xy 121.92 295.91)
 		)
 		(stroke
 			(width 0)
@@ -11206,6 +11610,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 303.53) (xy 96.52 288.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "746fe8ad-79c4-4a2a-9ace-1a3fa7b544b5")
+	)
+	(wire
+		(pts
 			(xy 453.39 314.96) (xy 453.39 312.42)
 		)
 		(stroke
@@ -11223,6 +11637,16 @@
 			(type default)
 		)
 		(uuid "75697d85-85bc-4655-8e5b-705e5e2546e3")
+	)
+	(wire
+		(pts
+			(xy 97.79 203.2) (xy 97.79 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75951e87-e3f3-4dfc-8aa3-1e1762b573bd")
 	)
 	(wire
 		(pts
@@ -11256,6 +11680,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 240.03) (xy 95.25 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77dccb63-e891-4f1e-b260-47ae1d8a8d8e")
+	)
+	(wire
+		(pts
 			(xy 265.43 107.95) (xy 270.51 107.95)
 		)
 		(stroke
@@ -11276,13 +11710,13 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 127) (xy 148.59 123.19)
+			(xy 210.82 127) (xy 205.74 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "78b131e8-c359-4a26-b300-5246358b2cd5")
+		(uuid "78abdab2-2fef-4fb1-80fd-03ae203b90ed")
 	)
 	(wire
 		(pts
@@ -11416,6 +11850,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 110.49) (xy 176.53 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82cb8f57-5834-4dd2-a0ed-546f1be4c4ef")
+	)
+	(wire
+		(pts
 			(xy 106.68 487.68) (xy 106.68 490.22)
 		)
 		(stroke
@@ -11426,7 +11870,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 97.79) (xy 148.59 97.79)
+			(xy 143.51 90.17) (xy 148.59 90.17)
 		)
 		(stroke
 			(width 0)
@@ -11556,6 +12000,16 @@
 	)
 	(wire
 		(pts
+			(xy 247.65 110.49) (xy 251.46 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bab67a3-6267-42d9-a0fe-3a0f984aeeb7")
+	)
+	(wire
+		(pts
 			(xy 86.36 368.3) (xy 97.79 368.3)
 		)
 		(stroke
@@ -11643,16 +12097,6 @@
 			(type default)
 		)
 		(uuid "8e6d00cd-c673-4701-8748-9a53fcaa7a2f")
-	)
-	(wire
-		(pts
-			(xy 280.67 123.19) (xy 280.67 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e9ba5d5-d515-4626-924f-3d8f23b22b43")
 	)
 	(wire
 		(pts
@@ -11753,6 +12197,26 @@
 			(type default)
 		)
 		(uuid "9942fcdd-af90-4767-8dfa-34e8b0482485")
+	)
+	(wire
+		(pts
+			(xy 148.59 127) (xy 148.59 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a33d646-1ac0-4fcb-81ed-1c1b0e1e373c")
+	)
+	(wire
+		(pts
+			(xy 95.25 240.03) (xy 95.25 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a51564b-2d8c-4881-be6b-870a678786f8")
 	)
 	(wire
 		(pts
@@ -11873,6 +12337,16 @@
 			(type default)
 		)
 		(uuid "a5645824-0fae-4538-b22d-07f19d1a0a5e")
+	)
+	(wire
+		(pts
+			(xy 205.74 127) (xy 205.74 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a75b45e4-665b-4263-bc09-bf302d1d2009")
 	)
 	(wire
 		(pts
@@ -12056,6 +12530,26 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 303.53) (xy 96.52 303.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b423a76a-c541-4952-8888-893dbd0eed3c")
+	)
+	(wire
+		(pts
+			(xy 153.67 127) (xy 148.59 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6099e44-a142-4674-9d5f-98c0416f6aa7")
+	)
+	(wire
+		(pts
 			(xy 474.98 43.18) (xy 474.98 54.61)
 		)
 		(stroke
@@ -12083,6 +12577,16 @@
 			(type default)
 		)
 		(uuid "b69abdac-5c92-48d5-b0de-884cd6e7279d")
+	)
+	(wire
+		(pts
+			(xy 190.5 123.19) (xy 195.58 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6a52590-02fb-452a-9d9e-fdf6e3f8867f")
 	)
 	(wire
 		(pts
@@ -12123,6 +12627,16 @@
 			(type default)
 		)
 		(uuid "b9040801-09d0-4651-b026-553561e80a6b")
+	)
+	(wire
+		(pts
+			(xy 133.35 123.19) (xy 138.43 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b99b136c-8c3f-425a-ae33-267d2dd37cb2")
 	)
 	(wire
 		(pts
@@ -12303,6 +12817,16 @@
 			(type default)
 		)
 		(uuid "c4d5fee9-bbb4-4e05-bad7-2f853a1742ce")
+	)
+	(wire
+		(pts
+			(xy 90.17 240.03) (xy 90.17 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5ca24cb-c9d4-45b7-b76e-245a8f46c863")
 	)
 	(wire
 		(pts
@@ -12526,6 +13050,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 303.53) (xy 91.44 302.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7c84010-ff31-44ba-9d54-258deeadf0bd")
+	)
+	(wire
+		(pts
 			(xy 231.14 287.02) (xy 231.14 288.29)
 		)
 		(stroke
@@ -12583,6 +13117,16 @@
 			(type default)
 		)
 		(uuid "d9bad881-19b8-4e8b-abff-656acb6a8f08")
+	)
+	(wire
+		(pts
+			(xy 153.67 127) (xy 153.67 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dabcc717-d110-453c-857d-46dee3457bf3")
 	)
 	(wire
 		(pts
@@ -13056,6 +13600,26 @@
 	)
 	(wire
 		(pts
+			(xy 287.02 127) (xy 280.67 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f94f2a66-3f40-4170-b748-d352abd8d061")
+	)
+	(wire
+		(pts
+			(xy 287.02 127) (xy 287.02 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f993f474-dc0a-464f-b534-e8ce09a86dd0")
+	)
+	(wire
+		(pts
 			(xy 736.6 34.29) (xy 728.98 34.29)
 		)
 		(stroke
@@ -13063,6 +13627,16 @@
 			(type default)
 		)
 		(uuid "fa1c03d8-b743-4555-98c3-2333f0100353")
+	)
+	(wire
+		(pts
+			(xy 90.17 212.09) (xy 90.17 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa910d5d-1d2c-418d-b784-36f7dab70b0d")
 	)
 	(wire
 		(pts
@@ -13106,17 +13680,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 288.29) (xy 124.46 299.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "febdd2a7-5d0e-4ca2-b4bb-7aea257f74b6")
-	)
-	(wire
-		(pts
-			(xy 52.07 91.44) (xy 50.8 91.44)
+			(xy 55.88 91.44) (xy 50.8 91.44)
 		)
 		(stroke
 			(width 0)
@@ -14258,7 +14822,7 @@
 	)
 	(global_label "CAN+"
 		(shape input)
-		(at 120.65 295.91 180)
+		(at 114.3 295.91 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14268,7 +14832,7 @@
 		)
 		(uuid "70924a55-b0ab-4118-954b-7289d34e9408")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 112.6452 295.91 0)
+			(at 106.2952 295.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14786,7 +15350,7 @@
 	)
 	(global_label "CAN+"
 		(shape input)
-		(at 92.71 295.91 180)
+		(at 86.36 295.91 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14796,7 +15360,7 @@
 		)
 		(uuid "bc999b91-7b9e-43b2-a039-b7ad85f8bdd0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 84.7052 295.91 0)
+			(at 78.3552 295.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15229,7 +15793,7 @@
 		(lib_id "finalhand-easyedapro:SRR1208-6R5ML")
 		(at 134.62 519.43 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -15373,7 +15937,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 280.67 496.57 270)
+		(at 283.21 496.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15382,7 +15946,7 @@
 		(fields_autoplaced yes)
 		(uuid "088bc438-a641-406c-a64f-922259897fc1")
 		(property "Reference" "#PWR052"
-			(at 276.86 496.57 0)
+			(at 283.21 500.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15391,7 +15955,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 284.48 496.5699 90)
+			(at 285.75 495.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15400,7 +15964,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 280.67 496.57 0)
+			(at 283.21 496.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15409,7 +15973,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 280.67 496.57 0)
+			(at 283.21 496.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15418,7 +15982,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 280.67 496.57 0)
+			(at 283.21 496.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15440,7 +16004,7 @@
 	)
 	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
-		(at 203.2 97.79 270)
+		(at 200.66 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15448,7 +16012,7 @@
 		(dnp no)
 		(uuid "09b3dfe2-fc28-4f90-aa48-ff4a32a17f19")
 		(property "Reference" "#PWR082"
-			(at 203.2 97.79 0)
+			(at 200.66 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15457,7 +16021,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 196.85 97.79 0)
+			(at 200.66 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15465,7 +16029,7 @@
 			)
 		)
 		(property "Footprint" "finalhand-easyedapro:"
-			(at 203.2 97.79 0)
+			(at 200.66 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15474,7 +16038,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 97.79 0)
+			(at 200.66 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15483,7 +16047,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 203.2 97.79 0)
+			(at 200.66 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15639,16 +16203,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 124.46 299.72 180)
+		(at 119.38 302.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0ad5704b-0f96-49a2-b9fd-f9c77e560e0c")
 		(property "Reference" "#PWR016"
-			(at 124.46 295.91 0)
+			(at 119.38 306.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15657,15 +16220,16 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 124.46 304.8 0)
+			(at 113.792 301.244 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 299.72 0)
+			(at 119.38 302.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15674,7 +16238,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 299.72 0)
+			(at 119.38 302.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15683,7 +16247,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 124.46 299.72 0)
+			(at 119.38 302.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15980,7 +16544,7 @@
 		(lib_id "finalhand-easyedapro:CAP")
 		(at 105.41 516.89 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -16148,16 +16712,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 96.52 299.72 180)
+		(at 91.44 302.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "119d0380-b7a7-4108-958a-9f02abeb9a56")
 		(property "Reference" "#PWR01"
-			(at 96.52 295.91 0)
+			(at 91.44 306.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16166,15 +16729,16 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 96.52 304.8 0)
+			(at 86.36 300.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 96.52 299.72 0)
+			(at 91.44 302.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16183,7 +16747,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 299.72 0)
+			(at 91.44 302.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16192,7 +16756,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 96.52 299.72 0)
+			(at 91.44 302.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16480,6 +17044,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 257.81 496.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "162fa816-809c-45c2-ba65-9ec751ef107b")
+		(property "Reference" "#PWR084"
+			(at 257.81 500.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 257.81 491.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 257.81 496.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.81 496.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 257.81 496.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f7c97a2a-a7c3-4d7f-94a1-f94cedb4b26b")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
+					(reference "#PWR084")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
 		(at 270.51 510.54 0)
 		(unit 1)
@@ -16546,16 +17176,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 289.56 506.73 90)
+		(at 287.02 506.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "19c42590-eaef-42df-823e-f1d118162f6f")
 		(property "Reference" "#PWR049"
-			(at 293.37 506.73 0)
+			(at 287.02 510.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16564,7 +17193,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 285.75 506.7299 90)
+			(at 284.988 502.158 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16573,7 +17202,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 289.56 506.73 0)
+			(at 287.02 506.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16582,7 +17211,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 289.56 506.73 0)
+			(at 287.02 506.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16591,7 +17220,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 289.56 506.73 0)
+			(at 287.02 506.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16606,6 +17235,71 @@
 			(project "HUB_RevA"
 				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
 					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 153.67 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1a39f726-5e46-485e-a51b-be2c2495d433")
+		(property "Reference" "#PWR051"
+			(at 153.67 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 153.416 119.634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 153.67 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "464daee0-342b-4a17-b003-aad18fb29a57")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -16808,6 +17502,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 312.42 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22013a20-e363-497e-9d77-c86f31575806")
+		(property "Reference" "#PWR081"
+			(at 312.42 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 312.42 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 312.42 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 312.42 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 312.42 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a0cd383-acf3-42d9-a123-e6f055e7d691")
+		)
+		(instances
+			(project ""
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
+					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "finalhand-easyedapro:Res")
 		(at 753.11 49.53 270)
 		(unit 1)
@@ -16878,7 +17638,7 @@
 	)
 	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
-		(at 138.43 123.19 270)
+		(at 133.35 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16886,7 +17646,7 @@
 		(dnp no)
 		(uuid "241dd41d-f744-4bb1-85fc-2ca8703dd59f")
 		(property "Reference" "#PWR08"
-			(at 138.43 123.19 0)
+			(at 133.35 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16895,7 +17655,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 132.08 123.19 0)
+			(at 133.35 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16903,7 +17663,7 @@
 			)
 		)
 		(property "Footprint" "finalhand-easyedapro:"
-			(at 138.43 123.19 0)
+			(at 133.35 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16912,7 +17672,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 123.19 0)
+			(at 133.35 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16921,7 +17681,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 138.43 123.19 0)
+			(at 133.35 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17013,16 +17773,15 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 82.55 368.3 90)
+		(at 80.01 368.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "25b9e574-4a50-4f81-8643-49b17e57d196")
 		(property "Reference" "#PWR065"
-			(at 86.36 368.3 0)
+			(at 80.01 372.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17031,7 +17790,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 78.74 368.2999 90)
+			(at 77.724 363.474 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17040,7 +17799,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 368.3 0)
+			(at 80.01 368.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17049,7 +17808,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 368.3 0)
+			(at 80.01 368.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17058,7 +17817,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 82.55 368.3 0)
+			(at 80.01 368.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17426,71 +18185,6 @@
 		)
 	)
 	(symbol
-		(lib_id "finalhand-easyedapro:Power-VCC")
-		(at 312.42 138.43 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2c673eb2-5544-447d-a0fe-f76df912516e")
-		(property "Reference" "#PWR03"
-			(at 312.42 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "40V"
-			(at 317.5 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "finalhand-easyedapro:"
-			(at 312.42 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 312.42 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name 'VCC'"
-			(at 312.42 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8a3518ab-8f0e-4073-98ca-d0cb8a98bc3b")
-		)
-		(instances
-			(project "HUBHUBHUB"
-				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
 		(at 300.99 71.12 0)
 		(unit 1)
@@ -17557,7 +18251,7 @@
 	)
 	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
-		(at 278.13 97.79 270)
+		(at 276.86 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17565,7 +18259,7 @@
 		(dnp no)
 		(uuid "2e57a5dc-f4a1-47c0-8143-d5e50d85431d")
 		(property "Reference" "#PWR077"
-			(at 278.13 97.79 0)
+			(at 276.86 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17574,7 +18268,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 271.78 97.79 0)
+			(at 276.86 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17582,7 +18276,7 @@
 			)
 		)
 		(property "Footprint" "finalhand-easyedapro:"
-			(at 278.13 97.79 0)
+			(at 276.86 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17591,7 +18285,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 278.13 97.79 0)
+			(at 276.86 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17600,7 +18294,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 278.13 97.79 0)
+			(at 276.86 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17696,7 +18390,7 @@
 		(lib_id "finalhand-easyedapro:Res")
 		(at 171.45 524.51 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -17842,7 +18536,7 @@
 		(lib_id "finalhand-easyedapro:GRM188R72A104KA35D")
 		(at 46.99 505.46 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -18455,73 +19149,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 205.74 127 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3bcd6d86-1537-4c86-8105-0369357eb0ed")
-		(property "Reference" "#PWR081"
-			(at 205.74 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 205.7401 130.81 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 205.74 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2254b913-58df-4302-ae51-f5d56f79e145")
-		)
-		(instances
-			(project "HUB_RevA"
-				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
-					(reference "#PWR081")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "finalhand-easyedapro:CAP")
 		(at 86.36 377.19 90)
 		(unit 1)
@@ -18661,7 +19288,7 @@
 		(lib_id "finalhand-easyedapro:Power-VCC")
 		(at 30.48 497.84 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -18795,73 +19422,6 @@
 			(project "HUB_RevA"
 				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
 					(reference "#PWR093")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 265.43 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "40f150ce-a2a6-413d-b202-bf8b5eba4267")
-		(property "Reference" "#PWR076"
-			(at 265.43 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 265.4301 90.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 265.43 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 265.43 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 265.43 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7735cd68-8db9-4a0a-8395-0fc5a062b301")
-		)
-		(instances
-			(project "HUB_RevA"
-				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
-					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -19555,7 +20115,7 @@
 		(lib_id "finalhand-easyedapro:CAP")
 		(at 153.67 524.51 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -19810,7 +20370,7 @@
 	)
 	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
-		(at 97.79 228.6 180)
+		(at 90.17 241.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19818,7 +20378,7 @@
 		(dnp no)
 		(uuid "4ac83165-0d84-49e1-aab7-15c6c66f8453")
 		(property "Reference" "#PWR075"
-			(at 97.79 228.6 0)
+			(at 90.17 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19827,7 +20387,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 97.79 222.25 0)
+			(at 90.17 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19835,7 +20395,7 @@
 			)
 		)
 		(property "Footprint" "finalhand-easyedapro:"
-			(at 97.79 228.6 0)
+			(at 90.17 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19844,7 +20404,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.79 228.6 0)
+			(at 90.17 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19853,7 +20413,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 97.79 228.6 0)
+			(at 90.17 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20075,7 +20635,7 @@
 		(lib_id "finalhand-easyedapro:CSD18537NQ5A")
 		(at 114.3 492.76 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -20378,73 +20938,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 280.67 127 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "545fca47-a148-4e6b-8ace-a49f83a64c57")
-		(property "Reference" "#PWR080"
-			(at 280.67 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 280.6701 130.81 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 280.67 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 280.67 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 280.67 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "146ef2c2-ceba-4b44-a08e-36bec194ff08")
-		)
-		(instances
-			(project "HUB_RevA"
-				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
-					(reference "#PWR080")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
 		(at 165.1 72.39 0)
 		(unit 1)
@@ -20577,7 +21070,7 @@
 		(lib_id "finalhand-easyedapro:Ground-GND")
 		(at 86.36 561.34 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -20654,7 +21147,7 @@
 		(lib_id "finalhand-easyedapro:GRM31CR72A105KA01L")
 		(at 39.37 506.73 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -20735,7 +21228,7 @@
 		(lib_id "finalhand-easyedapro:Res")
 		(at 106.68 527.05 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -20807,6 +21300,71 @@
 			(project "finalhand"
 				(path "/73b72526-46e5-4785-aa86-2e54f83ed27e"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 287.02 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e536af5-fb55-46ba-aa36-b80aaddc13eb")
+		(property "Reference" "#PWR070"
+			(at 287.02 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 287.02 119.634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 287.02 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 287.02 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 287.02 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a29f32b1-2a52-4b99-93b1-b76a8f7acd52")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -20885,7 +21443,7 @@
 		(lib_id "finalhand-easyedapro:CAP")
 		(at 215.9 530.86 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -21102,7 +21660,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
-		(at 92.71 231.14 0)
+		(at 97.79 246.38 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21110,7 +21668,7 @@
 		(dnp no)
 		(uuid "664d463b-f8fe-4c20-84d2-1c66fe62f1b2")
 		(property "Reference" "J15"
-			(at 91.694 231.394 0)
+			(at 98.044 247.396 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21119,7 +21677,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03_Pin"
-			(at 92.964 220.98 0)
+			(at 87.63 246.126 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21129,7 +21687,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 92.71 231.14 0)
+			(at 97.79 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21138,7 +21696,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 92.71 231.14 0)
+			(at 97.79 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21147,7 +21705,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 92.71 231.14 0)
+			(at 97.79 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21243,7 +21801,7 @@
 		(lib_id "finalhand-easyedapro:LM3150MHX")
 		(at 86.36 519.43 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -21836,16 +22394,15 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 459.74 300.99 270)
+		(at 459.74 300.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6ed3eb59-0901-4461-a53f-2e04c05939f7")
 		(property "Reference" "#PWR058"
-			(at 455.93 300.99 0)
+			(at 459.74 304.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21854,7 +22411,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 463.55 300.9899 90)
+			(at 457.2 295.656 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21903,7 +22460,7 @@
 	)
 	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
-		(at 146.05 97.79 270)
+		(at 143.51 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21911,7 +22468,7 @@
 		(dnp no)
 		(uuid "6f326d63-ab61-4d82-8b50-56ffaf9484b1")
 		(property "Reference" "#PWR04"
-			(at 146.05 97.79 0)
+			(at 143.51 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21920,7 +22477,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 97.79 0)
+			(at 143.51 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21928,7 +22485,7 @@
 			)
 		)
 		(property "Footprint" "finalhand-easyedapro:"
-			(at 146.05 97.79 0)
+			(at 143.51 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21937,7 +22494,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 97.79 0)
+			(at 143.51 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21946,7 +22503,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 146.05 97.79 0)
+			(at 143.51 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22032,7 +22589,7 @@
 	)
 	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
-		(at 97.79 200.66 180)
+		(at 90.17 213.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22040,7 +22597,7 @@
 		(dnp no)
 		(uuid "71ec21f8-1f0c-4a29-8c33-7a36a74cf29a")
 		(property "Reference" "#PWR074"
-			(at 97.79 200.66 0)
+			(at 90.17 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22049,7 +22606,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 97.79 194.31 0)
+			(at 90.17 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22057,7 +22614,7 @@
 			)
 		)
 		(property "Footprint" "finalhand-easyedapro:"
-			(at 97.79 200.66 0)
+			(at 90.17 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22066,7 +22623,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.79 200.66 0)
+			(at 90.17 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22075,7 +22632,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 97.79 200.66 0)
+			(at 90.17 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22230,7 +22787,7 @@
 		(lib_id "finalhand-easyedapro:GRM21BR71A225KA01L")
 		(at 64.77 539.75 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -22296,10 +22853,76 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 190.5 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77167d30-2548-4860-8c5d-24c0623c0bfe")
+		(property "Reference" "#PWR080"
+			(at 190.5 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 190.5 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 190.5 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef2b9e23-53a6-4eed-9088-90e8e54071b9")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
+					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
 		(at 49.53 543.56 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -22442,73 +23065,8 @@
 		)
 	)
 	(symbol
-		(lib_id "finalhand-easyedapro:Power-VCC")
-		(at 260.35 496.57 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7b1c4bb8-23de-4f31-a9f0-f7a892a99875")
-		(property "Reference" "#PWR051"
-			(at 260.35 496.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "40V"
-			(at 255.27 496.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "finalhand-easyedapro:"
-			(at 260.35 496.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 260.35 496.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name 'VCC'"
-			(at 260.35 496.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6640d633-12e7-4b5d-bf7c-d0774a33ab4f")
-		)
-		(instances
-			(project "HUB_RevA"
-				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
-					(reference "#PWR051")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
-		(at 176.53 110.49 270)
+		(at 171.45 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22516,7 +23074,7 @@
 		(dnp no)
 		(uuid "7b881696-2f58-4afb-bfe2-1d92c90fc07c")
 		(property "Reference" "#PWR085"
-			(at 176.53 110.49 0)
+			(at 171.45 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22525,7 +23083,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 168.91 110.49 0)
+			(at 171.45 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22533,7 +23091,7 @@
 			)
 		)
 		(property "Footprint" "finalhand-easyedapro:"
-			(at 176.53 110.49 0)
+			(at 171.45 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22542,7 +23100,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 176.53 110.49 0)
+			(at 171.45 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22551,7 +23109,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 176.53 110.49 0)
+			(at 171.45 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22643,16 +23201,16 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 87.63 154.94 270)
+		(at 265.43 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7d24ec9e-745b-496f-8e71-44c9a407509a")
-		(property "Reference" "#PWR069"
-			(at 83.82 154.94 0)
+		(uuid "7e455c7d-9380-4700-aa43-81f8f20c1807")
+		(property "Reference" "#PWR076"
+			(at 265.43 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22661,16 +23219,15 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 91.44 154.9399 90)
+			(at 265.43 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 154.94 0)
+			(at 265.43 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22679,7 +23236,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 154.94 0)
+			(at 265.43 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22688,7 +23245,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 87.63 154.94 0)
+			(at 265.43 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22697,12 +23254,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "628c60e3-f48a-42e0-9de6-2fc29a968b6c")
+			(uuid "0c4b34b6-ce7f-4843-89a5-e75f2b5804d5")
 		)
 		(instances
 			(project "HUB_RevA"
 				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
-					(reference "#PWR069")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -22912,7 +23469,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
-		(at 92.71 203.2 0)
+		(at 97.79 218.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22920,7 +23477,7 @@
 		(dnp no)
 		(uuid "81c2a077-3dce-422a-8da4-80463eca86c7")
 		(property "Reference" "J16"
-			(at 91.694 203.454 0)
+			(at 98.044 219.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22929,7 +23486,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03_Pin"
-			(at 92.964 193.04 0)
+			(at 87.63 218.186 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22939,7 +23496,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 92.71 203.2 0)
+			(at 97.79 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22948,7 +23505,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 92.71 203.2 0)
+			(at 97.79 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22957,7 +23514,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 92.71 203.2 0)
+			(at 97.79 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23587,73 +24144,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 133.35 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8d9ebcc7-8b85-434b-9f94-36eb8e238bd8")
-		(property "Reference" "#PWR067"
-			(at 133.35 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 133.3501 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 133.35 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 133.35 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3b3396ee-932d-4a35-a455-fb315ac22194")
-		)
-		(instances
-			(project "HUB_RevA"
-				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
-					(reference "#PWR067")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
 		(at 53.34 190.5 0)
 		(unit 1)
@@ -23992,6 +24482,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 133.35 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c8e9907-f2fc-406c-9103-2bb903c259f5")
+		(property "Reference" "#PWR067"
+			(at 133.35 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 133.35 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 133.35 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d76d56e-32b9-489d-b514-6c0f5100b868")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
+					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "finalhand-easyedapro:Res")
 		(at 215.9 354.33 270)
 		(unit 1)
@@ -24135,7 +24691,7 @@
 		(lib_id "finalhand-easyedapro:Power-VCC")
 		(at 97.79 486.41 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -24212,7 +24768,7 @@
 		(lib_id "finalhand-easyedapro:CAP")
 		(at 201.93 530.86 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -24291,16 +24847,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 415.29 300.99 90)
+		(at 415.29 300.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a8282302-bf4c-4050-83f8-eff0847363ee")
 		(property "Reference" "#PWR023"
-			(at 419.1 300.99 0)
+			(at 415.29 304.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24309,7 +24864,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 411.48 300.9899 90)
+			(at 413.258 296.164 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24416,73 +24971,6 @@
 			(project "HUBHUBHUB"
 				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 148.59 127 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aac17ef8-d56a-4d81-a311-7ec4929bb187")
-		(property "Reference" "#PWR070"
-			(at 148.59 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 148.5901 130.81 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.59 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 148.59 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 148.59 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8fc191f6-1c73-479c-89d8-b4f499ef00e0")
-		)
-		(instances
-			(project "HUB_RevA"
-				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
-					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -24848,7 +25336,7 @@
 	)
 	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
-		(at 95.25 354.33 270)
+		(at 92.71 354.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24856,7 +25344,7 @@
 		(dnp no)
 		(uuid "b09e178e-3075-4b54-86fe-d9ea886f58b7")
 		(property "Reference" "#PWR07"
-			(at 95.25 354.33 0)
+			(at 92.71 354.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24865,7 +25353,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 88.9 354.33 0)
+			(at 92.71 360.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24873,7 +25361,7 @@
 			)
 		)
 		(property "Footprint" "finalhand-easyedapro:"
-			(at 95.25 354.33 0)
+			(at 92.71 354.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24882,7 +25370,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 354.33 0)
+			(at 92.71 354.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24891,7 +25379,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 95.25 354.33 0)
+			(at 92.71 354.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24984,7 +25472,7 @@
 		(lib_id "finalhand-easyedapro:GRM31CR72A105KA01L")
 		(at 30.48 506.73 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -25063,7 +25551,7 @@
 	)
 	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
-		(at 119.38 110.49 270)
+		(at 114.3 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25071,7 +25559,7 @@
 		(dnp no)
 		(uuid "b10b6541-061c-4056-b2df-f7b3d074b83a")
 		(property "Reference" "#PWR05"
-			(at 119.38 110.49 0)
+			(at 114.3 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25080,7 +25568,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 113.03 110.49 0)
+			(at 114.3 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25088,7 +25576,7 @@
 			)
 		)
 		(property "Footprint" "finalhand-easyedapro:"
-			(at 119.38 110.49 0)
+			(at 114.3 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25097,7 +25585,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 110.49 0)
+			(at 114.3 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25106,7 +25594,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 119.38 110.49 0)
+			(at 114.3 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25406,7 +25894,7 @@
 		(lib_id "finalhand-easyedapro:Ground-GND")
 		(at 64.77 544.83 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -25713,7 +26201,7 @@
 	)
 	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
-		(at 195.58 123.19 270)
+		(at 190.5 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25721,7 +26209,7 @@
 		(dnp no)
 		(uuid "b78f8c6f-e226-4bf1-9301-7945c597e333")
 		(property "Reference" "#PWR083"
-			(at 195.58 123.19 0)
+			(at 190.5 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25730,7 +26218,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 189.23 123.19 0)
+			(at 190.5 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25738,7 +26226,7 @@
 			)
 		)
 		(property "Footprint" "finalhand-easyedapro:"
-			(at 195.58 123.19 0)
+			(at 190.5 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25747,7 +26235,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 123.19 0)
+			(at 190.5 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25756,7 +26244,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 195.58 123.19 0)
+			(at 190.5 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26117,7 +26605,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 97.79 233.68 180)
+		(at 100.33 241.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26126,7 +26614,7 @@
 		(fields_autoplaced yes)
 		(uuid "c228c56e-90fa-4f55-b830-b130712e19f4")
 		(property "Reference" "#PWR072"
-			(at 97.79 229.87 0)
+			(at 100.33 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26135,15 +26623,16 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 97.79 238.76 0)
+			(at 102.87 240.0299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 97.79 233.68 0)
+			(at 100.33 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26152,7 +26641,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.79 233.68 0)
+			(at 100.33 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26161,7 +26650,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 97.79 233.68 0)
+			(at 100.33 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26185,7 +26674,7 @@
 		(lib_id "finalhand-easyedapro:EEFCX0J101R")
 		(at 187.96 530.86 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -26603,7 +27092,7 @@
 		(lib_id "finalhand-easyedapro:Ground-GND")
 		(at 195.58 544.83 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -26751,16 +27240,17 @@
 		)
 	)
 	(symbol
-		(lib_id "finalhand-easyedapro:Ground-GND")
-		(at 270.51 123.19 270)
+		(lib_id "power:+3.3V")
+		(at 87.63 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d600b7a9-a2db-4f48-83a5-3aa7219255c9")
-		(property "Reference" "#PWR079"
-			(at 270.51 123.19 0)
+		(fields_autoplaced yes)
+		(uuid "d4fa3a0e-fde4-4ad8-86c2-d6d8e414bb8a")
+		(property "Reference" "#PWR03"
+			(at 87.63 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26768,16 +27258,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 264.16 123.19 0)
+		(property "Value" "+3.3V"
+			(at 87.63 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "finalhand-easyedapro:"
-			(at 270.51 123.19 0)
+		(property "Footprint" ""
+			(at 87.63 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26786,7 +27276,72 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 270.51 123.19 0)
+			(at 87.63 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 87.63 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23d7712e-ceec-476e-aa9a-b9a5d747e52f")
+		)
+		(instances
+			(project ""
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "finalhand-easyedapro:Ground-GND")
+		(at 266.7 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d600b7a9-a2db-4f48-83a5-3aa7219255c9")
+		(property "Reference" "#PWR079"
+			(at 266.7 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 266.7 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "finalhand-easyedapro:"
+			(at 266.7 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26795,7 +27350,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 270.51 123.19 0)
+			(at 266.7 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27132,7 +27687,7 @@
 		(lib_id "finalhand-easyedapro:Ground-GND")
 		(at 125.73 546.1 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -27209,7 +27764,7 @@
 		(lib_id "finalhand-easyedapro:GRM2195C1H153JA01D")
 		(at 49.53 538.48 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -27360,7 +27915,7 @@
 		(lib_id "finalhand-easyedapro:Ground-GND")
 		(at 39.37 513.08 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -27437,7 +27992,7 @@
 		(lib_id "finalhand-easyedapro:CSD19534Q5A")
 		(at 125.73 539.75 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -27525,7 +28080,7 @@
 	)
 	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
-		(at 132.08 355.6 90)
+		(at 133.35 355.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27533,7 +28088,7 @@
 		(dnp no)
 		(uuid "deba5b8b-a683-4651-acf6-20b44244602f")
 		(property "Reference" "#PWR012"
-			(at 132.08 355.6 0)
+			(at 133.35 355.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27542,7 +28097,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 355.6 0)
+			(at 133.35 361.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27550,7 +28105,7 @@
 			)
 		)
 		(property "Footprint" "finalhand-easyedapro:"
-			(at 132.08 355.6 0)
+			(at 133.35 355.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27559,7 +28114,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 355.6 0)
+			(at 133.35 355.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27568,7 +28123,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 132.08 355.6 0)
+			(at 133.35 355.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27802,73 +28357,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 190.5 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e52aafc3-aaeb-4f48-879e-6610fc7b0f36")
-		(property "Reference" "#PWR084"
-			(at 190.5 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 190.5001 90.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 190.5 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 190.5 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 190.5 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bc75d134-00c9-40fa-a9a6-6118ce292bf2")
-		)
-		(instances
-			(project "HUB_RevA"
-				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
-					(reference "#PWR084")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "finalhand-easyedapro:Res")
 		(at 110.49 341.63 180)
 		(unit 1)
@@ -27941,7 +28429,7 @@
 		(lib_id "finalhand-easyedapro:CRCW0805102KFKEA")
 		(at 60.96 506.73 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -28102,7 +28590,7 @@
 			)
 		)
 		(property "Value" "ACS711xLCTR-25AB"
-			(at 244.094 122.936 90)
+			(at 222.758 120.142 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28176,7 +28664,7 @@
 		(lib_id "finalhand-easyedapro:Res")
 		(at 171.45 539.75 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
@@ -28518,7 +29006,7 @@
 	)
 	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
-		(at 52.07 91.44 90)
+		(at 55.88 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28526,7 +29014,7 @@
 		(dnp no)
 		(uuid "edf39329-f55e-4f70-aa5d-d0a0cc94843b")
 		(property "Reference" "#PWR010"
-			(at 52.07 91.44 0)
+			(at 55.88 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28535,7 +29023,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 58.42 91.44 0)
+			(at 55.88 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28543,7 +29031,7 @@
 			)
 		)
 		(property "Footprint" "finalhand-easyedapro:"
-			(at 52.07 91.44 0)
+			(at 55.88 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28552,7 +29040,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 91.44 0)
+			(at 55.88 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28561,7 +29049,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 52.07 91.44 0)
+			(at 55.88 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28652,16 +29140,15 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 97.79 205.74 180)
+		(at 210.82 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f2415350-443a-42df-865c-eb8ee4b39e56")
-		(property "Reference" "#PWR073"
-			(at 97.79 201.93 0)
+		(uuid "f16ff020-32a1-4e6d-b4d3-f1cc9f11cfeb")
+		(property "Reference" "#PWR069"
+			(at 210.82 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28670,7 +29157,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 97.79 210.82 0)
+			(at 210.566 119.634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28678,7 +29165,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 97.79 205.74 0)
+			(at 210.82 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28687,7 +29174,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.79 205.74 0)
+			(at 210.82 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28696,7 +29183,74 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 97.79 205.74 0)
+			(at 210.82 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "49911d3e-0e04-4e52-b524-a7a493adc60a")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 100.33 213.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2415350-443a-42df-865c-eb8ee4b39e56")
+		(property "Reference" "#PWR073"
+			(at 100.33 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 102.87 212.0899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 100.33 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28718,7 +29272,7 @@
 	)
 	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
-		(at 251.46 110.49 270)
+		(at 247.65 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28726,7 +29280,7 @@
 		(dnp no)
 		(uuid "f39027ac-568d-40fa-9ec0-b1efb3464acc")
 		(property "Reference" "#PWR078"
-			(at 251.46 110.49 0)
+			(at 247.65 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28735,7 +29289,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 245.11 110.49 0)
+			(at 247.65 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28743,7 +29297,7 @@
 			)
 		)
 		(property "Footprint" "finalhand-easyedapro:"
-			(at 251.46 110.49 0)
+			(at 247.65 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28752,7 +29306,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 110.49 0)
+			(at 247.65 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28761,7 +29315,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 251.46 110.49 0)
+			(at 247.65 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29075,7 +29629,7 @@
 		(lib_id "finalhand-easyedapro:Power-VCC")
 		(at 215.9 519.43 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
