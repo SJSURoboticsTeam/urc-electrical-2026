@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "277f1ac8-dc34-41d4-888e-4cee9bc5b3a6")
 	(paper "A4")
 	(lib_symbols
@@ -86,6 +86,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(bus_alias "USB"
@@ -352,6 +353,10 @@
 	(sheet
 		(at 104.14 31.75)
 		(size 39.37 49.53)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -390,73 +395,73 @@
 		)
 		(pin "A{GATE}" output
 			(at 143.51 35.56 0)
+			(uuid "54f17c15-ac80-4c22-903b-5bf99e29bacf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "54f17c15-ac80-4c22-903b-5bf99e29bacf")
 		)
 		(pin "B{GATE}" output
 			(at 143.51 52.07 0)
+			(uuid "ec4ae6e7-1ca9-469d-8274-bf718a8ce2cb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ec4ae6e7-1ca9-469d-8274-bf718a8ce2cb")
 		)
 		(pin "USB{USB}" input
 			(at 104.14 40.64 180)
+			(uuid "4a9bd839-88e4-44c5-9213-43148cb90bef")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4a9bd839-88e4-44c5-9213-43148cb90bef")
 		)
 		(pin "C{GATE}" output
 			(at 143.51 66.04 0)
+			(uuid "a379a3fd-a31a-453e-b531-07e699cacd18")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a379a3fd-a31a-453e-b531-07e699cacd18")
 		)
 		(pin "SENSE1" input
 			(at 143.51 71.12 0)
+			(uuid "a6be7a98-b25d-4397-bea9-e9a428561f2f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a6be7a98-b25d-4397-bea9-e9a428561f2f")
 		)
 		(pin "SENSE2" input
 			(at 143.51 73.66 0)
+			(uuid "4472657b-fab8-42c5-8458-b217fcec8e4a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "4472657b-fab8-42c5-8458-b217fcec8e4a")
 		)
 		(pin "SENSE3" input
 			(at 143.51 76.2 0)
+			(uuid "85e67a5b-6d11-4010-a27b-586aa3cf9238")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "85e67a5b-6d11-4010-a27b-586aa3cf9238")
 		)
 		(instances
 			(project "bldc"
@@ -469,6 +474,10 @@
 	(sheet
 		(at 185.42 46.355)
 		(size 16.51 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -498,23 +507,23 @@
 		)
 		(pin "SENSE" output
 			(at 185.42 54.61 180)
+			(uuid "4e714d80-7b74-40e5-9e89-311ac191ed3f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4e714d80-7b74-40e5-9e89-311ac191ed3f")
 		)
 		(pin "IN{GATE}" input
 			(at 185.42 52.07 180)
+			(uuid "c22ce887-f8e7-4abe-84f7-2b20a65a4dcf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c22ce887-f8e7-4abe-84f7-2b20a65a4dcf")
 		)
 		(instances
 			(project "bldc"
@@ -527,6 +536,10 @@
 	(sheet
 		(at 185.42 60.96)
 		(size 16.51 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -556,23 +569,23 @@
 		)
 		(pin "SENSE" output
 			(at 185.42 68.58 180)
+			(uuid "83b3193a-163c-4a05-9aa0-08dc6d58e145")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "83b3193a-163c-4a05-9aa0-08dc6d58e145")
 		)
 		(pin "IN{GATE}" input
 			(at 185.42 66.04 180)
+			(uuid "1172474b-8171-4800-8ac4-bc10d94425c5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1172474b-8171-4800-8ac4-bc10d94425c5")
 		)
 		(instances
 			(project "bldc"
@@ -585,6 +598,10 @@
 	(sheet
 		(at 185.42 30.48)
 		(size 16.51 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -614,23 +631,23 @@
 		)
 		(pin "SENSE" output
 			(at 185.42 38.1 180)
+			(uuid "d373a3d3-4fcc-45d7-93cb-5f2dab5ada2a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d373a3d3-4fcc-45d7-93cb-5f2dab5ada2a")
 		)
 		(pin "IN{GATE}" input
 			(at 185.42 35.56 180)
+			(uuid "51f3befc-7d85-46f4-9e35-7d2e21fb959a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "51f3befc-7d85-46f4-9e35-7d2e21fb959a")
 		)
 		(instances
 			(project "bldc"
@@ -643,6 +660,10 @@
 	(sheet
 		(at 71.12 31.75)
 		(size 16.51 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -672,13 +693,13 @@
 		)
 		(pin "USB{USB}" output
 			(at 87.63 40.64 0)
+			(uuid "cddbcd77-e31d-4060-800a-5a664c462c1d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "cddbcd77-e31d-4060-800a-5a664c462c1d")
 		)
 		(instances
 			(project "bldc"
@@ -693,4 +714,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

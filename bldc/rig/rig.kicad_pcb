@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.600198)
 		(legacy_teardrops no)
@@ -12,18 +12,18 @@
 	)
 	(layers
 		(0 "F.Cu" signal "Front")
-		(31 "B.Cu" signal "Back")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(49 "F.Fab" user)
+		(2 "B.Cu" signal "Back")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
 	)
 	(setup
 		(stackup
@@ -68,11 +68,12 @@
 		(pad_to_mask_clearance 0)
 		(solder_mask_min_width 0.12)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(aux_axis_origin 100.25 100)
 		(grid_origin 100.25 100)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes no)
@@ -82,7 +83,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -90,16 +90,19 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue no)
-			(plotfptext yes)
-			(plotinvisibletext no)
+			(plot_black_and_white yes)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk yes)
 			(outputformat 1)
 			(mirror no)
@@ -161,19 +164,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f891e94d-2384-4a19-9010-2cf07e787e54")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -332,6 +322,7 @@
 			(pintype "passive")
 			(uuid "a87f14f8-c735-443a-94b2-44ec15a16bb7")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Bridge_Pitch2.0mm_Drill0.7mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -366,19 +357,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "a4d43d78-566b-43e5-b8c0-6315a9cc434f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "996e4830-effe-4fbc-a6de-f80f46f17d26")
 			(effects
 				(font
 					(size 1 1)
@@ -453,6 +431,7 @@
 			(pintype "passive")
 			(uuid "bca1dd0f-824f-401b-938b-ad59f7e58c89")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -487,19 +466,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "5cea7e06-6989-4cb6-9781-dfb82049209e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a6b646c5-6c3f-4145-842b-3a4ba9ada0b5")
 			(effects
 				(font
 					(size 1 1)
@@ -574,6 +540,7 @@
 			(pintype "passive")
 			(uuid "e95ef689-d737-4748-ae20-e14a7da3ea8c")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -608,19 +575,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "49c0935c-3c09-41e9-bff0-e1db83bbcf8e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ffd75bc1-8ed1-47b4-b7cb-80f1f38d1462")
 			(effects
 				(font
 					(size 1 1)
@@ -695,6 +649,7 @@
 			(pintype "passive")
 			(uuid "7fe89e6b-b079-4472-95e2-6a369915c89b")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -729,19 +684,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "71a2b77e-0395-45d5-8afe-062f447649af")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1d5c57f0-d290-4dbf-b119-2dbd231d9b9c")
 			(effects
 				(font
 					(size 1 1)
@@ -816,6 +758,7 @@
 			(pintype "passive")
 			(uuid "b39d3de1-8e00-44e9-9a97-7ad2235c90a4")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -850,19 +793,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "8a2f701d-1c1e-48cd-b4a7-164c3dba4824")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "37897119-8c47-424d-a076-060f4780e7cf")
 			(effects
 				(font
 					(size 1 1)
@@ -937,6 +867,7 @@
 			(pintype "passive")
 			(uuid "3a773ee2-4773-4cc8-94e8-3c12f805d1e6")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -971,19 +902,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "ff165146-a27e-46fa-b043-291d863249eb")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ebbee2b0-e6dd-44f9-adb4-5685168e2ec4")
 			(effects
 				(font
 					(size 1 1)
@@ -1058,6 +976,7 @@
 			(pintype "passive")
 			(uuid "eea4abf5-83a2-4c68-83bb-458f9722d68c")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -1098,21 +1017,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4ed389d6-cfb3-4452-b431-6e50d0e9e78d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1125,7 +1031,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1256,7 +1162,7 @@
 		(pad "1" smd roundrect
 			(at -0.8625 0 270)
 			(size 1.075 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "GND")
 			(pintype "passive")
@@ -1265,12 +1171,13 @@
 		(pad "2" smd roundrect
 			(at 0.8625 0 270)
 			(size 1.075 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 6 "Net-(J1-CC2)")
 			(pintype "passive")
 			(uuid "8c375531-367e-47a6-aa5a-42c5bccbbc1b")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1305,19 +1212,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "2700b8b9-17b7-4579-ab16-20cb7abbc54b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "416e24a2-6f5b-4bc8-b46c-1e93338f56f6")
 			(effects
 				(font
 					(size 1 1)
@@ -1392,6 +1286,7 @@
 			(pintype "passive")
 			(uuid "5d306f0c-67e2-4f79-a023-1c67f8d7a6e4")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -1426,19 +1321,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "a9e3b8c0-b461-4858-b4b5-600589c993ea")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5bee9e99-96e3-43ab-be2a-35b004fc6114")
 			(effects
 				(font
 					(size 1 1)
@@ -1513,6 +1395,7 @@
 			(pintype "passive")
 			(uuid "607d913a-7266-4b11-930b-b60797242b9d")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -1549,19 +1432,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "289738d9-3c55-40d5-a70b-451c419bf0f9")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1720,6 +1590,7 @@
 			(pintype "passive")
 			(uuid "5896517b-0842-4729-a21e-32a5b863676d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Bridge_Pitch2.0mm_Drill0.7mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1754,19 +1625,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "9bc3216b-9252-4166-8756-c8bd86db9646")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e244d522-9202-4b0d-8261-3ef4ef325478")
 			(effects
 				(font
 					(size 1 1)
@@ -1841,6 +1699,7 @@
 			(pintype "passive")
 			(uuid "36a1c8ae-398e-4038-bdc3-4a33cf07a107")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -1860,7 +1719,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "R1"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(uuid "0843103d-fcf0-4896-ba4c-61308876bdd6")
 			(effects
@@ -1871,25 +1730,12 @@
 			)
 		)
 		(property "Value" "5.1k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "e9c958e3-10fe-448b-b14a-de50bb5fdc3b")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8657e7c9-9fe3-4a4f-aae4-55f4c69340e0")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2026,7 +1872,7 @@
 			(uuid "4456b2b0-f8f7-4f0d-abf8-5303349a6664")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "43da08e6-0b33-4a08-884b-70b8740c56ae")
 			(effects
@@ -2039,7 +1885,7 @@
 		(pad "1" smd roundrect
 			(at -0.8625 0 180)
 			(size 1.075 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 8 "Net-(J1-CC1)")
 			(pintype "passive")
@@ -2048,12 +1894,13 @@
 		(pad "2" smd roundrect
 			(at 0.8625 0 180)
 			(size 1.075 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "GND")
 			(pintype "passive")
 			(uuid "b8451fd0-8664-44da-96e3-25b459b9615e")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2088,19 +1935,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "ffabf377-44f0-4ed3-abd7-4fbdf41a5a6f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f7517a3f-e6e1-4724-a06c-dd1de1afd619")
 			(effects
 				(font
 					(size 1 1)
@@ -2175,6 +2009,7 @@
 			(pintype "passive")
 			(uuid "95129ac0-c606-4ae0-aaa9-b1b9b6815e3a")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -2211,19 +2046,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d2f9053e-33b4-4aab-96d3-8560135292c2")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2382,6 +2204,7 @@
 			(pintype "passive")
 			(uuid "07fe02d9-7b19-410b-b294-7d682afbc452")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Bridge_Pitch2.0mm_Drill0.7mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2418,19 +2241,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "74013d98-d091-4dd0-950b-3a99a146e142")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2589,6 +2399,7 @@
 			(pintype "passive")
 			(uuid "d534127d-3971-45fc-99f6-a1c5abc532d2")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Bridge_Pitch2.0mm_Drill0.7mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2608,7 +2419,7 @@
 		(descr "Through hole straight pin header, 2x05, 1.27mm pitch, double rows")
 		(tags "Through hole pin header THT 2x05 1.27mm double row")
 		(property "Reference" "J2"
-			(at 0.635 -1.695 360)
+			(at 0.635 -1.695 0)
 			(layer "F.SilkS")
 			(uuid "604bd035-712f-436b-aeeb-65c0822e2bc7")
 			(effects
@@ -2619,25 +2430,12 @@
 			)
 		)
 		(property "Value" "Conn_ARM_JTAG_SWD_10"
-			(at 0.635 6.775 360)
+			(at 0.635 6.775 0)
 			(layer "F.Fab")
 			(uuid "43357245-1db4-4a90-bea4-572ac68c7efb")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6c945d3c-ea93-4fa8-9350-2f11b08fd5f2")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3014,6 +2812,7 @@
 			(pintype "open_collector")
 			(uuid "9e352b20-f9d7-4616-ba57-1a4b1c5cf06d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_1.27mm.3dshapes/PinHeader_2x05_P1.27mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3054,21 +2853,8 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c6c94ddb-4b9a-429c-be02-781dcbd13f41")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3081,7 +2867,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3232,7 +3018,7 @@
 		(pad "1" smd roundrect
 			(at -0.875 0 270)
 			(size 1.05 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "GND")
 			(pinfunction "K")
@@ -3242,13 +3028,14 @@
 		(pad "2" smd roundrect
 			(at 0.875 0 270)
 			(size 1.05 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 28 "Net-(D2-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "21406cf0-26d6-40a5-946e-da20fb54c84d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3289,21 +3076,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b2403d3b-d17d-481c-904b-e9536c7cc1ea")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3316,7 +3090,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3447,7 +3221,7 @@
 		(pad "1" smd roundrect
 			(at -0.8625 0 270)
 			(size 1.075 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 27 "Net-(D1-A)")
 			(pintype "passive")
@@ -3456,12 +3230,13 @@
 		(pad "2" smd roundrect
 			(at 0.8625 0 270)
 			(size 1.075 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 17 "+12V")
 			(pintype "passive")
 			(uuid "9dbebfd5-93dd-4b6b-abc9-3ee0e1654ac9")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3496,19 +3271,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "cd51b28c-ca4b-45a8-9092-64bb15a2764a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f8c0f5ed-e7bf-4f58-826c-5cb72f40ea8f")
 			(effects
 				(font
 					(size 1 1)
@@ -3583,6 +3345,7 @@
 			(pintype "passive")
 			(uuid "7d0c6f59-d757-4129-992f-0f7e109120e8")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -3619,19 +3382,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a69e169e-a588-436a-995c-91beeb212c47")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3790,6 +3540,7 @@
 			(pintype "passive")
 			(uuid "47fa9506-9a45-4ed9-bb4a-f7282b23b6f6")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Bridge_Pitch2.0mm_Drill0.7mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3826,19 +3577,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a7d46dba-7191-4b6c-9c2b-b6a87168d90a")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3997,6 +3735,7 @@
 			(pintype "passive")
 			(uuid "926e9e4d-17e6-4b04-add5-caf9be91d6ba")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Bridge_Pitch2.0mm_Drill0.7mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4031,19 +3770,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "d501005c-e65d-4aa2-b46d-3d5736990543")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "77b8cb4d-1124-4ed1-9aec-426b13f87e29")
 			(effects
 				(font
 					(size 1 1)
@@ -4118,6 +3844,7 @@
 			(pintype "passive")
 			(uuid "2eb8d461-0865-4f61-893a-62805b04f9fa")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -4154,19 +3881,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c1307a8b-e0cf-477f-aa8a-17804b56d4fd")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4325,6 +4039,7 @@
 			(pintype "passive")
 			(uuid "65402983-b8b1-408e-b547-0cc739f3de16")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Bridge_Pitch2.0mm_Drill0.7mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4361,19 +4076,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1a770746-41f4-491c-99b7-4320fdc55dc9")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4567,7 +4269,7 @@
 		(pad "A1" smd rect
 			(at -3.25 -4.045)
 			(size 0.6 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
@@ -4576,7 +4278,7 @@
 		(pad "A4" smd rect
 			(at -2.45 -4.045)
 			(size 0.6 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "VBUS")
 			(pinfunction "VBUS")
 			(pintype "passive")
@@ -4585,7 +4287,7 @@
 		(pad "A5" smd rect
 			(at -1.25 -4.045)
 			(size 0.3 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 8 "Net-(J1-CC1)")
 			(pinfunction "CC1")
 			(pintype "bidirectional")
@@ -4594,7 +4296,7 @@
 		(pad "A6" smd rect
 			(at -0.25 -4.045)
 			(size 0.3 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 5 "/D+")
 			(pinfunction "D+")
 			(pintype "bidirectional")
@@ -4603,7 +4305,7 @@
 		(pad "A7" smd rect
 			(at 0.25 -4.045)
 			(size 0.3 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "/D-")
 			(pinfunction "D-")
 			(pintype "bidirectional")
@@ -4612,7 +4314,7 @@
 		(pad "A8" smd rect
 			(at 1.25 -4.045)
 			(size 0.3 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 3 "unconnected-(J1-SBU1-PadA8)")
 			(pinfunction "SBU1")
 			(pintype "bidirectional+no_connect")
@@ -4621,7 +4323,7 @@
 		(pad "A9" smd rect
 			(at 2.45 -4.045)
 			(size 0.6 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "VBUS")
 			(pinfunction "VBUS")
 			(pintype "passive")
@@ -4630,7 +4332,7 @@
 		(pad "A12" smd rect
 			(at 3.25 -4.045)
 			(size 0.6 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
@@ -4639,7 +4341,7 @@
 		(pad "B1" smd rect
 			(at 3.25 -4.045)
 			(size 0.6 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
@@ -4648,7 +4350,7 @@
 		(pad "B4" smd rect
 			(at 2.45 -4.045)
 			(size 0.6 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "VBUS")
 			(pinfunction "VBUS")
 			(pintype "passive")
@@ -4657,7 +4359,7 @@
 		(pad "B5" smd rect
 			(at 1.75 -4.045)
 			(size 0.3 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 6 "Net-(J1-CC2)")
 			(pinfunction "CC2")
 			(pintype "bidirectional")
@@ -4666,7 +4368,7 @@
 		(pad "B6" smd rect
 			(at 0.75 -4.045)
 			(size 0.3 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 5 "/D+")
 			(pinfunction "D+")
 			(pintype "bidirectional")
@@ -4675,7 +4377,7 @@
 		(pad "B7" smd rect
 			(at -0.75 -4.045)
 			(size 0.3 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "/D-")
 			(pinfunction "D-")
 			(pintype "bidirectional")
@@ -4684,7 +4386,7 @@
 		(pad "B8" smd rect
 			(at -1.75 -4.045)
 			(size 0.3 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 7 "unconnected-(J1-SBU2-PadB8)")
 			(pinfunction "SBU2")
 			(pintype "bidirectional+no_connect")
@@ -4693,7 +4395,7 @@
 		(pad "B9" smd rect
 			(at -2.45 -4.045)
 			(size 0.6 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "VBUS")
 			(pinfunction "VBUS")
 			(pintype "passive")
@@ -4702,7 +4404,7 @@
 		(pad "B12" smd rect
 			(at -3.25 -4.045)
 			(size 0.6 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
@@ -4756,6 +4458,7 @@
 			(pintype "passive")
 			(uuid "34aa5a8e-d3dc-4199-b920-0c882dedd5de")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4792,19 +4495,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a14a69a7-ca3b-40ed-a91c-8d19ccd67980")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4963,6 +4653,7 @@
 			(pintype "passive")
 			(uuid "01ff66bd-7d57-49a5-b3a4-8d3381a8a72e")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Bridge_Pitch2.0mm_Drill0.7mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5003,21 +4694,8 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "50823ea4-7e26-4372-b85c-25491a805525")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5030,7 +4708,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5181,7 +4859,7 @@
 		(pad "1" smd roundrect
 			(at -0.875 0 270)
 			(size 1.05 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "GND")
 			(pinfunction "K")
@@ -5191,13 +4869,14 @@
 		(pad "2" smd roundrect
 			(at 0.875 0 270)
 			(size 1.05 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 27 "Net-(D1-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "f611f142-cf3e-4c98-94bb-856bc23a7d5e")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5236,19 +4915,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cd2bc738-6a50-4179-abe3-51345be0875b")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5350,7 +5016,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Dwgs.User")
 			(uuid "6396989a-e3be-43ac-a0a1-f7c5bbb44757")
 		)
@@ -5481,7 +5147,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "565b96d5-669e-4357-aed5-26583dcc0916")
 		)
@@ -5500,7 +5166,7 @@
 		(pad "1" smd rect
 			(at -3.875 0)
 			(size 1.25 1)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 26 "/BOOT")
 			(pinfunction "1")
 			(pintype "passive")
@@ -5509,12 +5175,13 @@
 		(pad "2" smd rect
 			(at 3.875 0)
 			(size 1.25 1)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "GND")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "759b23ba-1fc9-4c01-b877-d1db1705ab51")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5555,21 +5222,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cdd8755d-5686-488c-bac0-e5c73c27c972")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5582,7 +5236,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5713,7 +5367,7 @@
 		(pad "1" smd roundrect
 			(at -0.8625 0 270)
 			(size 1.075 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 28 "Net-(D2-A)")
 			(pintype "passive")
@@ -5722,12 +5376,13 @@
 		(pad "2" smd roundrect
 			(at 0.8625 0 270)
 			(size 1.075 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 18 "+3V3")
 			(pintype "passive")
 			(uuid "e4f313cd-d23d-4072-8e31-6794989a0e48")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5766,19 +5421,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c419b3f4-d5c9-416a-af54-fbd8f1ccd79e")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5880,7 +5522,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Dwgs.User")
 			(uuid "868bf991-9f2e-4311-948f-c4fd19fb1da5")
 		)
@@ -6011,7 +5653,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "06937404-fc5c-4304-a6d1-1b3c01188831")
 		)
@@ -6030,7 +5672,7 @@
 		(pad "1" smd rect
 			(at -3.875 0)
 			(size 1.25 1)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 13 "/RESET")
 			(pinfunction "1")
 			(pintype "passive")
@@ -6039,12 +5681,13 @@
 		(pad "2" smd rect
 			(at 3.875 0)
 			(size 1.25 1)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "GND")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "a2c960f7-1a7f-4bfe-919a-dc647810e73f")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6079,19 +5722,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "a980b597-b692-4fb0-880b-55464d32246b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e32d295b-7558-42de-9bc9-1438d263fdc2")
 			(effects
 				(font
 					(size 1 1)
@@ -6166,6 +5796,7 @@
 			(pintype "passive")
 			(uuid "1d7efbfc-f0d2-4723-8b09-7a3437465bc8")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -6200,19 +5831,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "1beb8b2b-7419-4c60-9c95-c050ad1d66dd")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "19ec6204-8048-4ac6-ae2c-4aa19f2a6a06")
 			(effects
 				(font
 					(size 1 1)
@@ -6287,6 +5905,7 @@
 			(pintype "passive")
 			(uuid "5985acab-13c8-41d2-8722-c099967ff07d")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -6321,19 +5940,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "7e25ad71-2509-43cc-88c3-17d76e34e73c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b06cda24-8d98-47dd-b6b0-a97e227d718f")
 			(effects
 				(font
 					(size 1 1)
@@ -6408,6 +6014,7 @@
 			(pintype "passive")
 			(uuid "00f0857a-0648-40fc-ad9c-41f2dcd76286")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -6444,19 +6051,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5aedd88b-6243-4ebb-a1e8-c11be2442110")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6615,6 +6209,7 @@
 			(pintype "passive")
 			(uuid "959e3e09-a7ba-4ada-8645-0e7f409ffcdb")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Bridge_Pitch2.0mm_Drill0.7mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6651,19 +6246,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "16fec4ab-b849-49a5-bb04-36cf6e37e44d")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6822,6 +6404,7 @@
 			(pintype "passive")
 			(uuid "9d465cb8-42f4-4511-b07e-b9cdfcfe173f")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Bridge_Pitch2.0mm_Drill0.7mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6856,19 +6439,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "13c3dba8-56e0-4056-9361-7e19b0be20f2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "eae949da-b7ef-4abb-ba6f-220e2cc5dcba")
 			(effects
 				(font
 					(size 1 1)
@@ -6943,6 +6513,7 @@
 			(pintype "passive")
 			(uuid "b83dc854-a597-4c5f-9299-1cbb1395d635")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -6977,19 +6548,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "850a3be7-c265-448c-a757-e8ddcc8c1cdc")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "30b7a264-18f6-4d4a-92e3-5ed6a0be9548")
 			(effects
 				(font
 					(size 1 1)
@@ -7064,6 +6622,7 @@
 			(pintype "passive")
 			(uuid "e8d1adc9-eb37-4833-844f-a19eb2338b9c")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -7098,19 +6657,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "6724a03a-d6b7-4167-a8fb-63b5ab2840e9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "SJSU_common:MilMax_Pogo_0906-0-15-20-76-14-11-0"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b9d6861c-bbbe-42dd-8cfb-5f206522ee31")
 			(effects
 				(font
 					(size 1 1)
@@ -7185,6 +6731,7 @@
 			(pintype "passive")
 			(uuid "19d5969b-3ee4-4faa-886e-aeb80f79869c")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/umeda/Code/urc-electrical-2026/common/models/0906-0-15-20-76-14-11-0.STEP"
 			(offset
 				(xyz 0 0 0)
@@ -7222,20 +6769,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "1d9bf8df-2604-470d-873e-d8b288abdc06")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -7281,7 +6814,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "65376af1-3469-450c-84f5-ddfac8ee9d69")
 		)
@@ -7292,7 +6825,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "B.CrtYd")
 			(uuid "73ac6174-2258-4787-873b-186f98f854cd")
 		)
@@ -7315,6 +6848,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "5fc6908c-b444-489d-a94f-ae77e93ffec7")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3_DIN965"
 		(layer "B.Cu")
@@ -7341,20 +6875,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "542896b4-3f3b-4c54-9e9d-e28e2b4afcf4")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -7400,7 +6920,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "f549d4c3-10f9-4c12-8512-63b5baac467e")
 		)
@@ -7411,7 +6931,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "B.CrtYd")
 			(uuid "1aed2f8d-2cd9-4159-b228-5523b9b586ec")
 		)
@@ -7434,6 +6954,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "a3cfbcca-4ff7-410d-8246-505fb1306de5")
 		)
+		(embedded_fonts no)
 	)
 	(gr_rect
 		(start 91.25 48)
@@ -7442,7 +6963,7 @@
 			(width 0.0381)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "8a07f995-8910-4791-8eb3-74fe77300f24")
 	)
@@ -8355,7 +7876,7 @@
 	(zone
 		(net 4)
 		(net_name "GND")
-		(layers "F&B.Cu")
+		(layers "F.Cu" "B.Cu")
 		(uuid "433a17c0-a984-4541-9edd-68eb66ba5e33")
 		(hatch edge 0.5)
 		(connect_pads
@@ -10055,4 +9576,5 @@
 			"f08fcb22-4ea5-4086-b296-6d4336436296" "fc7059fb-f7c1-4aba-9797-8459f9a936d2"
 		)
 	)
+	(embedded_fonts no)
 )
