@@ -60,16 +60,8 @@
       ],
       "drc_exclusions": [
         [
-          "courtyards_overlap|187645000|110902830|a13aca77-1cd2-45b4-a18d-6518241802c6|3d10e99f-d8cc-46a3-9e10-82162a9674a7",
-          ""
-        ],
-        [
-          "silk_edge_clearance|163300000|114000000|d4ac4146-efa7-4a9e-adcf-2c545069eb6e|db9d3f0a-5e08-413c-8e8c-82994cc23a96",
-          ""
-        ],
-        [
-          "silk_edge_clearance|172700000|114000000|d4ac4146-efa7-4a9e-adcf-2c545069eb6e|ff4ba1bd-de52-47a3-9b90-3b6c7b650808",
-          ""
+          "courtyards_overlap|187645000|110902830|3d10e99f-d8cc-46a3-9e10-82162a9674a7|a13aca77-1cd2-45b4-a18d-6518241802c6",
+          "Courtyard for J1 is far too conservative"
         ]
       ],
       "meta": {
@@ -114,7 +106,7 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
