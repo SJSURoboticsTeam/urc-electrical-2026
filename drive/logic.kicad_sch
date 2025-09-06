@@ -4795,6 +4795,12 @@
 			(embedded_fonts no)
 		)
 	)
+	(bus_alias ""
+		(members)
+	)
+	(bus_alias "I2C"
+		(members "SDA" "SCL")
+	)
 	(bus_alias "QSPI"
 		(members "SCK" "COPI" "CIPO" "DATA1" "DATA2" "DATA3")
 	)
@@ -5106,6 +5112,15 @@
 		(uuid "6c60698f-9927-4f86-852c-071b15338007")
 	)
 	(bus_entry
+		(at 185.42 76.2)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74d50411-0f44-42f1-8f3e-b1850b9813c8")
+	)
+	(bus_entry
 		(at 181.61 128.27)
 		(size 2.54 -2.54)
 		(stroke
@@ -5158,6 +5173,15 @@
 			(type default)
 		)
 		(uuid "c66253be-b417-4166-aa67-f02ffa85421a")
+	)
+	(bus_entry
+		(at 185.42 73.66)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0a4e96e-ae4f-42a5-9915-bd679d40a59d")
 	)
 	(bus_entry
 		(at 181.61 138.43)
@@ -5625,6 +5649,16 @@
 		)
 		(uuid "8edd932c-a790-477f-9eb4-4e0967b96c79")
 	)
+	(bus
+		(pts
+			(xy 185.42 73.66) (xy 185.42 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94727238-a523-40cf-95f4-4035c0773c87")
+	)
 	(wire
 		(pts
 			(xy 251.46 116.84) (xy 260.35 116.84)
@@ -5715,6 +5749,16 @@
 		)
 		(uuid "aafc4d4f-ec3a-4508-8324-77192f65e287")
 	)
+	(wire
+		(pts
+			(xy 187.96 73.66) (xy 194.31 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab5bec6d-10d8-4b4f-b4c5-5fba2c9762d5")
+	)
 	(bus
 		(pts
 			(xy 181.61 130.81) (xy 181.61 128.27)
@@ -5724,6 +5768,16 @@
 			(type default)
 		)
 		(uuid "ac54d357-0dea-43bb-8c54-9e2d1d71a3ed")
+	)
+	(wire
+		(pts
+			(xy 187.96 71.12) (xy 194.31 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad3c3a57-e009-480d-9c0e-f075ed8f549a")
 	)
 	(wire
 		(pts
@@ -5744,6 +5798,16 @@
 			(type default)
 		)
 		(uuid "aed9ed38-d8ed-4ad6-ae7d-cda324b042f6")
+	)
+	(bus
+		(pts
+			(xy 184.15 80.01) (xy 185.42 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b51d41a2-6f18-4aa5-affb-a43ee79bcceb")
 	)
 	(wire
 		(pts
@@ -5834,6 +5898,16 @@
 			(type default)
 		)
 		(uuid "d0973599-8dfe-42fd-aaa2-93327b50fb19")
+	)
+	(bus
+		(pts
+			(xy 185.42 76.2) (xy 185.42 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e18c558b-989d-4bed-971e-f3928a39b1f0")
 	)
 	(bus
 		(pts
@@ -6185,6 +6259,16 @@
 		)
 		(uuid "54636547-2e84-44f9-b678-c29509f13454")
 	)
+	(label "I2C.SDA"
+		(at 194.31 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6044cb12-1e8e-4b54-986b-9b2da5f5e82b")
+	)
 	(label "CAN_RX"
 		(at 33.02 114.3 180)
 		(effects
@@ -6244,6 +6328,16 @@
 			(justify right bottom)
 		)
 		(uuid "867747f1-9ad1-47ac-afa1-0ba92e151c6c")
+	)
+	(label "I2C.SCL"
+		(at 194.31 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "875801f7-0010-4a7f-9504-a3299152ccba")
 	)
 	(label "LED2"
 		(at 140.97 83.82 0)
@@ -6489,6 +6583,17 @@
 			(justify right)
 		)
 		(uuid "59e77a23-d0dd-47f2-8744-bccb8280e56e")
+	)
+	(hierarchical_label "I2C{I2C}"
+		(shape bidirectional)
+		(at 184.15 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5cd968af-8327-4296-baee-23fededd6635")
 	)
 	(hierarchical_label "G[0..7]"
 		(shape bidirectional)

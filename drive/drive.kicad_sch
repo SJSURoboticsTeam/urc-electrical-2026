@@ -646,6 +646,16 @@
 		)
 		(uuid "e6551f89-6185-4a5c-a566-8cf25301e8a3")
 	)
+	(bus
+		(pts
+			(xy 140.97 63.5) (xy 180.34 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebc6ce5f-afb5-4d30-9e6e-aebc52ab3578")
+	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 217.17 59.69 0)
@@ -2025,6 +2035,16 @@
 				(justify right)
 			)
 		)
+		(pin "I2C{I2C}" bidirectional
+			(at 140.97 63.5 0)
+			(uuid "cc5ee207-d392-4905-a274-44d9028c99ff")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "drive"
 				(path "/d511e5ee-a132-4263-8a29-3f5b0e7d70f3"
@@ -2140,6 +2160,16 @@
 		(pin "G[0..7]" bidirectional
 			(at 180.34 82.55 180)
 			(uuid "ce9d80a7-18b5-43bc-a5e2-f0e2a5dce83b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C{I2C}" bidirectional
+			(at 180.34 63.5 180)
+			(uuid "ba93882c-bf3e-4267-a226-ed4ea2012f11")
 			(effects
 				(font
 					(size 1.27 1.27)
