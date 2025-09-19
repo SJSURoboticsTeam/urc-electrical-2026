@@ -2,6 +2,10 @@ name: Generate KiCad outputs
 on:
   workflow_dispatch:
   workflow_call:
+    inputs:
+      project:
+        required: true
+        type: string
 env:
   GIT_COMMITTER_NAME: ci-bot
   GIT_COMMITTER_EMAIL: sjsurobotics@gmail.com
@@ -44,35 +48,30 @@ jobs:
           - bldc:
             path: 'bldc/bldc'
             name: bldc
-
     steps:
     - uses: actions/checkout@v4
   
     - name: Export PDF
       id: production
-      uses: SJSURoboticsTeam/kicad-action@v1.2.2
+      uses: sparkengineering/kicad-action@v2
+      if: '!cancelled()'
       with:
-        kicad_sch: ${{ matrix.projects.path }}.kicad_sch
-        kicad_pcb: ${{ matrix.projects.path }}.kicad_pcb
+        kicad_sch: ${{ inputs.project }}/${{ inputs.project }}.kicad_sch
         sch_pdf: true
-        pcb_image: true
-        pcb_image_path: .
+        sch_pdf_file:  ${{ inputs.project }}.pdf
 
-    - name: Get directory of outputs
-      run: echo "OUTPUT_DIRECTORIES=`dirname ${{ matrix.projects.path }}`" >> "$GITHUB_ENV"
-
-    - name: Create navigation file
-      run: |
-        echo "* [Schematic](sch.pdf)
-        * [PCB](top.png)" > ${{ env.OUTPUT_DIRECTORIES }}/nav.md
+    - name: Render Image
+      uses: linalinn/kicad-render@main
+      with:
+        pcb_file: ${{ inputs.project }}/${{ inputs.project }}.kicad_pcb
+        output_path: ${{ inputs.project }}
 
     - name: Upload production files
       uses: actions/upload-artifact@v4
       if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
       with:
-        name: ${{ matrix.projects.name }}
+        name: ${{ inputs.project }}-out
         path: |
-          ${{ env.OUTPUT_DIRECTORIES }}/nav.md
-          ${{ env.OUTPUT_DIRECTORIES }}/sch.pdf
-          ${{ env.OUTPUT_DIRECTORIES }}/top.png
-          ${{ env.OUTPUT_DIRECTORIES }}/bottom.png
+          ${{ inputs.project }}/${{ inputs.project }}.pdf
+          ${{ inputs.project }}/top.png
+          ${{ inputs.project }}/bottom.png
