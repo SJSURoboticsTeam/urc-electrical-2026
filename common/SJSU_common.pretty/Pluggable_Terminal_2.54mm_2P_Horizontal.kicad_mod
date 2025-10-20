@@ -1,7 +1,7 @@
 (footprint "Pluggable_Terminal_2.54mm_2P_Horizontal"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -0.5 0)
@@ -21,19 +21,6 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "89c1df65-af7b-44e1-9955-b400e23f3bdb")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" "Pluggable_Terminal_2.54mm_2P_Horizontal"
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "0bc955de-6daf-4756-ad65-d11cbfd1b7f4")
 		(effects
 			(font
 				(size 1 1)
@@ -158,45 +145,16 @@
 		(layer "F.SilkS")
 		(uuid "cab4f01d-0728-406c-b2ae-cd3dfa950c8d")
 	)
-	(fp_line
-		(start -5.5 3)
-		(end -5.5 14.5)
+	(fp_rect
+		(start -4.5 3.5)
+		(end 3.5 14.5)
 		(stroke
 			(width 0.05)
-			(type solid)
+			(type default)
 		)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "99b67f66-f100-4320-b4e5-14f852e1f3a9")
-	)
-	(fp_line
-		(start -5.5 14.5)
-		(end 4.01 14.5)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "1370b16b-931b-4a69-8c41-9d2b579a5136")
-	)
-	(fp_line
-		(start 4.01 3)
-		(end -5.5 3)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "9380ccc4-57d3-4c74-a13c-232a7c102fea")
-	)
-	(fp_line
-		(start 4.01 14.5)
-		(end 4.01 3)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "31cfd49c-85a9-46fc-b8e6-800a98baa3ba")
+		(uuid "a1057b60-be46-44f4-97e8-49767c8dd312")
 	)
 	(fp_line
 		(start -2.44 5.3)
@@ -246,6 +204,7 @@
 		(remove_unused_layers no)
 		(uuid "ed4ce376-fbea-4342-89c6-b2949f77d97d")
 	)
+	(embedded_fonts no)
 	(model "${KICAD8_3DMODEL_DIR}/Connector_Phoenix_MC.3dshapes/PhoenixContact_MC_1,5_2-G-3.5_1x02_P3.50mm_Horizontal.wrl"
 		(offset
 			(xyz -1.85 -5.25 0)
