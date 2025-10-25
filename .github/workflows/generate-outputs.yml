@@ -20,7 +20,7 @@ jobs:
         sch_pdf: true
         pcb_image: true
         pcb_image_path: .
-        output_directory: ${{ github.workspace }}/build
+        output_dir: ${{ github.workspace }}/build
 
     - name: Get directory of outputs
       run: echo "OUTPUT_DIRECTORIES=`dirname ${{ matrix.projects.path }}`" >> "$GITHUB_ENV"
