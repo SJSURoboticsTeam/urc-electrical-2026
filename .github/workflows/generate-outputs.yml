@@ -8,62 +8,35 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        projects:
-          - servo:
-            path: 40Vservo/40Vservo
-            name: servo
-          - drive:
-            path: drive/drive
-            name: drive
-          - arm:
-            path: main_arm/main_arm
-            name: arm
-          - hub:
-            path: 'HUB/HUB'
-            name: hub
-          - science:
-            path: Science/Science
-            name: science
-          - PoE:
-            path: 'POE/POE'
-            name: POE
-          - battery-amp:
-            path: 'BatteryAmp/BatteryAmp'
-            name: battery-amp
-          - tla-dev:
-            path: 'tla_dev/tla_dev'
-            name: tla
-          - tmag:
-            path: 'TMAG_Carrier/tmag_screwed/tmag_screwed'
-            name: tmag
-          - usb:
-            path: 'USB/USB'
-            name: usb
-          - bldc:
-            path: 'bldc/bldc'
-            name: bldc
+    
     steps:
     - uses: actions/checkout@v4
-  
     - name: Export PDF
       id: production
-      uses: SJSURoboticsTeam/kicad-action@v1.2.2
+      uses: SJSURoboticsTeam/kicad-action@v1.5
       with:
-        kicad_sch: ${{ matrix.projects.path }}.kicad_sch
-        kicad_pcb: ${{ matrix.projects.path }}.kicad_pcb
+        kicad_sch: '40Vservo/40Vservo.kicad_sch;drive/drive.kicad_sch;main_arm/main_arm.kicad_sch;HUB/HUB.kicad_sch;Science/Science.kicad_sch;POE/POE.kicad_sch;bldc/bldc.kicad_sch'
+        kicad_pcb: '40Vservo/40Vservo.kicad_pcb;drive/drive.kicad_pcb;main_arm/main_arm.kicad_pcb;HUB/HUB.kicad_pcb;Science/Science.kicad_pcb;POE/POE.kicad_pcb;bldc/bldc.kicad_pcb'
         sch_pdf: true
         pcb_image: true
         pcb_image_path: .
+        output_directory: ${{ github.workspace }}/build
 
     - name: Get directory of outputs
       run: echo "OUTPUT_DIRECTORIES=`dirname ${{ matrix.projects.path }}`" >> "$GITHUB_ENV"
+    
+    
+    - name: Upload production files
+      uses: actions/upload-artifact@v4
+      if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
+      with:
+        name: "all-outputs"
+        path: ${{ github.workspace }}/build
 
     - name: Create navigation file
       run: |
         echo "* [Schematic](sch.pdf)
-        * [PCB](top.png)" > ${{ env.OUTPUT_DIRECTORIES }}/nav.md
+        * [PCB](top.png)" > ${{ github.workspace }}/nav.md
 
     - name: Upload production files
       uses: actions/upload-artifact@v4
@@ -71,7 +44,7 @@ jobs:
       with:
         name: ${{ matrix.projects.name }}
         path: |
-          ${{ env.OUTPUT_DIRECTORIES }}/nav.md
-          ${{ env.OUTPUT_DIRECTORIES }}/sch.pdf
-          ${{ env.OUTPUT_DIRECTORIES }}/top.png
-          ${{ env.OUTPUT_DIRECTORIES }}/bottom.png
+          ${{ github.workspace }}/nav.md
+          ${{ github.workspace }}/sch.pdf
+          ${{ github.workspace }}/top.png
+          ${{ github.workspace }}/bottom.png
