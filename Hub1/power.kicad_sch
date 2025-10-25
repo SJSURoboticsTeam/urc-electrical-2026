@@ -1551,8 +1551,8 @@
 		(uuid 4828fc6c-1a6d-4dde-847f-052a027dcd6b)
 	)
 	(rectangle
-		(start 147.32 12.7)
-		(end 197.485 79.375)
+		(start 90.17 80.01)
+		(end 168.91 103.505)
 		(stroke
 			(width 0)
 			(type default)
@@ -1602,7 +1602,7 @@
 	)
 	(text "Indicator"
 		(exclude_from_sim no)
-		(at 155.194 15.748 0)
+		(at 97.536 82.55 0)
 		(effects
 			(font
 				(size 2 2)
@@ -2086,34 +2086,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 76.2 31.75 270)
+		(lib_id "finalhand-easyedapro:Ground-GND")
+		(at 156.21 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "046ecbe9-58f5-4e47-9007-f49c0f7f7a60")
-		(property "Reference" "J19"
-			(at 85.598 32.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "RPI Zero W"
-			(at 83.312 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_2P_Horizontal"
-			(at 76.2 31.75 0)
+		(uuid "0721112c-e262-4971-8d55-cc646ba40009")
+		(property "Reference" "#PWR0107"
+			(at 156.21 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2121,8 +2103,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 76.2 31.75 0)
+		(property "Value" "GND"
+			(at 162.56 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "finalhand-easyedapro:"
+			(at 156.21 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2130,8 +2120,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 76.2 31.75 0)
+		(property "Datasheet" ""
+			(at 156.21 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2139,16 +2129,22 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "332259d0-e556-42dd-9825-01f98958966f")
+		(property "Description" "Power symbol creates a global label with name 'GND'"
+			(at 156.21 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "5eda2f0f-8158-4681-9f9d-12f821f044c3")
+			(uuid "46545ca7-462d-449e-83d3-9a73883c7bc1")
 		)
 		(instances
 			(project "HUB_RevA"
 				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/c7ec1e0b-ef3a-4634-a2b3-8c53bfe67cf1"
-					(reference "J19")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -2223,7 +2219,7 @@
 	)
 	(symbol
 		(lib_id "finalhand-easyedapro:Res")
-		(at 167.64 43.18 90)
+		(at 106.68 99.06 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2231,7 +2227,7 @@
 		(dnp no)
 		(uuid "0ccdd802-6a6c-427f-981a-a9aa3fcc8bc0")
 		(property "Reference" "R18"
-			(at 166.116 44.704 0)
+			(at 108.204 100.584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2240,7 +2236,7 @@
 			)
 		)
 		(property "Value" "120"
-			(at 170.688 45.212 0)
+			(at 108.712 96.012 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2250,7 +2246,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 167.64 43.18 0)
+			(at 106.68 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2259,7 +2255,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 43.18 0)
+			(at 106.68 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2268,7 +2264,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 43.18 0)
+			(at 106.68 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2293,7 +2289,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 167.64 38.1 0)
+		(at 101.6 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2302,7 +2298,7 @@
 		(fields_autoplaced yes)
 		(uuid "162335b7-2b79-44bc-a024-6827d3c121f5")
 		(property "Reference" "#PWR057"
-			(at 167.64 41.91 0)
+			(at 105.41 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2311,7 +2307,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 167.6401 34.29 90)
+			(at 97.79 99.0599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2320,7 +2316,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 38.1 0)
+			(at 101.6 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2329,7 +2325,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 38.1 0)
+			(at 101.6 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2338,7 +2334,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 167.64 38.1 0)
+			(at 101.6 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2621,7 +2617,7 @@
 	)
 	(symbol
 		(lib_id "finalhand-easyedapro:Res")
-		(at 175.26 43.18 90)
+		(at 106.68 91.44 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2629,7 +2625,7 @@
 		(dnp no)
 		(uuid "2521f7c9-fda1-48c5-b9ba-11f81b2bdb48")
 		(property "Reference" "R22"
-			(at 173.736 44.704 0)
+			(at 108.204 92.964 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2638,7 +2634,7 @@
 			)
 		)
 		(property "Value" "120"
-			(at 178.308 45.212 0)
+			(at 108.712 88.392 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2648,7 +2644,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 175.26 43.18 0)
+			(at 106.68 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2657,7 +2653,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 43.18 0)
+			(at 106.68 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2666,7 +2662,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 175.26 43.18 0)
+			(at 106.68 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2831,33 +2827,36 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 175.26 52.07 90)
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 93.98 63.5 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3794d419-f83a-4561-9c69-a5251d08db61")
-		(property "Reference" "D3"
-			(at 177.038 55.118 0)
+		(fields_autoplaced yes)
+		(uuid "34bbcf73-0d5f-4294-a0ef-c75f1924776d")
+		(property "Reference" "J14"
+			(at 95.25 63.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "D"
-			(at 179.07 52.07 0)
+		(property "Value" "Conn_01x03_Pin"
+			(at 95.25 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
-			(at 175.26 52.07 0)
+		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_3P_Vertical"
+			(at 93.98 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2866,7 +2865,78 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 175.26 52.07 0)
+			(at 93.98 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 93.98 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4ddefbd-fd9a-4629-99be-5e4cccf6a919")
+		)
+		(pin "3"
+			(uuid "29ce98fa-2ce0-4d38-977c-cf49ed7e8e85")
+		)
+		(pin "2"
+			(uuid "caeabacb-6eb9-4465-beeb-f7cba3eb7ca5")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/c7ec1e0b-ef3a-4634-a2b3-8c53bfe67cf1"
+					(reference "J14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 115.57 91.44 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3794d419-f83a-4561-9c69-a5251d08db61")
+		(property "Reference" "D3"
+			(at 118.618 89.662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 115.57 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 115.57 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2875,7 +2945,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 175.26 52.07 0)
+			(at 115.57 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2884,7 +2954,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 175.26 52.07 0)
+			(at 115.57 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2893,7 +2963,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 175.26 52.07 0)
+			(at 115.57 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2917,77 +2987,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 130.81 31.75 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3aea5acb-10aa-45a4-a2b5-d2b92f1e5ce5")
-		(property "Reference" "J22"
-			(at 140.208 32.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "RPI Zero W"
-			(at 137.922 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_2P_Horizontal"
-			(at 130.81 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 130.81 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 130.81 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2e305695-9a18-4502-822c-c8c7c928cca9")
-		)
-		(pin "1"
-			(uuid "67867f77-7430-4849-ad92-2c1513ef047f")
-		)
-		(instances
-			(project "HUB_RevA"
-				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/c7ec1e0b-ef3a-4634-a2b3-8c53bfe67cf1"
-					(reference "J22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
-		(at 175.26 38.1 0)
+		(at 101.6 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2996,7 +2997,7 @@
 		(fields_autoplaced yes)
 		(uuid "3cc31cc6-969c-4440-bbff-ccdfc4b2e8a0")
 		(property "Reference" "#PWR063"
-			(at 175.26 41.91 0)
+			(at 105.41 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3005,7 +3006,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 175.2601 34.29 90)
+			(at 97.79 91.4399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3014,7 +3015,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 175.26 38.1 0)
+			(at 101.6 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3023,7 +3024,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 38.1 0)
+			(at 101.6 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3032,7 +3033,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 175.26 38.1 0)
+			(at 101.6 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3054,7 +3055,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 167.64 52.07 90)
+		(at 115.57 99.06 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3062,7 +3063,7 @@
 		(dnp no)
 		(uuid "477076b6-0ab0-4e46-a90e-fe832e6db2ef")
 		(property "Reference" "D2"
-			(at 169.418 55.118 0)
+			(at 118.618 97.282 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3070,7 +3071,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 171.45 52.07 0)
+			(at 115.57 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3079,7 +3080,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
-			(at 167.64 52.07 0)
+			(at 115.57 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3088,7 +3089,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 167.64 52.07 0)
+			(at 115.57 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3097,7 +3098,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 167.64 52.07 0)
+			(at 115.57 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3106,7 +3107,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 167.64 52.07 0)
+			(at 115.57 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3115,7 +3116,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 167.64 52.07 0)
+			(at 115.57 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3206,7 +3207,7 @@
 	)
 	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
-		(at 167.64 55.88 0)
+		(at 119.38 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3214,7 +3215,7 @@
 		(dnp no)
 		(uuid "4e07d9e6-4340-45ea-a523-9e06ffd52f65")
 		(property "Reference" "#PWR056"
-			(at 167.64 55.88 0)
+			(at 119.38 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3223,7 +3224,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.64 62.23 0)
+			(at 125.73 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3231,7 +3232,7 @@
 			)
 		)
 		(property "Footprint" "finalhand-easyedapro:"
-			(at 167.64 55.88 0)
+			(at 119.38 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3240,7 +3241,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 55.88 0)
+			(at 119.38 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3249,7 +3250,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 167.64 55.88 0)
+			(at 119.38 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3264,6 +3265,92 @@
 			(project "HUB_RevA"
 				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/c7ec1e0b-ef3a-4634-a2b3-8c53bfe67cf1"
 					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 152.4 91.44 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e0841ee-5691-4791-a3ba-0c3f25785a98")
+		(property "Reference" "D4"
+			(at 155.448 89.662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 152.4 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 152.4 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 152.4 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 152.4 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 152.4 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "83d98df6-864d-4970-b2bd-db6264e5d02b")
+		)
+		(pin "1"
+			(uuid "aadb052b-1100-4fa0-a1db-d76527d64a63")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/c7ec1e0b-ef3a-4634-a2b3-8c53bfe67cf1"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -3402,6 +3489,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 76.2 31.75 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5bdbfc8d-9542-44f3-a85f-81a56c2d953a")
+		(property "Reference" "J22"
+			(at 85.598 32.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RPI Zero W"
+			(at 83.312 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_2P_Vertical"
+			(at 76.2 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 76.2 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2948b7e1-da7f-426a-94a4-02308e6371ba")
+		)
+		(pin "1"
+			(uuid "a1a86de9-b24c-4675-be20-470260b0b9fc")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/c7ec1e0b-ef3a-4634-a2b3-8c53bfe67cf1"
+					(reference "J22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 81.28 62.23 0)
 		(unit 1)
@@ -3462,80 +3618,6 @@
 			(project "HUB_RevA"
 				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/c7ec1e0b-ef3a-4634-a2b3-8c53bfe67cf1"
 					(reference "#PWR074")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
-		(at 93.98 63.5 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "67fc4fa7-6ee1-4b1b-9bdc-a617cdfe5e56")
-		(property "Reference" "J14"
-			(at 95.25 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Conn_01x03_Pin"
-			(at 95.25 64.7699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_3P_Horizontal"
-			(at 93.98 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 93.98 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c1fdb896-86b1-44d6-ad2d-4fb5e0344c84")
-		)
-		(pin "3"
-			(uuid "0ce576b4-91e4-441e-8008-0691f6b0e5c1")
-		)
-		(pin "2"
-			(uuid "03a343cd-734e-492c-8ab8-b33a25202c38")
-		)
-		(instances
-			(project "HUB_RevA"
-				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/c7ec1e0b-ef3a-4634-a2b3-8c53bfe67cf1"
-					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -3894,7 +3976,7 @@
 	)
 	(symbol
 		(lib_id "finalhand-easyedapro:Ground-GND")
-		(at 175.26 55.88 0)
+		(at 119.38 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3902,7 +3984,7 @@
 		(dnp no)
 		(uuid "806a046c-60cb-4217-8225-d2e30706385a")
 		(property "Reference" "#PWR059"
-			(at 175.26 55.88 0)
+			(at 119.38 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3911,7 +3993,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 175.26 62.23 0)
+			(at 125.73 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3919,7 +4001,7 @@
 			)
 		)
 		(property "Footprint" "finalhand-easyedapro:"
-			(at 175.26 55.88 0)
+			(at 119.38 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3928,7 +4010,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 55.88 0)
+			(at 119.38 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3937,7 +4019,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name 'GND'"
-			(at 175.26 55.88 0)
+			(at 119.38 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4017,6 +4099,75 @@
 			(project "HUB_RevA"
 				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/c7ec1e0b-ef3a-4634-a2b3-8c53bfe67cf1"
 					(reference "#PWR0116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 130.81 31.75 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a06a1904-81c8-48ce-b825-fdd1dd644243")
+		(property "Reference" "J19"
+			(at 140.208 32.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RPI Zero W"
+			(at 137.922 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_2P_Vertical"
+			(at 130.81 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 130.81 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f39d857d-f595-4497-beef-bdb7776600e0")
+		)
+		(pin "1"
+			(uuid "b75403d1-d89a-41ae-b8f0-d40d78c68446")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/c7ec1e0b-ef3a-4634-a2b3-8c53bfe67cf1"
+					(reference "J19")
 					(unit 1)
 				)
 			)
@@ -4166,7 +4317,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b5ad6ebe-e3df-428e-b1da-73475a5977f1")
+		(uuid "b1474e95-5ccf-4a89-8041-e38df2a2ede2")
 		(property "Reference" "J18"
 			(at 112.268 32.766 0)
 			(effects
@@ -4185,7 +4336,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_2P_Horizontal"
+		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_2P_Vertical"
 			(at 102.87 31.75 0)
 			(effects
 				(font
@@ -4213,10 +4364,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "b290863a-7bca-4fe6-ab09-4f4e0c39bcdf")
+			(uuid "ea0b994c-91ec-460a-987c-1761dc1fb657")
 		)
 		(pin "1"
-			(uuid "dcc818d1-0ffa-433b-8dac-26291e7fedeb")
+			(uuid "53063bc4-13be-481e-8eb2-c4ee974404ae")
 		)
 		(instances
 			(project "HUB_RevA"
@@ -4358,6 +4509,76 @@
 		)
 	)
 	(symbol
+		(lib_id "finalhand-easyedapro:Res")
+		(at 143.51 91.44 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb9ea3c9-c3ca-48a6-ab14-97eeffafb0e5")
+		(property "Reference" "R19"
+			(at 145.034 92.964 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "120"
+			(at 145.542 88.392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 143.51 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 143.51 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d39f8cc-d849-49af-b440-805fb077fdc8")
+		)
+		(pin "2"
+			(uuid "eb5b37b4-472e-43a2-8e3f-084547e735c7")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/c7ec1e0b-ef3a-4634-a2b3-8c53bfe67cf1"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
 		(at 138.43 63.5 180)
 		(unit 1)
@@ -4368,7 +4589,7 @@
 		(fields_autoplaced yes)
 		(uuid "bdd6fe97-84a0-40a2-9336-9dad97a484ab")
 		(property "Reference" "J16"
-			(at 139.7 62.2299 0)
+			(at 139.7 63.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4386,7 +4607,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_3P_Horizontal"
+		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_3P_Vertical"
 			(at 138.43 63.5 0)
 			(effects
 				(font
@@ -4426,6 +4647,80 @@
 			(project "HUB_RevA"
 				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/c7ec1e0b-ef3a-4634-a2b3-8c53bfe67cf1"
 					(reference "J16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 115.57 63.5 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be3757e5-b19b-4529-a9d5-08b12d5d5773")
+		(property "Reference" "J15"
+			(at 116.84 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 116.84 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_3P_Vertical"
+			(at 115.57 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 115.57 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8767e998-345c-4eee-8021-48e017b482a3")
+		)
+		(pin "3"
+			(uuid "205af9a3-b116-450a-b273-ade53725d40b")
+		)
+		(pin "2"
+			(uuid "ed4b6cb3-8af0-41ed-a707-e9a7b69b38c1")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/c7ec1e0b-ef3a-4634-a2b3-8c53bfe67cf1"
+					(reference "J15")
 					(unit 1)
 				)
 			)
@@ -4563,36 +4858,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
-		(at 115.57 63.5 180)
+		(lib_id "power:+5V")
+		(at 138.43 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "db14c42e-0794-4b06-b867-1754f4809da1")
-		(property "Reference" "J15"
-			(at 116.84 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Conn_01x03_Pin"
-			(at 116.84 64.7699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_3P_Horizontal"
-			(at 115.57 63.5 0)
+		(uuid "dd744681-a996-4a98-b798-626f516036fa")
+		(property "Reference" "#PWR017"
+			(at 142.24 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4600,8 +4875,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 115.57 63.5 0)
+		(property "Value" "+12V"
+			(at 134.62 91.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4609,8 +4893,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 115.57 63.5 0)
+		(property "Datasheet" ""
+			(at 138.43 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 138.43 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4619,18 +4912,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ae118195-72da-468d-a00a-fb4698a6a32b")
-		)
-		(pin "3"
-			(uuid "661eafda-fa3c-4298-bcfd-5a4005655f79")
-		)
-		(pin "2"
-			(uuid "1a9fbdf5-7402-4e30-b592-1884f9b12822")
+			(uuid "0e071d7f-2f74-4bf8-9984-cc215014475a")
 		)
 		(instances
 			(project "HUB_RevA"
 				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/c7ec1e0b-ef3a-4634-a2b3-8c53bfe67cf1"
-					(reference "J15")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)

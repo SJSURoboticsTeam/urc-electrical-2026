@@ -1941,26 +1941,6 @@
 		)
 		(uuid 2546789f-a833-455a-9f07-2ab2b03e3554)
 	)
-	(text "5V"
-		(exclude_from_sim no)
-		(at 203.962 54.61 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "04013009-2d71-422f-a966-e51e00c8f906")
-	)
-	(text "GND"
-		(exclude_from_sim no)
-		(at 206.756 55.118 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0d895d32-7049-4524-8fb1-b64bab2c1345")
-	)
 	(text "SDA"
 		(exclude_from_sim no)
 		(at 38.354 41.402 90)
@@ -1970,16 +1950,6 @@
 			)
 		)
 		(uuid "16d59be3-a8a2-4b82-a145-d0de016772a1")
-	)
-	(text "CAN+"
-		(exclude_from_sim no)
-		(at 246.38 56.642 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "35c1f0aa-654b-4742-83fd-30d0c2fa194f")
 	)
 	(text "SCL"
 		(exclude_from_sim no)
@@ -2004,16 +1974,6 @@
 		)
 		(uuid "3a1ac9e9-bc17-4520-b33f-a4fdd6876175")
 	)
-	(text "CAN+"
-		(exclude_from_sim no)
-		(at 209.296 55.626 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5fab6811-c23f-4049-b7af-491f3c1404b8")
-	)
 	(text " -> MPU6050"
 		(exclude_from_sim no)
 		(at 28.448 33.782 0)
@@ -2023,16 +1983,6 @@
 			)
 		)
 		(uuid "64060356-ac74-40b2-9dd2-1a322c2ea864")
-	)
-	(text "CAN-"
-		(exclude_from_sim no)
-		(at 211.836 55.372 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "71caeba2-3433-4fc8-8401-b994147f4b73")
 	)
 	(text "CANBus"
 		(exclude_from_sim no)
@@ -2059,43 +2009,13 @@
 	)
 	(text " -> LCD"
 		(exclude_from_sim no)
-		(at 155.702 68.834 0)
+		(at 160.782 68.834 0)
 		(effects
 			(font
 				(size 2 2)
 			)
 		)
 		(uuid "9e6fdd2d-b820-4bef-ac1d-2322bae79e24")
-	)
-	(text "5V"
-		(exclude_from_sim no)
-		(at 241.554 56.388 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a72dd8e7-8f0a-4768-b0fa-40bcf8e33cba")
-	)
-	(text "GND"
-		(exclude_from_sim no)
-		(at 243.84 56.388 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "ea2acf32-5685-484a-8cc2-ee0910aa315e")
-	)
-	(text "CAN-"
-		(exclude_from_sim no)
-		(at 248.92 56.642 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "ee8b207e-ae11-40df-b3f8-846921b7c4ad")
 	)
 	(junction
 		(at 48.26 113.03)
@@ -3623,28 +3543,7 @@
 			)
 		)
 	)
-	(global_label "SDA"
-		(shape input)
-		(at 143.51 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0954629b-6a27-4b6f-a65e-33c5e315b159")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 165.9191 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "I2C_-"
+	(global_label "I2C_3.3_-"
 		(shape input)
 		(at 77.47 34.29 270)
 		(fields_autoplaced yes)
@@ -3666,7 +3565,29 @@
 			)
 		)
 	)
-	(global_label "SCL"
+	(global_label "G-"
+		(shape input)
+		(at 26.67 129.54 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "110792fa-e207-4b9e-b611-7f48ea274ecb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 21.8595 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C_5_-"
 		(shape input)
 		(at 154.94 41.91 180)
 		(fields_autoplaced yes)
@@ -3676,7 +3597,7 @@
 			)
 			(justify right)
 		)
-		(uuid "1389f8b9-6004-4f13-a739-f908c86c57dd")
+		(uuid "143dc3a5-d1bb-42ba-a301-c84e5ae3a6b6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 149.1014 41.91 0)
 			(effects
@@ -3732,9 +3653,9 @@
 			)
 		)
 	)
-	(global_label "G2'"
+	(global_label "I2C_3.3_+"
 		(shape input)
-		(at 151.13 99.06 180)
+		(at 25.4 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3742,57 +3663,14 @@
 			)
 			(justify right)
 		)
-		(uuid "1f98f23d-5ac5-4854-bf9c-7e2618fb2e20")
+		(uuid "3128a75c-6c3a-417a-9bc4-e03baccb813a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 145.7147 99.06 0)
+			(at 17.4447 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "I2C_-"
-		(shape input)
-		(at 25.4 76.2 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3ba47200-88fd-4c60-aac1-3317b04afe08")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 17.4447 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SCL"
-		(shape input)
-		(at 143.51 69.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3cebf865-bad5-4d4c-a486-cd4497775d09")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 165.8586 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -3819,24 +3697,23 @@
 			)
 		)
 	)
-	(global_label "G3"
+	(global_label "I2C_5_+"
 		(shape input)
-		(at 26.67 129.54 180)
-		(fields_autoplaced yes)
+		(at 143.51 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "44e8e715-9331-4305-bfa4-454b0d975ec7")
+		(uuid "450c36e4-ab1c-4c3b-90d0-e66d3a44e1e5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.8595 129.54 0)
+			(at 165.9191 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -3885,7 +3762,7 @@
 			)
 		)
 	)
-	(global_label "I2C_+"
+	(global_label "I2C_3.3_+"
 		(shape input)
 		(at 97.79 34.29 270)
 		(fields_autoplaced yes)
@@ -3898,6 +3775,28 @@
 		(uuid "64e8efb4-9c7d-4fe8-944e-48e04bd24a7d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 97.79 42.2453 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C_3.3_-"
+		(shape input)
+		(at 25.4 76.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "679f6e6f-babb-4087-bbee-acec74a60974")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 17.4447 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3929,29 +3828,29 @@
 			)
 		)
 	)
-	(global_label "G3'"
+	(global_label "G'-"
 		(shape input)
-		(at 138.43 123.19 0)
+		(at 151.13 99.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "82177dea-8227-406e-ac32-74656b4dae35")
+		(uuid "79aa1f19-5911-425a-b6fb-e193b41b4e44")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 143.8453 123.19 0)
+			(at 145.7147 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
-	(global_label "SDA"
+	(global_label "I2C_5_+"
 		(shape input)
 		(at 154.94 39.37 180)
 		(fields_autoplaced yes)
@@ -3961,7 +3860,7 @@
 			)
 			(justify right)
 		)
-		(uuid "8afa1f93-4f10-4878-8fd8-9d6905b02b48")
+		(uuid "8c496be2-8ef9-4ce0-8678-e11a9d0a49fb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 149.0409 39.37 0)
 			(effects
@@ -3973,29 +3872,28 @@
 			)
 		)
 	)
-	(global_label "G2"
+	(global_label "I2C_5_-"
 		(shape input)
-		(at 26.67 127 180)
-		(fields_autoplaced yes)
+		(at 143.51 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "a3826aeb-cbc6-43f2-91a5-fc658f063e60")
+		(uuid "92ccadc1-3b46-48cb-b2e2-7887c92f7a51")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.8595 127 0)
+			(at 165.8586 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
-	(global_label "G2'"
+	(global_label "G'+"
 		(shape input)
 		(at 138.43 120.65 0)
 		(fields_autoplaced yes)
@@ -4005,7 +3903,7 @@
 			)
 			(justify left)
 		)
-		(uuid "bc102ec0-fd58-4dca-a4d1-4da3579d4f59")
+		(uuid "968f0600-69d3-45c3-a621-f05fc35c82e2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 143.8453 120.65 0)
 			(effects
@@ -4017,7 +3915,29 @@
 			)
 		)
 	)
-	(global_label "I2C_-"
+	(global_label "G'-"
+		(shape input)
+		(at 138.43 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9785f1fb-335a-4bce-8d22-b115ab2bc53e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 143.8453 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C_3.3_-"
 		(shape input)
 		(at 95.25 34.29 270)
 		(fields_autoplaced yes)
@@ -4039,9 +3959,9 @@
 			)
 		)
 	)
-	(global_label "I2C_+"
+	(global_label "G+"
 		(shape input)
-		(at 25.4 73.66 180)
+		(at 26.67 127 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4049,9 +3969,9 @@
 			)
 			(justify right)
 		)
-		(uuid "cf2d7587-ba24-4d52-8f92-247f88393d31")
+		(uuid "c54a3672-e364-4636-bbd2-a35da10919fe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 17.4447 73.66 0)
+			(at 21.8595 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4061,7 +3981,7 @@
 			)
 		)
 	)
-	(global_label "I2C_+"
+	(global_label "I2C_3.3_+"
 		(shape input)
 		(at 80.01 34.29 270)
 		(fields_autoplaced yes)
@@ -4074,28 +3994,6 @@
 		(uuid "deb0f036-2260-44f8-a6de-2a15c9288444")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 80.01 42.2453 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "G3'"
-		(shape input)
-		(at 151.13 96.52 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e087db5a-b722-49a4-9d0f-b58218094d4a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 145.7147 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4123,6 +4021,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "G'+"
+		(shape input)
+		(at 151.13 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ec994e2c-4e60-45af-bece-eb214a2c5e36")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.7147 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4597,7 +4517,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal"
+		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_2P_Vertical"
 			(at 80.01 29.21 0)
 			(effects
 				(font
@@ -5947,6 +5867,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x04_Pin")
+		(at 207.01 52.07 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a445127b-dc40-4625-abd2-67295a501d77")
+		(property "Reference" "J4"
+			(at 207.01 59.944 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Phoenix [2.54mm]"
+			(at 208.534 57.658 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_4P_Horizontal"
+			(at 207.01 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 207.01 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b0d25fcd-8e57-464b-857f-5e3724fa6fae")
+		)
+		(pin "3"
+			(uuid "00515c8d-4d30-4fe6-988f-022b50ccfbda")
+		)
+		(pin "1"
+			(uuid "861160c1-afd3-4a9a-8fa9-8ab8f24daa71")
+		)
+		(pin "4"
+			(uuid "d28cf103-f35e-4efd-a5de-82673cf630f2")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/2446a063-2a00-4e9a-b83f-c0e59977093c"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 240.03 88.9 0)
 		(unit 1)
@@ -6408,80 +6402,6 @@
 			(project "HUB_RevA"
 				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/2446a063-2a00-4e9a-b83f-c0e59977093c"
 					(reference "#PWR068")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
-		(at 207.01 52.07 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bd86217f-80f0-46c5-ad0a-3eb6cbfdcc4b")
-		(property "Reference" "J4"
-			(at 207.01 59.944 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Phoenix [2.54mm]"
-			(at 208.534 57.658 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_4P_Horizontal"
-			(at 207.01 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 207.01 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 207.01 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0b64c2bf-de0b-4f92-b2a9-161f1a0f0364")
-		)
-		(pin "3"
-			(uuid "6fdd3c32-4e31-4857-ad89-43f722be25e4")
-		)
-		(pin "1"
-			(uuid "41fd6ebb-c546-403b-9bc2-a17918973942")
-		)
-		(pin "4"
-			(uuid "c244be4d-5ace-409c-903d-3e0ed9e301bd")
-		)
-		(instances
-			(project "HUB_RevA"
-				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/2446a063-2a00-4e9a-b83f-c0e59977093c"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -7007,7 +6927,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_2P_Horizontal"
+		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_2P_Vertical"
 			(at 38.1 44.45 0)
 			(effects
 				(font
@@ -7262,6 +7182,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 97.79 29.21 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e2d8ae31-9cbe-42bd-958c-ac08477c976e")
+		(property "Reference" "J24"
+			(at 96.012 22.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Phoenix (SDA/L)"
+			(at 88.646 25.654 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_2P_Vertical"
+			(at 97.79 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 97.79 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "827ec1a0-2865-49f2-8736-fb725f84da64")
+		)
+		(pin "1"
+			(uuid "1c69c13a-83d2-446d-baf0-1f917bb697ba")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/2446a063-2a00-4e9a-b83f-c0e59977093c"
+					(reference "J24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "finalhand-easyedapro:Res")
 		(at 229.87 97.79 180)
 		(unit 1)
@@ -7456,75 +7445,6 @@
 			(project "HUB_RevA"
 				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/2446a063-2a00-4e9a-b83f-c0e59977093c"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 97.79 29.21 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f3615327-e910-45a7-a244-17b30cb4e4fe")
-		(property "Reference" "J24"
-			(at 96.012 22.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Phoenix (SDA/L)"
-			(at 88.646 25.654 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 97.79 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 97.79 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 97.79 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e34c8139-dea1-42a2-87a8-4f2caa5ea164")
-		)
-		(pin "1"
-			(uuid "5bb8ed4f-2e69-43ac-a8d9-6dc3cbde086f")
-		)
-		(instances
-			(project "HUB_RevA"
-				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/2446a063-2a00-4e9a-b83f-c0e59977093c"
-					(reference "J24")
 					(unit 1)
 				)
 			)

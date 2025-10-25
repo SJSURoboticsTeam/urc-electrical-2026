@@ -1,7 +1,7 @@
 (footprint "Pluggable_Terminal_2.54mm_4P_Horizontal"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -0.5 0)
@@ -20,19 +20,6 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "039a532e-3a40-431f-bfed-160614f1e273")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" "Pluggable_Terminal_2.54mm_4P_Horizontal"
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "377a6b31-9374-494a-bb6d-5b79aeb44d48")
 		(effects
 			(font
 				(size 1 1)
@@ -127,6 +114,17 @@
 		(layer "F.SilkS")
 		(uuid "6727e966-6404-47d0-926a-4ec467d9e7af")
 	)
+	(fp_rect
+		(start -6.70313 2.242452)
+		(end 6.264508 12.846486)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "b2d8d908-f05f-4c25-ada3-cd736e013240")
+	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)
 		(unlocked yes)
@@ -172,6 +170,7 @@
 		(remove_unused_layers no)
 		(uuid "d4770a8c-8d1c-4e87-9552-9c54a69f4295")
 	)
+	(embedded_fonts no)
 	(model "${KICAD8_3DMODEL_DIR}/Connector_Phoenix_MC.3dshapes/PhoenixContact_MC_1,5_4-G-3.5_1x04_P3.50mm_Horizontal.wrl"
 		(offset
 			(xyz -4.2 -3.45 0)

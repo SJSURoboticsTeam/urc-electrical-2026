@@ -1,0 +1,169 @@
+(footprint "Pluggable_Terminal_2.54mm_3P_Vertical"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "16f98a17-195d-4d85-a9b3-6e26e81af969")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Pluggable_Terminal_2.54mm_3P_Vertical"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "da22d474-f67f-4f4d-ac2c-3d095ad515e3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e68eda0f-7124-4a12-8081-d97043f391da")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b3b40bd8-25bc-4708-9676-86c8606b8e3a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd allow_soldermask_bridges)
+	(fp_line
+		(start -4.356 -2.36)
+		(end -3.756 -2.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b7129428-b025-41e5-9c22-b70a60104d7d")
+	)
+	(fp_line
+		(start -4.056 -1.76)
+		(end -4.356 -2.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "59c2f328-d628-4f07-88b9-6a2637878634")
+	)
+	(fp_line
+		(start -3.756 -2.36)
+		(end -4.056 -1.76)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "62fc0c6e-714b-48e8-a44c-22a6abd1f527")
+	)
+	(fp_rect
+		(start -6.096 -3.81)
+		(end 3.375 4.29)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "64b648f0-8810-4a1d-a7e1-0f7108282c9b")
+	)
+	(fp_line
+		(start -3.696 -0.96)
+		(end -4.496 0.24)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "222ed8d8-0b10-4123-ac9d-3fd141bbba6f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "23148ed7-4717-46c9-8f4e-0a68dbd31876")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.096 -1.26 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "82006309-535a-45ae-b40d-2147c882153e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at -3.886 0.09)
+		(size 1.8 3.6)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.138889)
+		(uuid "83d33c36-4ad7-4071-86f6-e90c433bd2da")
+	)
+	(pad "2" thru_hole oval
+		(at -1.346 0.09)
+		(size 1.8 3.6)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "eb5c020c-ec1a-4435-8f2b-1431ecc77911")
+	)
+	(pad "3" thru_hole oval
+		(at 1.194 0.09)
+		(size 1.8 3.6)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "bef28d43-5c46-49f9-8365-0c315f057785")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Connector_Phoenix_MC.3dshapes/PhoenixContact_MCV_1,5_3-G-3.5_1x03_P3.50mm_Vertical.wrl"
+		(offset
+			(xyz -4 -1 0)
+		)
+		(scale
+			(xyz 0.75 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
