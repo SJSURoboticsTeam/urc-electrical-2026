@@ -8,23 +8,21 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
     steps:
     - uses: actions/checkout@v4
     - name: Export PDF
       id: production
       uses: SJSURoboticsTeam/kicad-action@v1.5
       with:
-        kicad_sch: '40Vservo/40Vservo.kicad_sch;drive/drive.kicad_sch;main_arm/main_arm.kicad_sch;HUB/HUB.kicad_sch;Science/Science.kicad_sch;POE/POE.kicad_sch;bldc/bldc.kicad_sch'
-        kicad_pcb: '40Vservo/40Vservo.kicad_pcb;drive/drive.kicad_pcb;main_arm/main_arm.kicad_pcb;HUB/HUB.kicad_pcb;Science/Science.kicad_pcb;POE/POE.kicad_pcb;bldc/bldc.kicad_pcb'
+        kicad_sch: 'drive/drive.kicad_sch;main_arm/main_arm.kicad_sch;HUB/HUB.kicad_sch;Science/Science.kicad_sch;POE/POE.kicad_sch;bldc/bldc.kicad_sch'
+        kicad_pcb: 'drive/drive.kicad_pcb;main_arm/main_arm.kicad_pcb;HUB/HUB.kicad_pcb;Science/Science.kicad_pcb;POE/POE.kicad_pcb;bldc/bldc.kicad_pcb'
         sch_pdf: true
         pcb_image: true
         pcb_image_path: .
         output_dir: ${{ github.workspace }}/build
 
-    - name: Get directory of outputs
-      run: echo "OUTPUT_DIRECTORIES=`dirname ${{ matrix.projects.path }}`" >> "$GITHUB_ENV"
-    
+    - name: Create navigation file
+      run: 'BASEDIR=${{ github.workspace }} sh ${{ github.workspace }}/.github/nav-writer.sh'
     
     - name: Upload production files
       uses: actions/upload-artifact@v4
@@ -32,19 +30,3 @@ jobs:
       with:
         name: "all-outputs"
         path: ${{ github.workspace }}/build
-
-    - name: Create navigation file
-      run: |
-        echo "* [Schematic](sch.pdf)
-        * [PCB](top.png)" > ${{ github.workspace }}/nav.md
-
-    - name: Upload production files
-      uses: actions/upload-artifact@v4
-      if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
-      with:
-        name: ${{ matrix.projects.name }}
-        path: |
-          ${{ github.workspace }}/nav.md
-          ${{ github.workspace }}/sch.pdf
-          ${{ github.workspace }}/top.png
-          ${{ github.workspace }}/bottom.png
