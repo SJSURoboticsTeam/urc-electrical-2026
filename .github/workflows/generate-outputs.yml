@@ -35,7 +35,7 @@ jobs:
 
       - name: Create navigation file
         run: >
-          BASEDIR=${{ github.workspace }}/outputs sh ${{ github.workspace }}/.github/nav-writer.sh
+          BASEDIR=${{ github.workspace }}/outputs sudo sh ${{ github.workspace }}/.github/nav-writer.sh
           drive
           main_arm
           HUB
