@@ -5318,7 +5318,7 @@
 		)
 		(uuid "06ba6d1b-8ce7-4861-8a2b-e44b9381364d")
 	)
-	(text "3V3 in from LDL"
+	(text "3V3 in from LDO"
 		(exclude_from_sim no)
 		(at 98.044 20.574 0)
 		(effects
@@ -5588,7 +5588,17 @@
 		)
 		(uuid "ca409ae4-06d0-43af-9a93-c12f0769c1f6")
 	)
-	(text "LDL"
+	(text "5V connector for buck"
+		(exclude_from_sim no)
+		(at 28.448 148.844 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d8b6b13a-3d51-41fe-aa11-ec44d34e7385")
+	)
+	(text "LDO"
 		(exclude_from_sim no)
 		(at 37.084 50.8 0)
 		(effects
@@ -6929,6 +6939,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 156.21) (xy 24.13 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4b5c16a-ca51-4fa3-ab37-16c0b94b35a0")
+	)
+	(wire
+		(pts
 			(xy 187.96 93.98) (xy 186.69 93.98)
 		)
 		(stroke
@@ -7116,6 +7136,16 @@
 			(type default)
 		)
 		(uuid "da250c98-df97-4b2a-8b73-67535e15f4c4")
+	)
+	(wire
+		(pts
+			(xy 26.67 156.21) (xy 24.13 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dae22062-6f3e-427a-a3fa-0a348a5dcf48")
 	)
 	(wire
 		(pts
@@ -7364,6 +7394,28 @@
 		(uuid "0e872f6a-4e5d-4658-a4e3-652a8b1509e5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 152.7904 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5V"
+		(shape input)
+		(at 26.67 153.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "15f7c3a5-c242-400e-9ef9-e81a08913d81")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 22.0409 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11285,6 +11337,75 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
+		(at 31.75 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "83e080eb-1749-4861-99bb-033699f7837e")
+		(property "Reference" "J10"
+			(at 37.084 153.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Socket"
+			(at 40.894 150.7489 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "SJSU_common:Pluggable_Terminal_2.54mm_2P_Horizontal"
+			(at 31.75 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 31.75 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4e1315c-22e9-44d0-a2c1-00f80ee1cd14")
+		)
+		(pin "2"
+			(uuid "6545aa82-4548-47e2-a72a-0a7f3b2fe783")
+		)
+		(instances
+			(project "drill"
+				(path "/da48a1d7-a3e6-444f-8b34-e6b70c46ac20"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Socket")
 		(at 31.75 140.97 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13302,6 +13423,72 @@
 			(project "drill"
 				(path "/da48a1d7-a3e6-444f-8b34-e6b70c46ac20"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 24.13 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fcb76a5f-5fb6-405e-9245-97a1144c16a5")
+		(property "Reference" "#PWR020"
+			(at 24.13 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 24.13 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.13 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 24.13 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38466d2a-24ce-444c-a6f5-bd5d20ee1760")
+		)
+		(instances
+			(project "drill"
+				(path "/da48a1d7-a3e6-444f-8b34-e6b70c46ac20"
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
