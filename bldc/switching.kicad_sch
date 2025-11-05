@@ -183,129 +183,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x01_Socket"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x01_Socket"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x01, script generated"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x01_Socket_1_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -0.508)
-					(mid -0.5058 0)
-					(end 0 0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers
 				(hide yes)
@@ -536,6 +413,156 @@
 					(at 0 -2.54 90)
 					(length 2.032)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:D_Zener_Filled"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener_Filled"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Zener diode, filled shape"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Zener_Filled_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "D_Zener_Filled_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -989,131 +1016,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3V3"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+3V3"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+3V3_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3V3_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+BATT"
 			(power)
 			(pin_numbers
@@ -1406,6 +1308,12 @@
 		(uuid "bf6b1968-cd82-4976-bcdf-3c35294ad7fc")
 	)
 	(junction
+		(at 175.26 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d297d6a0-aa11-4549-a6cc-59b161ba375f")
+	)
+	(junction
 		(at 107.95 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1536,6 +1444,16 @@
 			(type default)
 		)
 		(uuid "4fc267ba-d3e7-4f0d-822c-36d667f18f88")
+	)
+	(wire
+		(pts
+			(xy 175.26 55.88) (xy 163.83 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "581defc3-63b2-487c-91d7-f8f2cac44b69")
 	)
 	(wire
 		(pts
@@ -1759,7 +1677,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 55.88) (xy 163.83 55.88)
+			(xy 179.07 55.88) (xy 175.26 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1829,7 +1747,7 @@
 	)
 	(hierarchical_label "SENSE"
 		(shape output)
-		(at 165.1 55.88 0)
+		(at 179.07 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1837,6 +1755,17 @@
 			(justify left)
 		)
 		(uuid "69c5a813-4171-4966-b851-c5f790d139c9")
+	)
+	(hierarchical_label "MOTOR"
+		(shape output)
+		(at 144.78 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6d600d5c-fcc2-461b-95d5-4eadcfad2f81")
 	)
 	(hierarchical_label "IN{GATE}"
 		(shape input)
@@ -2224,35 +2153,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Socket")
-		(at 149.86 76.2 0)
+		(lib_id "power:GND")
+		(at 175.26 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4c248f6a-132c-48cf-a8fe-858a82d0070c")
-		(property "Reference" "J7"
-			(at 151.13 74.9299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MOTOR A"
-			(at 151.13 77.4699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWire-1.5sqmm_1x01_D1.7mm_OD3.9mm"
-			(at 149.86 76.2 0)
+		(uuid "4968c8bf-2a32-4502-b8e0-86ea960ead92")
+		(property "Reference" "#PWR012"
+			(at 175.26 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2260,8 +2171,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 149.86 76.2 0)
+		(property "Value" "GND"
+			(at 175.26 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2269,8 +2188,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 149.86 76.2 0)
+		(property "Datasheet" ""
+			(at 175.26 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 175.26 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2279,20 +2207,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "ef23e198-c882-47ac-b644-002ef1d2000b")
+			(uuid "529543c3-1fb4-4129-b7d7-85c2f2ed7d81")
 		)
 		(instances
 			(project "bldc"
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/38b3435c-ec9f-4540-81f2-7b940bfa31f6"
-					(reference "J8")
+					(reference "#PWR044")
 					(unit 1)
 				)
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/50bb2d0a-89a1-46b1-9583-6fc9ef41509e"
-					(reference "J9")
+					(reference "#PWR051")
 					(unit 1)
 				)
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/c1072f84-6c58-4519-93b0-855da48bb19d"
-					(reference "J7")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -2666,6 +2594,80 @@
 				)
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/c1072f84-6c58-4519-93b0-855da48bb19d"
 					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 143.51 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c8c0fd0-9ef8-4064-95e8-792450a5843d")
+		(property "Reference" "#PWR07"
+			(at 143.51 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 143.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 143.51 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "831fbfb1-1bb6-4ba5-9243-0d9361e9d558")
+		)
+		(instances
+			(project "bldc"
+				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/38b3435c-ec9f-4540-81f2-7b940bfa31f6"
+					(reference "#PWR08")
+					(unit 1)
+				)
+				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/50bb2d0a-89a1-46b1-9583-6fc9ef41509e"
+					(reference "#PWR011")
+					(unit 1)
+				)
+				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/c1072f84-6c58-4519-93b0-855da48bb19d"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -3064,17 +3066,35 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 143.51 39.37 0)
+		(lib_id "Device:D_Zener_Filled")
+		(at 175.26 59.69 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b6ff9093-017a-4226-bdf2-f6cc5b6dab72")
-		(property "Reference" "#PWR044"
-			(at 143.51 43.18 0)
+		(uuid "b304050b-ee83-4538-9886-260ea45100c0")
+		(property "Reference" "D5"
+			(at 177.8 58.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3V3"
+			(at 177.8 60.9599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 175.26 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3082,16 +3102,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 143.51 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 143.51 39.37 0)
+		(property "Datasheet" "~"
+			(at 175.26 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3099,17 +3111,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 143.51 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 143.51 39.37 0)
+		(property "Description" "Zener diode, filled shape"
+			(at 175.26 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3118,20 +3121,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "13ddcfe1-1a53-4e3e-940a-75a75c63ccd9")
+			(uuid "89b8ceb6-b900-4e5a-8353-a78647571cbf")
+		)
+		(pin "2"
+			(uuid "bdb561ce-af32-4286-b589-95c57f00867e")
 		)
 		(instances
 			(project ""
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/38b3435c-ec9f-4540-81f2-7b940bfa31f6"
-					(reference "#PWR051")
+					(reference "D6")
 					(unit 1)
 				)
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/50bb2d0a-89a1-46b1-9583-6fc9ef41509e"
-					(reference "#PWR058")
+					(reference "D7")
 					(unit 1)
 				)
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6/c1072f84-6c58-4519-93b0-855da48bb19d"
-					(reference "#PWR044")
+					(reference "D5")
 					(unit 1)
 				)
 			)
