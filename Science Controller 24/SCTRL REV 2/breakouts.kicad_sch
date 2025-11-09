@@ -647,21 +647,21 @@
 				)
 			)
 		)
-		(symbol "Connector_Generic:Conn_01x04"
+		(symbol "Connector_Generic:Conn_01x05"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 5.08 0)
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x04"
+			(property "Value" "Conn_01x05"
 				(at 0 -7.62 0)
 				(effects
 					(font
@@ -687,7 +687,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -714,7 +714,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x04_1_1"
+			(symbol "Conn_01x05_1_1"
 				(rectangle
 					(start -1.27 -4.953)
 					(end 0 -5.207)
@@ -760,7 +760,18 @@
 					)
 				)
 				(rectangle
-					(start -1.27 3.81)
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 6.35)
 					(end 1.27 -6.35)
 					(stroke
 						(width 0.254)
@@ -771,7 +782,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 5.08 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -789,7 +800,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -807,7 +818,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -825,7 +836,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -835,6 +846,24 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1926,6 +1955,126 @@
 				)
 			)
 		)
+		(symbol "power:+4V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+4V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+4V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+4V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+4V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers hide)
@@ -2273,7 +2422,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 26.67) (xy 41.91 26.67)
+			(xy 35.56 26.67) (xy 41.91 26.67)
 		)
 		(stroke
 			(width 0)
@@ -2300,6 +2449,26 @@
 			(type default)
 		)
 		(uuid "2946026a-4321-484e-8459-51f769ee7883")
+	)
+	(wire
+		(pts
+			(xy 41.91 24.13) (xy 39.37 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3758d57d-ebe1-41a4-922f-094e1473d18d")
+	)
+	(wire
+		(pts
+			(xy 162.56 25.4) (xy 166.37 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "380e8c07-ff12-43fa-bba6-0526086d3d11")
 	)
 	(wire
 		(pts
@@ -2353,7 +2522,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 29.21) (xy 34.29 29.21)
+			(xy 41.91 29.21) (xy 30.48 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2363,7 +2532,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 31.75) (xy 29.21 31.75)
+			(xy 41.91 31.75) (xy 25.4 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2573,7 +2742,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 29.21) (xy 34.29 25.4)
+			(xy 30.48 29.21) (xy 30.48 24.13)
 		)
 		(stroke
 			(width 0)
@@ -2593,7 +2762,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 21.59) (xy 167.64 21.59)
+			(xy 162.56 21.59) (xy 167.64 21.59)
 		)
 		(stroke
 			(width 0)
@@ -2633,7 +2802,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 25.4) (xy 39.37 26.67)
+			(xy 35.56 24.13) (xy 35.56 26.67)
 		)
 		(stroke
 			(width 0)
@@ -2683,7 +2852,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 31.75) (xy 29.21 25.4)
+			(xy 25.4 31.75) (xy 25.4 24.13)
 		)
 		(stroke
 			(width 0)
@@ -2733,7 +2902,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 21.59) (xy 166.37 25.4)
+			(xy 162.56 21.59) (xy 162.56 25.4)
 		)
 		(stroke
 			(width 0)
@@ -2829,16 +2998,6 @@
 		)
 		(uuid "61bb2eb5-10b6-46a0-92ba-3a02ee041520")
 	)
-	(text "BREAKOUT checklist:\n\n"
-		(exclude_from_sim no)
-		(at 10.414 -2.54 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "bf40b5bb-3b77-4054-88e6-7a2d63dfc1c9")
-	)
 	(text "I2C PULLUPS"
 		(exclude_from_sim no)
 		(at 217.678 22.098 0)
@@ -2848,17 +3007,6 @@
 			)
 		)
 		(uuid "c9b04bb4-826d-4edf-9f48-13dc6fa0652d")
-	)
-	(text "Things using I2C:\n-PWM\n-Color sensor (off board/needs pullup resistors)"
-		(exclude_from_sim no)
-		(at 110.744 4.826 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e7437285-4916-4050-929e-ba0d3f0ceeae")
 	)
 	(text "I2C Connector\n"
 		(exclude_from_sim no)
@@ -3080,7 +3228,7 @@
 	)
 	(global_label "I2C_SCL"
 		(shape bidirectional)
-		(at 166.37 27.94 180)
+		(at 166.37 30.48 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3090,7 +3238,7 @@
 		)
 		(uuid "b491e028-ab77-465c-93d7-db773d689506")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.714 27.94 0)
+			(at 154.714 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3146,7 +3294,7 @@
 	)
 	(global_label "I2C_SDA"
 		(shape bidirectional)
-		(at 166.37 30.48 180)
+		(at 166.37 27.94 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3156,7 +3304,7 @@
 		)
 		(uuid "fc862957-8091-4ac0-ae6f-f8c2ec056f8c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.6535 30.48 0)
+			(at 154.6535 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3168,7 +3316,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 34.29 25.4 0)
+		(at 30.48 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3177,7 +3325,7 @@
 		(fields_autoplaced yes)
 		(uuid "01d2a75c-c36a-4954-99e0-dc167bec84a7")
 		(property "Reference" "#PWR043"
-			(at 34.29 29.21 0)
+			(at 30.48 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3186,7 +3334,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 34.29 20.32 0)
+			(at 30.48 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3194,7 +3342,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 34.29 25.4 0)
+			(at 30.48 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3203,7 +3351,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 34.29 25.4 0)
+			(at 30.48 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3212,7 +3360,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 34.29 25.4 0)
+			(at 30.48 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3234,7 +3382,7 @@
 	)
 	(symbol
 		(lib_id "power:+24V")
-		(at 39.37 25.4 0)
+		(at 35.56 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3242,7 +3390,7 @@
 		(dnp no)
 		(uuid "0303eaa2-6cec-4d0b-846b-a7b6b7674c58")
 		(property "Reference" "#PWR044"
-			(at 39.37 29.21 0)
+			(at 35.56 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3251,7 +3399,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 36.576 20.32 0)
+			(at 32.258 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3260,7 +3408,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 25.4 0)
+			(at 35.56 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3269,7 +3417,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 25.4 0)
+			(at 35.56 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3278,7 +3426,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 39.37 25.4 0)
+			(at 35.56 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3293,6 +3441,71 @@
 			(project "SCTRL REV 2"
 				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51/09785baf-47ac-4883-a7a9-79b5893c3df0"
 					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+4V")
+		(at 39.37 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "058856f6-3c51-4285-b8ad-9af8363fc475")
+		(property "Reference" "#PWR078"
+			(at 39.37 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+40V"
+			(at 39.878 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+4V\""
+			(at 39.37 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95cadfc7-304d-4186-9bf5-3187c3491ae7")
+		)
+		(instances
+			(project "SCTRL REV 2"
+				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51/09785baf-47ac-4883-a7a9-79b5893c3df0"
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -3503,6 +3716,85 @@
 			(project "SCTRL REV 2"
 				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51/09785baf-47ac-4883-a7a9-79b5893c3df0"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 46.99 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2900f656-3094-4e54-8dc0-23b6a83386c3")
+		(property "Reference" "EXT_PWR1"
+			(at 49.53 27.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x05"
+			(at 49.53 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+			(at 46.99 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 46.99 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "1bca0f45-9d68-4f8d-aa8a-900ca6766c8b")
+		)
+		(pin "2"
+			(uuid "c6677917-d116-446a-9af2-b57445e40460")
+		)
+		(pin "1"
+			(uuid "a73ec56d-2442-45ef-b178-0e764bead3a7")
+		)
+		(pin "4"
+			(uuid "e1ea4953-af22-4edb-8cc0-82e40606fe2c")
+		)
+		(pin "5"
+			(uuid "fb62ca04-608f-41c8-a0ff-2be53adcd2d7")
+		)
+		(instances
+			(project "SCTRL REV 2"
+				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51/09785baf-47ac-4883-a7a9-79b5893c3df0"
+					(reference "EXT_PWR1")
 					(unit 1)
 				)
 			)
@@ -3802,9 +4094,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "45d9ee39-d725-4cd3-b0d8-7cc19ed478dd")
-		(property "Reference" "R24"
+		(property "Reference" "R5"
 			(at 25.4 80.0099 0)
 			(effects
 				(font
@@ -3858,7 +4149,7 @@
 		(instances
 			(project "SCTRL REV 2"
 				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51/09785baf-47ac-4883-a7a9-79b5893c3df0"
-					(reference "R24")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4234,7 +4525,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 29.21 25.4 0)
+		(at 25.4 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4242,7 +4533,7 @@
 		(dnp no)
 		(uuid "bbcc048b-97c3-498c-a302-9c5939bc1f0c")
 		(property "Reference" "#PWR041"
-			(at 29.21 29.21 0)
+			(at 25.4 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4251,7 +4542,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 26.416 20.32 0)
+			(at 22.606 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4260,7 +4551,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 25.4 0)
+			(at 25.4 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4269,7 +4560,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 25.4 0)
+			(at 25.4 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4278,7 +4569,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 29.21 25.4 0)
+			(at 25.4 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4440,7 +4731,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da32412b-4e12-400d-8a37-9fb3c887b3ab")
-		(property "Reference" "R26"
+		(property "Reference" "R24"
 			(at 110.49 72.3899 0)
 			(effects
 				(font
@@ -4494,7 +4785,7 @@
 		(instances
 			(project "SCTRL REV 2"
 				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51/09785baf-47ac-4883-a7a9-79b5893c3df0"
-					(reference "R26")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -4703,82 +4994,6 @@
 			(project "SCTRL REV 2"
 				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51/09785baf-47ac-4883-a7a9-79b5893c3df0"
 					(reference "#PWR066")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 46.99 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e8f9cc4d-f169-4208-b0b9-ecb37feb4bbd")
-		(property "Reference" "EXT_PWR1"
-			(at 49.53 29.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x04"
-			(at 49.53 31.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 46.99 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 46.99 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 46.99 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "577d19a2-e044-4a7d-8d50-f857d29fcd6b")
-		)
-		(pin "3"
-			(uuid "20d0efa9-7226-4829-a9c4-56809b6bd557")
-		)
-		(pin "4"
-			(uuid "1d7482e2-ee25-45b5-ae88-229d8a344f52")
-		)
-		(pin "1"
-			(uuid "d5997318-2a11-40bf-a303-e25595081187")
-		)
-		(instances
-			(project "SCTRL REV 2"
-				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51/09785baf-47ac-4883-a7a9-79b5893c3df0"
-					(reference "EXT_PWR1")
 					(unit 1)
 				)
 			)

@@ -997,6 +997,290 @@
 				)
 			)
 		)
+		(symbol "Device:Q_PMOS_GSD"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Q_PMOS_GSD"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "P-MOSFET transistor, gate/source/drain"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "transistor PMOS P-MOS P-MOSFET"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_PMOS_GSD_0_1"
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "Q_PMOS_GSD_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -3435,7 +3719,7 @@
 	)
 	(text "MOTORS"
 		(exclude_from_sim no)
-		(at 10.668 5.842 0)
+		(at 234.95 41.656 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -3486,16 +3770,6 @@
 			(justify left)
 		)
 		(uuid "8ec80911-1797-4fa4-9b87-634e8c2fa9ab")
-	)
-	(text "PWM checklist:\nDONE\n"
-		(exclude_from_sim no)
-		(at 207.264 90.424 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "944b2764-c328-4a4f-9b60-0c70d23c6790")
 	)
 	(text "VENT FAN:"
 		(exclude_from_sim no)
@@ -3607,7 +3881,7 @@
 	)
 	(global_label "SRV3"
 		(shape input)
-		(at 248.92 107.95 0)
+		(at 248.92 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3617,7 +3891,7 @@
 		)
 		(uuid "1b93c30a-fae8-4e31-bcc1-938a5cd16030")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.6828 107.95 0)
+			(at 256.6828 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3651,7 +3925,7 @@
 	)
 	(global_label "MIX"
 		(shape input)
-		(at 248.92 115.57 0)
+		(at 248.92 102.87 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3661,7 +3935,7 @@
 		)
 		(uuid "2d645ba7-621d-465a-8749-bd93b0702c51")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 255.1709 115.57 0)
+			(at 255.1709 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3695,7 +3969,7 @@
 	)
 	(global_label "MINI2"
 		(shape input)
-		(at 248.92 113.03 0)
+		(at 248.92 115.57 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3705,7 +3979,7 @@
 		)
 		(uuid "59c445ad-9733-4ee8-a551-488a42c9559b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 257.1062 113.03 0)
+			(at 257.1062 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3739,7 +4013,7 @@
 	)
 	(global_label "SRV2"
 		(shape input)
-		(at 248.92 105.41 0)
+		(at 248.92 113.03 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3749,7 +4023,7 @@
 		)
 		(uuid "782c8224-c7ed-4d87-8cf4-3f1052c52f6b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.6828 105.41 0)
+			(at 256.6828 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3783,7 +4057,7 @@
 	)
 	(global_label "MINI1"
 		(shape input)
-		(at 248.92 110.49 0)
+		(at 248.92 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3793,7 +4067,7 @@
 		)
 		(uuid "8b815bc8-1efe-4baa-9bf7-cfc8dc5bc8db")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 257.1062 110.49 0)
+			(at 257.1062 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3893,7 +4167,7 @@
 	)
 	(global_label "SRV1"
 		(shape input)
-		(at 248.92 102.87 0)
+		(at 248.92 110.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3903,7 +4177,7 @@
 		)
 		(uuid "df01b776-20b5-45a3-9ee6-30a63fd02eef")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.6828 102.87 0)
+			(at 256.6828 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4240,7 +4514,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19461850-642d-4a5a-9051-48a2332beac7")
-		(property "Reference" "FAN_BATT1"
+		(property "Reference" "F_BATT1"
 			(at 48.26 177.7999 0)
 			(effects
 				(font
@@ -4294,7 +4568,7 @@
 		(instances
 			(project "SCTRL REV 2"
 				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51"
-					(reference "FAN_BATT1")
+					(reference "F_BATT1")
 					(unit 1)
 				)
 			)
@@ -4789,6 +5063,106 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Q_PMOS_GSD")
+		(at 29.21 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "36b73544-508b-4d16-9ff6-7114618c56b2")
+		(property "Reference" "Q5"
+			(at 35.56 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PMOS"
+			(at 35.56 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 34.29 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "P-MOSFET transistor, gate/source/drain"
+			(at 29.21 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PMOS"
+			(at 29.21 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 29.21 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 29.21 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "46bb5990-ef2a-4231-a32d-f94a93b739bf")
+		)
+		(pin "1"
+			(uuid "578b121f-c3c3-4faa-a993-c84ed68c4e4d")
+		)
+		(pin "2"
+			(uuid "1be4efa8-009b-4987-bf95-6a44ad5188df")
+		)
+		(instances
+			(project "SCTRL REV 2"
+				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51"
+					(reference "Q5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 128.27 27.94 0)
 		(unit 1)
@@ -5139,7 +5513,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "490dc489-87b8-4e98-bfd4-13854799e5c4")
-		(property "Reference" "SDROP1"
+		(property "Reference" "SOIL1"
 			(at 39.37 116.8399 0)
 			(effects
 				(font
@@ -5196,7 +5570,7 @@
 		(instances
 			(project "SCTRL REV 2"
 				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51"
-					(reference "SDROP1")
+					(reference "SOIL1")
 					(unit 1)
 				)
 			)
@@ -7449,79 +7823,6 @@
 			(project "SCTRL REV 2"
 				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51"
 					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Q_NMOS_GDS")
-		(at 29.21 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c1868b9f-5991-43e1-8e08-6fc59101942a")
-		(property "Reference" "Q5"
-			(at 35.56 151.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Q_NMOS_GDS"
-			(at 35.56 153.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 34.29 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 29.21 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, gate/drain/source"
-			(at 29.21 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "2fa0dafa-2619-4be8-b73c-0f0102a9c6d1")
-		)
-		(pin "2"
-			(uuid "385bbe11-cecc-4590-8ee6-79bd79ecedf9")
-		)
-		(pin "1"
-			(uuid "b434a92c-7e77-4dc8-becb-b102d8143726")
-		)
-		(instances
-			(project "SCTRL REV 2"
-				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51"
-					(reference "Q5")
 					(unit 1)
 				)
 			)
