@@ -3273,6 +3273,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 74.93) (xy 245.11 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7f2512b-7a5b-402d-b51a-1ab1bd1fdcb0")
+	)
+	(wire
+		(pts
 			(xy 92.71 120.65) (xy 121.92 120.65)
 		)
 		(stroke
@@ -3490,6 +3500,16 @@
 			(type default)
 		)
 		(uuid "f6c6d78b-5926-44be-a30c-15580a8b0bd3")
+	)
+	(wire
+		(pts
+			(xy 214.63 74.93) (xy 214.63 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6f81c31-f319-4de8-a798-1c4c0b6988d1")
 	)
 	(wire
 		(pts
@@ -4139,7 +4159,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 124.46 105.41 0)
 			(effects
 				(font
@@ -4616,7 +4636,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 129.54 50.8 0)
 			(effects
 				(font
@@ -4751,7 +4771,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 134.62 105.41 0)
 			(effects
 				(font
@@ -4820,7 +4840,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 139.7 50.8 0)
 			(effects
 				(font
@@ -5539,6 +5559,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 214.63 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6d50f9f1-54a9-4982-a4dd-a687bc3ac375")
+		(property "Reference" "#PWR056"
+			(at 214.63 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 212.344 70.104 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 214.63 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e03bbaf-327d-4d50-8470-c6fb3a53a398")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/2446a063-2a00-4e9a-b83f-c0e59977093c"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "finalhand-easyedapro:Res")
 		(at 58.42 64.77 270)
 		(unit 1)
@@ -6167,6 +6253,75 @@
 		)
 	)
 	(symbol
+		(lib_id "finalhand-easyedapro:Res")
+		(at 219.71 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a8668149-b63a-431b-94d3-fc16ec4f7c1f")
+		(property "Reference" "R42"
+			(at 217.932 74.168 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10K"
+			(at 217.17 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 219.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 219.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c375c8c-f6ca-40a4-a51a-2ff8d22a88ab")
+		)
+		(pin "2"
+			(uuid "bd73eadd-64a5-4cd7-a025-4c4b8dd7ab95")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/2446a063-2a00-4e9a-b83f-c0e59977093c"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 43.18 106.68 0)
 		(unit 1)
@@ -6427,6 +6582,72 @@
 			(project "HUB_RevA"
 				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/2446a063-2a00-4e9a-b83f-c0e59977093c"
 					(reference "#PWR068")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 245.11 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c3cc3499-c5fa-4917-8ea0-6a99fef56cc7")
+		(property "Reference" "#PWR059"
+			(at 245.11 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 242.824 70.104 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.11 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.11 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 245.11 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee3f5f17-336c-4a01-92d4-6c4195f9ca10")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/2446a063-2a00-4e9a-b83f-c0e59977093c"
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -6712,6 +6933,75 @@
 			(project "HUB_RevA"
 				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/2446a063-2a00-4e9a-b83f-c0e59977093c"
 					(reference "#PWR079")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "finalhand-easyedapro:Res")
+		(at 240.03 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d566724c-8006-4cf6-b1b8-bc2984f93d5b")
+		(property "Reference" "R35"
+			(at 238.252 74.168 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10K"
+			(at 237.49 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 240.03 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 240.03 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "615d5486-0ec5-432b-a4b4-87eb1b6033bc")
+		)
+		(pin "2"
+			(uuid "dbc9656f-79a3-4e0f-b44a-ea0b2323098c")
+		)
+		(instances
+			(project "HUB_RevA"
+				(path "/423fa3ab-f9f8-4e23-b1c9-fcfb1d269885/2446a063-2a00-4e9a-b83f-c0e59977093c"
+					(reference "R35")
 					(unit 1)
 				)
 			)

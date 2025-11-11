@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "3dcefd58-e37c-417f-a8a0-17427656d798")
-	(paper "User" 150 190)
+	(paper "User" 200 190)
 	(lib_symbols
 		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
@@ -1540,7 +1540,7 @@
 	)
 	(rectangle
 		(start 63.5 80.01)
-		(end 137.16 145.415)
+		(end 187.325 145.415)
 		(stroke
 			(width 0)
 			(type default)
@@ -1612,6 +1612,27 @@
 			)
 		)
 		(uuid "e6d10203-d497-4fd7-8b86-10ca28c2c511")
+	)
+	(text_box "3V3 Sinks:\nuM = 0.1A\nLED = 0.01A\nLSF = ~<5uA x2\nADC = 0.56mA\nLMV358 = 210uA\nNTCs = 0.33mA x3 MAX"
+		(exclude_from_sim no)
+		(at 141.605 91.44 0)
+		(size 40.64 38.1)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 255 255 1)
+		)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "5d2b97bd-141d-4229-98e0-d595b6470992")
 	)
 	(junction
 		(at 44.45 128.27)
@@ -2354,7 +2375,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "120"
+		(property "Value" "TBD"
 			(at 47.498 113.792 0)
 			(effects
 				(font
@@ -2422,10 +2443,9 @@
 					(size 1.27 1.27)
 				)
 				(justify left bottom)
-				(hide yes)
 			)
 		)
-		(property "Value" "120"
+		(property "Value" "TBD"
 			(at 24.638 113.792 0)
 			(effects
 				(font
@@ -2909,7 +2929,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "120"
+		(property "Value" "TBD"
 			(at 55.118 113.792 0)
 			(effects
 				(font
@@ -2979,7 +2999,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "120"
+		(property "Value" "TBD"
 			(at 39.878 113.792 0)
 			(effects
 				(font
@@ -4251,7 +4271,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "120"
+		(property "Value" "TBD"
 			(at 32.258 113.792 0)
 			(effects
 				(font
