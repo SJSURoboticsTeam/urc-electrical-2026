@@ -1783,6 +1783,26 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 29.21) (xy 140.97 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ddb2693-ecdb-4524-8bbf-5af9b9d38cd6")
+	)
+	(wire
+		(pts
+			(xy 130.81 29.21) (xy 134.62 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26740a8e-8392-4cfe-81ca-ca7883dd550c")
+	)
+	(wire
+		(pts
 			(xy 27.94 99.06) (xy 27.94 102.87)
 		)
 		(stroke
@@ -1873,6 +1893,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 27.94) (xy 76.2 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b0c1086-9000-4022-be77-f2f33bea2bd9")
+	)
+	(wire
+		(pts
 			(xy 200.66 29.21) (xy 208.28 29.21)
 		)
 		(stroke
@@ -1923,7 +1953,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 29.21) (xy 114.3 29.21)
+			(xy 106.68 29.21) (xy 110.49 29.21)
 		)
 		(stroke
 			(width 0)
@@ -1993,13 +2023,13 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 27.94) (xy 69.85 27.94)
+			(xy 67.31 27.94) (xy 63.5 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9de1c652-525d-4fff-b8f7-1022d3240d75")
+		(uuid "a68e3bdd-d25f-4a71-ab70-1b396ecaaf07")
 	)
 	(wire
 		(pts
@@ -2063,6 +2093,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 27.94) (xy 63.5 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c584c819-b8a3-4775-a28d-9364f5f40090")
+	)
+	(wire
+		(pts
 			(xy 53.34 82.55) (xy 59.69 82.55)
 		)
 		(stroke
@@ -2090,6 +2130,16 @@
 			(type default)
 		)
 		(uuid "dd29d51d-a99f-4cc4-9621-0d70f3ae8215")
+	)
+	(wire
+		(pts
+			(xy 139.7 29.21) (xy 140.97 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed157e0e-de16-40ab-a14f-0fbbb4002026")
 	)
 	(wire
 		(pts
@@ -2161,15 +2211,74 @@
 		)
 		(uuid "fe27e79f-fd52-43b4-a1e8-eec76877233e")
 	)
-	(wire
-		(pts
-			(xy 139.7 29.21) (xy 134.62 29.21)
+	(symbol
+		(lib_id "Device:Fuse_Small")
+		(at 69.85 27.94 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "000f2fff-80ee-4ab8-b068-be8391d2b7c1")
+		(property "Reference" "F1"
+			(at 69.85 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(property "Value" "Fuse_Small"
+			(at 69.85 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(uuid "fec3c4cc-ce36-4f60-b6b9-127f6ae187d2")
+		(property "Footprint" "Fuse:Fuseholder_Littelfuse_Nano2_154x"
+			(at 69.85 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse, small symbol"
+			(at 69.85 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e8d9f5d2-863a-4f36-91f9-cb1124022b86")
+		)
+		(pin "1"
+			(uuid "b042d888-db6e-4d4c-8321-07c254ca0b09")
+		)
+		(instances
+			(project "SCTRL REV B"
+				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51/5e4a93cb-def6-4c6b-bbc2-54a2423ae50d"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -2768,7 +2877,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 139.7 29.21 0)
+		(at 140.97 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2776,7 +2885,7 @@
 		(dnp no)
 		(uuid "6b4b26df-4fec-4c5e-8db4-e93e3816a83c")
 		(property "Reference" "#PWR023"
-			(at 139.7 33.02 0)
+			(at 140.97 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2785,7 +2894,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 134.874 24.13 0)
+			(at 136.144 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2794,7 +2903,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 29.21 0)
+			(at 140.97 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2803,7 +2912,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 29.21 0)
+			(at 140.97 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2812,7 +2921,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 139.7 29.21 0)
+			(at 140.97 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2834,7 +2943,7 @@
 	)
 	(symbol
 		(lib_id "power:+24V")
-		(at 110.49 29.21 0)
+		(at 106.68 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2842,7 +2951,7 @@
 		(dnp no)
 		(uuid "6dc60c95-b147-4093-af56-d646c9cb9b54")
 		(property "Reference" "#PWR07"
-			(at 110.49 33.02 0)
+			(at 106.68 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2851,7 +2960,7 @@
 			)
 		)
 		(property "Value" "+40V"
-			(at 110.49 24.13 0)
+			(at 106.68 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2859,7 +2968,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 29.21 0)
+			(at 106.68 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2868,7 +2977,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 29.21 0)
+			(at 106.68 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2877,7 +2986,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 110.49 29.21 0)
+			(at 106.68 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3097,6 +3206,74 @@
 			(project "SCTRL REV B"
 				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51/5e4a93cb-def6-4c6b-bbc2-54a2423ae50d"
 					(reference "+3V3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse_Small")
+		(at 137.16 29.21 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d2fb5e4-a934-4394-94ba-dcec9eda4a09")
+		(property "Reference" "F3"
+			(at 137.16 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fuse_Small"
+			(at 135.128 26.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuseholder_Littelfuse_Nano2_154x"
+			(at 137.16 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse, small symbol"
+			(at 137.16 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dfb1f6fc-2f3c-44a6-a30d-46315b5c9607")
+		)
+		(pin "1"
+			(uuid "74c261e3-8ac9-4fb0-8193-b7b531a13ea2")
+		)
+		(instances
+			(project "SCTRL REV B"
+				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51/5e4a93cb-def6-4c6b-bbc2-54a2423ae50d"
+					(reference "F3")
 					(unit 1)
 				)
 			)
@@ -3370,16 +3547,15 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 69.85 27.94 180)
+		(at 63.5 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c3d163e2-8f2b-4c0a-a65c-0e7f7fbf4b0c")
 		(property "Reference" "#PWR06"
-			(at 69.85 24.13 0)
+			(at 63.5 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3388,15 +3564,16 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 69.85 33.02 0)
+			(at 60.706 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 27.94 0)
+			(at 63.5 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3405,7 +3582,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 27.94 0)
+			(at 63.5 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3414,7 +3591,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 69.85 27.94 0)
+			(at 63.5 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3503,7 +3680,7 @@
 	)
 	(symbol
 		(lib_id "SJSU_common:5VBuckModule")
-		(at 124.46 33.02 0)
+		(at 120.65 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3512,7 +3689,7 @@
 		(fields_autoplaced yes)
 		(uuid "cc061973-c8f8-4bbc-bd27-b5be84c0f9c6")
 		(property "Reference" "U3"
-			(at 124.46 21.59 0)
+			(at 120.65 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3520,7 +3697,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 124.46 24.13 0)
+			(at 120.65 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3528,7 +3705,7 @@
 			)
 		)
 		(property "Footprint" "SJSU_common:5VBuckModule"
-			(at 124.46 33.02 0)
+			(at 120.65 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3537,7 +3714,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 33.02 0)
+			(at 120.65 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3546,7 +3723,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 33.02 0)
+			(at 120.65 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3642,7 +3819,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 124.46 43.18 0)
+		(at 120.65 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3651,7 +3828,7 @@
 		(fields_autoplaced yes)
 		(uuid "dd454948-e4fa-4bdb-ac38-84938cacd27c")
 		(property "Reference" "#PWR05"
-			(at 124.46 49.53 0)
+			(at 120.65 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3660,7 +3837,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.46 48.26 0)
+			(at 120.65 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3668,7 +3845,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 43.18 0)
+			(at 120.65 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3677,7 +3854,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 43.18 0)
+			(at 120.65 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3686,7 +3863,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 43.18 0)
+			(at 120.65 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -3318,6 +3318,28 @@
 		)
 		(uuid "ff312d2b-9c4e-4738-a1dd-300a3f9204cf")
 	)
+	(global_label "6"
+		(shape input)
+		(at 91.44 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0a75e268-fa80-4377-99ab-4211a16bb1d5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.6347 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "EMTR3"
 		(shape input)
 		(at 91.44 93.98 0)
@@ -3551,6 +3573,50 @@
 		(uuid "8780f36e-c6a5-4245-ad77-307a3289d172")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 100.4727 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5"
+		(shape input)
+		(at 91.44 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "904e649a-22e2-4769-86f4-7b25579a0f33")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.6347 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "7"
+		(shape input)
+		(at 91.44 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "96eb98f2-c451-4740-bbf6-4c925c904daa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.6347 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3900,7 +3966,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5493ab9-cb9d-4452-b6aa-15326dbbfab8")
-		(property "Reference" "SW2"
+		(property "Reference" "BOOT1"
 			(at 170.18 49.53 0)
 			(effects
 				(font
@@ -3952,7 +4018,7 @@
 		(instances
 			(project "SCTRL REV B"
 				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51/d5ec5410-b5f4-4ebf-9ac8-56b4a1b08ba5"
-					(reference "SW2")
+					(reference "BOOT1")
 					(unit 1)
 				)
 			)
@@ -4310,7 +4376,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e941d250-0117-410b-8d2f-e56f8f57ee24")
-		(property "Reference" "SW1"
+		(property "Reference" "RST1"
 			(at 138.43 49.53 0)
 			(effects
 				(font
@@ -4362,7 +4428,7 @@
 		(instances
 			(project "SCTRL REV B"
 				(path "/16b91476-1dcd-43e3-8703-9e3f81441c51/d5ec5410-b5f4-4ebf-9ac8-56b4a1b08ba5"
-					(reference "SW1")
+					(reference "RST1")
 					(unit 1)
 				)
 			)
