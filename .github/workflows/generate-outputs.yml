@@ -2,10 +2,6 @@ name: Generate KiCad outputs
 on:
   workflow_dispatch:
   workflow_call:
-    inputs:
-      project:
-        required: true
-        type: string
 env:
   GIT_COMMITTER_NAME: ci-bot
   GIT_COMMITTER_EMAIL: sjsurobotics@gmail.com
@@ -13,29 +9,43 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-  
-    - name: Export PDF
-      id: production
-      uses: sparkengineering/kicad-action@v2
-      if: '!cancelled()'
-      with:
-        kicad_sch: ${{ inputs.project }}/${{ inputs.project }}.kicad_sch
-        sch_pdf: true
-        sch_pdf_file:  ${{ inputs.project }}.pdf
+      - uses: actions/checkout@v4
+      - name: Export PDF
+        id: production
+        uses: SJSURoboticsTeam/kicad-action@v1.6
+        with:
+          kicad_sch: >
+            drive/drive.kicad_sch
+            main_arm/main_arm.kicad_sch
+            HUB/HUB.kicad_sch
+            Science/Science.kicad_sch
+            POE/POE.kicad_sch
+            bldc/bldc.kicad_sch
+          kicad_pcb: >
+            drive/drive.kicad_pcb
+            main_arm/main_arm.kicad_pcb
+            HUB/HUB.kicad_pcb
+            Science/Science.kicad_pcb
+            POE/POE.kicad_pcb
+            bldc/bldc.kicad_pcb
+          sch_pdf: true
+          pcb_image: true
+          pcb_image_path: .
+          output_dir: ${{ github.workspace }}/outputs
 
-    - name: Render Image
-      uses: linalinn/kicad-render@main
-      with:
-        pcb_file: ${{ inputs.project }}/${{ inputs.project }}.kicad_pcb
-        output_path: ${{ inputs.project }}
+      - name: Create navigation file
+        run: >
+          BASEDIR=${{ github.workspace }}/outputs sudo sh ${{ github.workspace }}/.github/nav-writer.sh
+          drive
+          main_arm
+          HUB
+          Science
+          POE
+          bldc
 
-    - name: Upload production files
-      uses: actions/upload-artifact@v4
-      if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
-      with:
-        name: ${{ inputs.project }}-out
-        path: |
-          ${{ inputs.project }}/${{ inputs.project }}.pdf
-          ${{ inputs.project }}/top.png
-          ${{ inputs.project }}/bottom.png
+      - name: Upload production files
+        uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() && steps.production.conclusion == 'success' }}
+        with:
+          name: "all-outputs"
+          path: ${{ github.workspace }}/outputs
