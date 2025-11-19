@@ -4,13 +4,16 @@ repo_url: https://github.com/SJSURoboticsTeam/urc-electrical-2026
 nav:
   - Home: index.md
   - Servo: servo.md
-  - Main Arm: Main Arm Board.md
+  - Drive: drive.md
+  - Main Arm: Main_Arm_Board.md
 
 plugins:
   - search
   - macros
   - mkdocs-pdf
-  
+  - literate-nav:
+      nav_file: nav.md
+
 theme:
   name: material
   palette:
@@ -45,5 +48,5 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.pathconverter:
       absolute: false
-      tags: 'a script img link object embed'
+      tags: "a script img link object embed"
   - attr_list
