@@ -5,6 +5,177 @@
 	(uuid "277f1ac8-dc34-41d4-888e-4cee9bc5b3a6")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
 				(offset 1.016)
@@ -94,6 +265,26 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 55.88) (xy 222.25 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e752429-9dcc-4c20-aea3-5adc8c6a9529")
+	)
+	(wire
+		(pts
+			(xy 205.74 66.04) (xy 218.44 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1421dcba-303e-437b-81cf-4a3ebc62fa39")
+	)
+	(wire
+		(pts
 			(xy 143.51 76.2) (xy 180.34 76.2)
 		)
 		(stroke
@@ -142,6 +333,26 @@
 		)
 		(uuid "4dff26be-5e01-4ddb-800e-28f54c4c385a")
 	)
+	(wire
+		(pts
+			(xy 222.25 35.56) (xy 222.25 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "506a2667-b78f-46ff-b26c-a4e1486c2777")
+	)
+	(wire
+		(pts
+			(xy 218.44 58.42) (xy 222.25 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52909a00-c5b2-4b22-b0f9-088e39b86238")
+	)
 	(bus
 		(pts
 			(xy 87.63 40.64) (xy 104.14 40.64)
@@ -171,6 +382,16 @@
 			(type default)
 		)
 		(uuid "5f8b0a3e-bb91-407d-acd3-5797111d9200")
+	)
+	(wire
+		(pts
+			(xy 218.44 52.07) (xy 218.44 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6344565e-75b2-436e-9837-961e824f7cff")
 	)
 	(bus
 		(pts
@@ -211,6 +432,36 @@
 			(type default)
 		)
 		(uuid "9e44f664-3ced-4489-85df-30054f52a57f")
+	)
+	(wire
+		(pts
+			(xy 205.74 52.07) (xy 218.44 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc467259-9ca1-433e-a5ae-c27088a9aa64")
+	)
+	(wire
+		(pts
+			(xy 218.44 66.04) (xy 218.44 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfaf4ea0-ed8b-4680-a2f3-2c9be171b2d5")
+	)
+	(wire
+		(pts
+			(xy 205.74 35.56) (xy 222.25 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0c981ab-3340-4bb7-9b25-a0c30bcb0a08")
 	)
 	(wire
 		(pts
@@ -287,6 +538,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 227.33 55.88 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c34da343-66b8-47f2-a4ce-ecae70662281")
+		(property "Reference" "J1"
+			(at 229.87 57.1501 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MOTOR"
+			(at 229.87 54.6101 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc-footprints:Wuerth_WR-TBL_691137710003_1x03_P5mm"
+			(at 227.33 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 227.33 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 227.33 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "ecdab19b-a001-4fbd-b23a-65926ad8a9a2")
+		)
+		(pin "1"
+			(uuid "a4b272b3-b649-4206-aa13-899075a7dd40")
+		)
+		(pin "2"
+			(uuid "c699f776-09ec-42c1-9dd8-a5db7a26a157")
+		)
+		(instances
+			(project "bldc"
+				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 173.99 102.87 0)
 		(unit 1)
@@ -346,6 +670,78 @@
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6"
 					(reference "H1")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 185.42 46.99)
+		(size 20.32 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "04c35560-2dd5-4eff-96af-70554a96d2b4")
+		(property "Sheetname" "Switching1"
+			(at 185.42 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "switching.kicad_sch"
+			(at 185.42 57.7346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SENSE" output
+			(at 185.42 54.61 180)
+			(uuid "3d4c2a41-5ba5-4e2a-8032-7a9a00303ed2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN{GATE}" input
+			(at 185.42 52.07 180)
+			(uuid "71f359f2-a454-4c15-83a8-a1ee2df6f187")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOTOR" output
+			(at 205.74 52.07 0)
+			(uuid "72cd50de-0356-48d4-bcbd-e1a65f1b5d68")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "bldc"
+				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6"
+					(page "4")
 				)
 			)
 		)
@@ -472,70 +868,8 @@
 		)
 	)
 	(sheet
-		(at 185.42 46.355)
-		(size 16.51 10.16)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "38b3435c-ec9f-4540-81f2-7b940bfa31f6")
-		(property "Sheetname" "Switching1"
-			(at 185.42 45.6434 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "switching.kicad_sch"
-			(at 185.42 57.0996 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "SENSE" output
-			(at 185.42 54.61 180)
-			(uuid "4e714d80-7b74-40e5-9e89-311ac191ed3f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "IN{GATE}" input
-			(at 185.42 52.07 180)
-			(uuid "c22ce887-f8e7-4abe-84f7-2b20a65a4dcf")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "bldc"
-				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6"
-					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 185.42 60.96)
-		(size 16.51 10.16)
+		(size 20.32 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -548,7 +882,7 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "50bb2d0a-89a1-46b1-9583-6fc9ef41509e")
+		(uuid "5fc6fa10-90bb-450f-8c7c-0c3708a68359")
 		(property "Sheetname" "Switching2"
 			(at 185.42 60.2484 0)
 			(effects
@@ -569,7 +903,7 @@
 		)
 		(pin "SENSE" output
 			(at 185.42 68.58 180)
-			(uuid "83b3193a-163c-4a05-9aa0-08dc6d58e145")
+			(uuid "9784788e-ed29-4700-a522-08477e509267")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -579,7 +913,7 @@
 		)
 		(pin "IN{GATE}" input
 			(at 185.42 66.04 180)
-			(uuid "1172474b-8171-4800-8ac4-bc10d94425c5")
+			(uuid "03bc4cf7-15f0-41f8-802b-a768a95602ff")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -587,17 +921,27 @@
 				(justify left)
 			)
 		)
+		(pin "MOTOR" output
+			(at 205.74 66.04 0)
+			(uuid "35c328b4-fcf1-45c4-ba0b-5e0d7b004916")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "bldc"
 				(path "/277f1ac8-dc34-41d4-888e-4cee9bc5b3a6"
-					(page "9")
+					(page "5")
 				)
 			)
 		)
 	)
 	(sheet
 		(at 185.42 30.48)
-		(size 16.51 10.16)
+		(size 20.32 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -647,6 +991,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "MOTOR" output
+			(at 205.74 35.56 0)
+			(uuid "f713e019-f4d2-449a-aba4-63c020ba16f0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
