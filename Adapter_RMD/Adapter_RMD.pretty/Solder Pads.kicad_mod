@@ -1,0 +1,119 @@
+(footprint "Solder Pads"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.31 -0.115 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "51a5964d-c076-4428-9822-64ae3d7767e5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Solder Pads"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "599eed55-57d4-4432-9f41-8540540a480f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "73fc663b-2086-4959-aa5c-df69cbd9f35e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "18177e72-2687-433c-8a31-7a5e05bafc40")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "834435ec-dd00-461e-a730-22c1069238c7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "CAN H" smd roundrect
+		(at -2.9195 -7.59 90)
+		(size 3.175 1.5875)
+		(layers "B.Cu" "B.Mask" "B.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "ba9e07a1-d9dc-4301-b351-b4d1733a758d")
+	)
+	(pad "CAN H" smd roundrect
+		(at 7.7612 -7.59 90)
+		(size 3.175 1.5875)
+		(layers "B.Cu" "B.Mask" "B.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "c584e7ca-cede-4ec9-bc8c-f3d0b81b2dd3")
+	)
+	(pad "CAN L" smd roundrect
+		(at -5.65 -7.59 90)
+		(size 3.175 1.5875)
+		(layers "B.Cu" "B.Mask" "B.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "f608a48d-88d0-430f-93b4-0bb0ffd8ec79")
+	)
+	(pad "CAN L" smd roundrect
+		(at 10.4917 -7.59 90)
+		(size 3.175 1.5875)
+		(layers "B.Cu" "B.Mask" "B.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "1a37e308-09b7-45ac-81c5-381afd6c5dd5")
+	)
+	(pad "GND" smd roundrect
+		(at 4.73225 -7.59 90)
+		(size 3.175 2.0828)
+		(layers "B.Cu" "B.Mask" "B.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "408262d9-880f-4260-8f96-c46e63dc1a1b")
+	)
+	(pad "VIN" smd roundrect
+		(at 0.10945 -7.59 90)
+		(size 3.175 2.0828)
+		(layers "B.Cu" "B.Mask" "B.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "3b07d64a-65cb-4e85-b62f-b09f85532d25")
+	)
+	(group ""
+		(uuid "e735f3ba-09e7-4a4f-99a9-0d95b18fc439")
+		(members "1a37e308-09b7-45ac-81c5-381afd6c5dd5" "3b07d64a-65cb-4e85-b62f-b09f85532d25"
+			"408262d9-880f-4260-8f96-c46e63dc1a1b" "ba9e07a1-d9dc-4301-b351-b4d1733a758d"
+			"c584e7ca-cede-4ec9-bc8c-f3d0b81b2dd3" "f608a48d-88d0-430f-93b4-0bb0ffd8ec79"
+		)
+	)
+	(embedded_fonts no)
+)
