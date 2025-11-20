@@ -4,7 +4,7 @@
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 17 10 0)
+		(at 14.4435 5.739 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "f6dc70c2-ec70-46f3-b94b-0d24f8d71660")
@@ -16,7 +16,7 @@
 		)
 	)
 	(property "Value" "5VBuckModule"
-		(at 17 11.5 0)
+		(at 14.4435 7.239 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "573e3228-00b8-461c-9f4b-f535c52355b7")
@@ -56,17 +56,17 @@
 	(attr smd)
 	(fp_rect
 		(start 0 0)
-		(end 35 24)
+		(end 30 24)
 		(stroke
 			(width 0.1)
-			(type solid)
+			(type default)
 		)
 		(fill no)
 		(layer "F.SilkS")
 		(uuid "ff5bb48c-7752-4202-ae67-7d1d890219da")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 17 13 0)
+		(at 14.4435 8.739 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "7cce9ceb-a037-46e8-baa2-96f4ad6e7a0d")
@@ -77,17 +77,80 @@
 			)
 		)
 	)
-	(fp_text user "24mm x 35mm"
-		(at 5 23.5 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(uuid "cb405596-a3fd-45b8-8bce-93a81e89261d")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
+	(dimension
+		(type orthogonal)
+		(layer "Cmts.User")
+		(uuid "10bcc602-9ba8-400e-bd2c-b5f66369b9fc")
+		(pts
+			(xy 30 0) (xy 30 24)
+		)
+		(height -7.473)
+		(orientation 1)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 0)
+			(precision 4)
+			(suppress_zeroes yes)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "24"
+			(at 21.377 12 90)
+			(layer "Cmts.User")
+			(uuid "10bcc602-9ba8-400e-bd2c-b5f66369b9fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
 			)
-			(justify left bottom)
+		)
+	)
+	(dimension
+		(type orthogonal)
+		(layer "Cmts.User")
+		(uuid "2d876a18-09c6-4e71-8d6c-0b77e7b09eb5")
+		(pts
+			(xy 30 0) (xy 0 0)
+		)
+		(height 3.30767)
+		(orientation 0)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 0)
+			(precision 4)
+			(suppress_zeroes yes)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "30"
+			(at 15 2.15767 0)
+			(layer "Cmts.User")
+			(uuid "2d876a18-09c6-4e71-8d6c-0b77e7b09eb5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
 		)
 	)
 	(pad "1" smd oval
@@ -115,25 +178,25 @@
 		(uuid "2ab97c91-b301-4f26-b24b-69ecc8528ea2")
 	)
 	(pad "2" smd oval
-		(at 33.271392 2.249584 270)
+		(at 28.271392 2.249584 270)
 		(size 2.1 6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "e696f049-55cb-4217-a51f-5bfda3e507d2")
 	)
 	(pad "2" smd oval
-		(at 33.271392 4.789584 270)
+		(at 28.271392 4.789584 270)
 		(size 2.1 6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "1f19c9bc-efca-4688-ac49-8a3b373a2504")
 	)
 	(pad "2" smd oval
-		(at 33.271392 7.349584 270)
+		(at 28.271392 7.349584 270)
 		(size 2.1 6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "f8cd0dae-5018-487b-a526-315a586660ec")
 	)
 	(pad "2" smd oval
-		(at 33.271392 9.889584 270)
+		(at 28.271392 9.889584 270)
 		(size 2.1 6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "9ee83471-f3a9-42ce-9abe-17daa46ff201")
@@ -163,39 +226,28 @@
 		(uuid "f2f38b75-04ad-4ce8-b8c2-3f0cd2f42b54")
 	)
 	(pad "3" smd oval
-		(at 33.272742 14.090914 270)
+		(at 28.272742 14.090914 270)
 		(size 2.1 6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "bfe34b87-8e76-4000-9e2a-cee8e2964f66")
 	)
 	(pad "3" smd oval
-		(at 33.272742 16.630914 270)
+		(at 28.272742 16.630914 270)
 		(size 2.1 6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "b63de8d5-615f-4d4b-8543-669650f2b9e2")
 	)
 	(pad "3" smd oval
-		(at 33.272742 19.190914 270)
+		(at 28.272742 19.190914 270)
 		(size 2.1 6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "212d1db3-48ba-49b9-a3eb-24f9df87e35a")
 	)
 	(pad "3" smd oval
-		(at 33.272742 21.730914 270)
+		(at 28.272742 21.730914 270)
 		(size 2.1 6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "4e34bfa7-6214-48b9-9127-dd4339e408f3")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/hubModels/HUB.step"
-		(offset
-			(xyz -117 54 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz -0 -0 -0)
-		)
-	)
 )
