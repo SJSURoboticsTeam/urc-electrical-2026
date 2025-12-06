@@ -5731,6 +5731,16 @@
 		)
 		(uuid "8bd25711-85c8-4233-ba99-f8420851735c")
 	)
+	(text "xVREF = 10 k/16 k * 3.3 V = 0.2 V\nIfs = VREF/(5*100 m) = 0.41 A"
+		(exclude_from_sim no)
+		(at 218.948 136.144 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "90c8c0fc-af65-4b73-9abb-119ed32c3201")
+	)
 	(text "I2C connector"
 		(exclude_from_sim no)
 		(at 72.644 144.526 0)
@@ -9246,7 +9256,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "03622fe1-af44-4b8c-b966-dbd957047277")
 		(property "Reference" "R12"
 			(at 215.138 20.828 90)
@@ -9256,7 +9266,7 @@
 				)
 			)
 		)
-		(property "Value" "47 kΩ"
+		(property "Value" "0 Ω"
 			(at 215.138 25.4 90)
 			(effects
 				(font
@@ -10620,7 +10630,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "47414fa2-b519-47de-bfca-4d4cece9688f")
 		(property "Reference" "R15"
 			(at 36.83 122.428 90)
@@ -12743,7 +12753,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "bd025eb9-7867-4aab-8751-7e2e27331411")
 		(property "Reference" "R13"
 			(at 224.028 20.828 90)
@@ -12753,7 +12763,7 @@
 				)
 			)
 		)
-		(property "Value" "47 kΩ"
+		(property "Value" "0 Ω"
 			(at 224.79 25.4 90)
 			(effects
 				(font
